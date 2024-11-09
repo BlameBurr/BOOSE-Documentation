@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Enums.PatternType
+  commentId: T:Core.Enums.PatternType
+  id: PatternType
+  parent: Core.Enums
+  children:
+  - Core.Enums.PatternType.assignment
+  - Core.Enums.PatternType.call
+  - Core.Enums.PatternType.condition
+  - Core.Enums.PatternType.expression
+  - Core.Enums.PatternType.invalid
+  - Core.Enums.PatternType.iteration
+  langs:
+  - csharp
+  - vb
+  name: PatternType
+  nameWithType: PatternType
+  fullName: Core.Enums.PatternType
+  type: Enum
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/PatternType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: PatternType
+    path: ../BOOSE-Application/Core/Enums/PatternType.cs
+    startLine: 2
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: public enum PatternType
+    content.vb: Public Enum PatternType
+- uid: Core.Enums.PatternType.invalid
+  commentId: F:Core.Enums.PatternType.invalid
+  id: invalid
+  parent: Core.Enums.PatternType
+  langs:
+  - csharp
+  - vb
+  name: invalid
+  nameWithType: PatternType.invalid
+  fullName: Core.Enums.PatternType.invalid
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/PatternType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: invalid
+    path: ../BOOSE-Application/Core/Enums/PatternType.cs
+    startLine: 4
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: invalid = -1
+    return:
+      type: Core.Enums.PatternType
+- uid: Core.Enums.PatternType.assignment
+  commentId: F:Core.Enums.PatternType.assignment
+  id: assignment
+  parent: Core.Enums.PatternType
+  langs:
+  - csharp
+  - vb
+  name: assignment
+  nameWithType: PatternType.assignment
+  fullName: Core.Enums.PatternType.assignment
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/PatternType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: assignment
+    path: ../BOOSE-Application/Core/Enums/PatternType.cs
+    startLine: 5
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: assignment = 0
+    return:
+      type: Core.Enums.PatternType
+- uid: Core.Enums.PatternType.call
+  commentId: F:Core.Enums.PatternType.call
+  id: call
+  parent: Core.Enums.PatternType
+  langs:
+  - csharp
+  - vb
+  name: call
+  nameWithType: PatternType.call
+  fullName: Core.Enums.PatternType.call
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/PatternType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: call
+    path: ../BOOSE-Application/Core/Enums/PatternType.cs
+    startLine: 6
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: call = 1
+    return:
+      type: Core.Enums.PatternType
+- uid: Core.Enums.PatternType.expression
+  commentId: F:Core.Enums.PatternType.expression
+  id: expression
+  parent: Core.Enums.PatternType
+  langs:
+  - csharp
+  - vb
+  name: expression
+  nameWithType: PatternType.expression
+  fullName: Core.Enums.PatternType.expression
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/PatternType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: expression
+    path: ../BOOSE-Application/Core/Enums/PatternType.cs
+    startLine: 7
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: expression = 2
+    return:
+      type: Core.Enums.PatternType
+- uid: Core.Enums.PatternType.condition
+  commentId: F:Core.Enums.PatternType.condition
+  id: condition
+  parent: Core.Enums.PatternType
+  langs:
+  - csharp
+  - vb
+  name: condition
+  nameWithType: PatternType.condition
+  fullName: Core.Enums.PatternType.condition
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/PatternType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: condition
+    path: ../BOOSE-Application/Core/Enums/PatternType.cs
+    startLine: 8
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: condition = 3
+    return:
+      type: Core.Enums.PatternType
+- uid: Core.Enums.PatternType.iteration
+  commentId: F:Core.Enums.PatternType.iteration
+  id: iteration
+  parent: Core.Enums.PatternType
+  langs:
+  - csharp
+  - vb
+  name: iteration
+  nameWithType: PatternType.iteration
+  fullName: Core.Enums.PatternType.iteration
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/PatternType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: iteration
+    path: ../BOOSE-Application/Core/Enums/PatternType.cs
+    startLine: 9
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: iteration = 4
+    return:
+      type: Core.Enums.PatternType
+references:
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  href: Core.html
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+- uid: Core.Enums.PatternType
+  commentId: T:Core.Enums.PatternType
+  parent: Core.Enums
+  href: Core.Enums.PatternType.html
+  name: PatternType
+  nameWithType: PatternType
+  fullName: Core.Enums.PatternType

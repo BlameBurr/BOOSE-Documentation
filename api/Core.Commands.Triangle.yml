@@ -1,0 +1,751 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Commands.Triangle
+  commentId: T:Core.Commands.Triangle
+  id: Triangle
+  parent: Core.Commands
+  children:
+  - Core.Commands.Triangle.#ctor(Core.Canvas)
+  - Core.Commands.Triangle.Description
+  - Core.Commands.Triangle.Execute(System.Collections.Generic.List{System.Object})
+  - Core.Commands.Triangle.Name
+  - Core.Commands.Triangle.Usage
+  langs:
+  - csharp
+  - vb
+  name: Triangle
+  nameWithType: Triangle
+  fullName: Core.Commands.Triangle
+  type: Class
+  source:
+    remote:
+      path: BOOSE-Application/Core/Commands/Triangle.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Triangle
+    path: ../BOOSE-Application/Core/Commands/Triangle.cs
+    startLine: 6
+  assemblies:
+  - Core
+  namespace: Core.Commands
+  syntax:
+    content: 'public class Triangle : ICommand'
+    content.vb: Public Class Triangle Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - Core.Interfaces.ICommand
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Core.Commands.Triangle.Name
+  commentId: P:Core.Commands.Triangle.Name
+  id: Name
+  parent: Core.Commands.Triangle
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Triangle.Name
+  fullName: Core.Commands.Triangle.Name
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Commands/Triangle.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Name
+    path: ../BOOSE-Application/Core/Commands/Triangle.cs
+    startLine: 8
+  assemblies:
+  - Core
+  namespace: Core.Commands
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Core.Commands.Triangle.Name*
+  implements:
+  - Core.Interfaces.ICommand.Name
+- uid: Core.Commands.Triangle.Usage
+  commentId: P:Core.Commands.Triangle.Usage
+  id: Usage
+  parent: Core.Commands.Triangle
+  langs:
+  - csharp
+  - vb
+  name: Usage
+  nameWithType: Triangle.Usage
+  fullName: Core.Commands.Triangle.Usage
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Commands/Triangle.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Usage
+    path: ../BOOSE-Application/Core/Commands/Triangle.cs
+    startLine: 9
+  assemblies:
+  - Core
+  namespace: Core.Commands
+  example: []
+  syntax:
+    content: public string Usage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Usage As String
+  overload: Core.Commands.Triangle.Usage*
+  implements:
+  - Core.Interfaces.ICommand.Usage
+- uid: Core.Commands.Triangle.Description
+  commentId: P:Core.Commands.Triangle.Description
+  id: Description
+  parent: Core.Commands.Triangle
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Triangle.Description
+  fullName: Core.Commands.Triangle.Description
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Commands/Triangle.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Description
+    path: ../BOOSE-Application/Core/Commands/Triangle.cs
+    startLine: 10
+  assemblies:
+  - Core
+  namespace: Core.Commands
+  example: []
+  syntax:
+    content: public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Description As String
+  overload: Core.Commands.Triangle.Description*
+  implements:
+  - Core.Interfaces.ICommand.Description
+- uid: Core.Commands.Triangle.#ctor(Core.Canvas)
+  commentId: M:Core.Commands.Triangle.#ctor(Core.Canvas)
+  id: '#ctor(Core.Canvas)'
+  parent: Core.Commands.Triangle
+  langs:
+  - csharp
+  - vb
+  name: Triangle(Canvas)
+  nameWithType: Triangle.Triangle(Canvas)
+  fullName: Core.Commands.Triangle.Triangle(Core.Canvas)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSE-Application/Core/Commands/Triangle.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: .ctor
+    path: ../BOOSE-Application/Core/Commands/Triangle.cs
+    startLine: 13
+  assemblies:
+  - Core
+  namespace: Core.Commands
+  syntax:
+    content: public Triangle(Canvas canvas)
+    parameters:
+    - id: canvas
+      type: Core.Canvas
+    content.vb: Public Sub New(canvas As Canvas)
+  overload: Core.Commands.Triangle.#ctor*
+  nameWithType.vb: Triangle.New(Canvas)
+  fullName.vb: Core.Commands.Triangle.New(Core.Canvas)
+  name.vb: New(Canvas)
+- uid: Core.Commands.Triangle.Execute(System.Collections.Generic.List{System.Object})
+  commentId: M:Core.Commands.Triangle.Execute(System.Collections.Generic.List{System.Object})
+  id: Execute(System.Collections.Generic.List{System.Object})
+  parent: Core.Commands.Triangle
+  langs:
+  - csharp
+  - vb
+  name: Execute(List<object>)
+  nameWithType: Triangle.Execute(List<object>)
+  fullName: Core.Commands.Triangle.Execute(System.Collections.Generic.List<object>)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Commands/Triangle.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Execute
+    path: ../BOOSE-Application/Core/Commands/Triangle.cs
+    startLine: 21
+  assemblies:
+  - Core
+  namespace: Core.Commands
+  example: []
+  syntax:
+    content: public CommandResult Execute(List<object> parameters)
+    parameters:
+    - id: parameters
+      type: System.Collections.Generic.List{System.Object}
+    return:
+      type: Core.Enums.CommandResult
+    content.vb: Public Function Execute(parameters As List(Of Object)) As CommandResult
+  overload: Core.Commands.Triangle.Execute*
+  implements:
+  - Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  nameWithType.vb: Triangle.Execute(List(Of Object))
+  fullName.vb: Core.Commands.Triangle.Execute(System.Collections.Generic.List(Of Object))
+  name.vb: Execute(List(Of Object))
+references:
+- uid: Core.Commands
+  commentId: N:Core.Commands
+  href: Core.html
+  name: Core.Commands
+  nameWithType: Core.Commands
+  fullName: Core.Commands
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Commands
+    name: Commands
+    href: Core.Commands.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Commands
+    name: Commands
+    href: Core.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Core.Interfaces.ICommand
+  commentId: T:Core.Interfaces.ICommand
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Core.Interfaces.ICommand
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: Core.Commands.Triangle.Name*
+  commentId: Overload:Core.Commands.Triangle.Name
+  href: Core.Commands.Triangle.html#Core_Commands_Triangle_Name
+  name: Name
+  nameWithType: Triangle.Name
+  fullName: Core.Commands.Triangle.Name
+- uid: Core.Interfaces.ICommand.Name
+  commentId: P:Core.Interfaces.ICommand.Name
+  parent: Core.Interfaces.ICommand
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Name
+  name: Name
+  nameWithType: ICommand.Name
+  fullName: Core.Interfaces.ICommand.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Core.Commands.Triangle.Usage*
+  commentId: Overload:Core.Commands.Triangle.Usage
+  href: Core.Commands.Triangle.html#Core_Commands_Triangle_Usage
+  name: Usage
+  nameWithType: Triangle.Usage
+  fullName: Core.Commands.Triangle.Usage
+- uid: Core.Interfaces.ICommand.Usage
+  commentId: P:Core.Interfaces.ICommand.Usage
+  parent: Core.Interfaces.ICommand
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Usage
+  name: Usage
+  nameWithType: ICommand.Usage
+  fullName: Core.Interfaces.ICommand.Usage
+- uid: Core.Commands.Triangle.Description*
+  commentId: Overload:Core.Commands.Triangle.Description
+  href: Core.Commands.Triangle.html#Core_Commands_Triangle_Description
+  name: Description
+  nameWithType: Triangle.Description
+  fullName: Core.Commands.Triangle.Description
+- uid: Core.Interfaces.ICommand.Description
+  commentId: P:Core.Interfaces.ICommand.Description
+  parent: Core.Interfaces.ICommand
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Description
+  name: Description
+  nameWithType: ICommand.Description
+  fullName: Core.Interfaces.ICommand.Description
+- uid: Core.Commands.Triangle.#ctor*
+  commentId: Overload:Core.Commands.Triangle.#ctor
+  href: Core.Commands.Triangle.html#Core_Commands_Triangle__ctor_Core_Canvas_
+  name: Triangle
+  nameWithType: Triangle.Triangle
+  fullName: Core.Commands.Triangle.Triangle
+  nameWithType.vb: Triangle.New
+  fullName.vb: Core.Commands.Triangle.New
+  name.vb: New
+- uid: Core.Canvas
+  commentId: T:Core.Canvas
+  parent: Core
+  href: Core.Canvas.html
+  name: Canvas
+  nameWithType: Canvas
+  fullName: Core.Canvas
+- uid: Core
+  commentId: N:Core
+  href: Core.html
+  name: Core
+  nameWithType: Core
+  fullName: Core
+- uid: Core.Commands.Triangle.Execute*
+  commentId: Overload:Core.Commands.Triangle.Execute
+  href: Core.Commands.Triangle.html#Core_Commands_Triangle_Execute_System_Collections_Generic_List_System_Object__
+  name: Execute
+  nameWithType: Triangle.Execute
+  fullName: Core.Commands.Triangle.Execute
+- uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  commentId: M:Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  parent: Core.Interfaces.ICommand
+  isExternal: true
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
+  name: Execute(List<object>)
+  nameWithType: ICommand.Execute(List<object>)
+  fullName: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List<object>)
+  nameWithType.vb: ICommand.Execute(List(Of Object))
+  fullName.vb: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List(Of Object))
+  name.vb: Execute(List(Of Object))
+  spec.csharp:
+  - uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+    name: Execute
+    href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+    name: Execute
+    href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List{System.Object}
+  commentId: T:System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<object>
+  nameWithType: List<object>
+  fullName: System.Collections.Generic.List<object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Core.Enums.CommandResult
+  commentId: T:Core.Enums.CommandResult
+  parent: Core.Enums
+  href: Core.Enums.CommandResult.html
+  name: CommandResult
+  nameWithType: CommandResult
+  fullName: Core.Enums.CommandResult
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  href: Core.html
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html

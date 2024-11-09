@@ -1,0 +1,412 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.StoredProgramExecutor
+  commentId: T:Core.StoredProgramExecutor
+  id: StoredProgramExecutor
+  parent: Core
+  children:
+  - Core.StoredProgramExecutor.#ctor(Core.Canvas)
+  - Core.StoredProgramExecutor.Execute(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StoredProgramExecutor
+  nameWithType: StoredProgramExecutor
+  fullName: Core.StoredProgramExecutor
+  type: Class
+  source:
+    remote:
+      path: BOOSE-Application/Core/StoredProgramExecutor.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: StoredProgramExecutor
+    path: ../BOOSE-Application/Core/StoredProgramExecutor.cs
+    startLine: 12
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: public class StoredProgramExecutor
+    content.vb: Public Class StoredProgramExecutor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Core.StoredProgramExecutor.#ctor(Core.Canvas)
+  commentId: M:Core.StoredProgramExecutor.#ctor(Core.Canvas)
+  id: '#ctor(Core.Canvas)'
+  parent: Core.StoredProgramExecutor
+  langs:
+  - csharp
+  - vb
+  name: StoredProgramExecutor(Canvas)
+  nameWithType: StoredProgramExecutor.StoredProgramExecutor(Canvas)
+  fullName: Core.StoredProgramExecutor.StoredProgramExecutor(Core.Canvas)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSE-Application/Core/StoredProgramExecutor.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: .ctor
+    path: ../BOOSE-Application/Core/StoredProgramExecutor.cs
+    startLine: 17
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: public StoredProgramExecutor(Canvas canvas)
+    parameters:
+    - id: canvas
+      type: Core.Canvas
+    content.vb: Public Sub New(canvas As Canvas)
+  overload: Core.StoredProgramExecutor.#ctor*
+  nameWithType.vb: StoredProgramExecutor.New(Canvas)
+  fullName.vb: Core.StoredProgramExecutor.New(Core.Canvas)
+  name.vb: New(Canvas)
+- uid: Core.StoredProgramExecutor.Execute(System.String)
+  commentId: M:Core.StoredProgramExecutor.Execute(System.String)
+  id: Execute(System.String)
+  parent: Core.StoredProgramExecutor
+  langs:
+  - csharp
+  - vb
+  name: Execute(string)
+  nameWithType: StoredProgramExecutor.Execute(string)
+  fullName: Core.StoredProgramExecutor.Execute(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/StoredProgramExecutor.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Execute
+    path: ../BOOSE-Application/Core/StoredProgramExecutor.cs
+    startLine: 22
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: public CommandResult Execute(string lines)
+    parameters:
+    - id: lines
+      type: System.String
+    return:
+      type: Core.Enums.CommandResult
+    content.vb: Public Function Execute(lines As String) As CommandResult
+  overload: Core.StoredProgramExecutor.Execute*
+  nameWithType.vb: StoredProgramExecutor.Execute(String)
+  fullName.vb: Core.StoredProgramExecutor.Execute(String)
+  name.vb: Execute(String)
+references:
+- uid: Core
+  commentId: N:Core
+  href: Core.html
+  name: Core
+  nameWithType: Core
+  fullName: Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Core.StoredProgramExecutor.#ctor*
+  commentId: Overload:Core.StoredProgramExecutor.#ctor
+  href: Core.StoredProgramExecutor.html#Core_StoredProgramExecutor__ctor_Core_Canvas_
+  name: StoredProgramExecutor
+  nameWithType: StoredProgramExecutor.StoredProgramExecutor
+  fullName: Core.StoredProgramExecutor.StoredProgramExecutor
+  nameWithType.vb: StoredProgramExecutor.New
+  fullName.vb: Core.StoredProgramExecutor.New
+  name.vb: New
+- uid: Core.Canvas
+  commentId: T:Core.Canvas
+  parent: Core
+  href: Core.Canvas.html
+  name: Canvas
+  nameWithType: Canvas
+  fullName: Core.Canvas
+- uid: Core.StoredProgramExecutor.Execute*
+  commentId: Overload:Core.StoredProgramExecutor.Execute
+  href: Core.StoredProgramExecutor.html#Core_StoredProgramExecutor_Execute_System_String_
+  name: Execute
+  nameWithType: StoredProgramExecutor.Execute
+  fullName: Core.StoredProgramExecutor.Execute
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Core.Enums.CommandResult
+  commentId: T:Core.Enums.CommandResult
+  parent: Core.Enums
+  href: Core.Enums.CommandResult.html
+  name: CommandResult
+  nameWithType: CommandResult
+  fullName: Core.Enums.CommandResult
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  href: Core.html
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html

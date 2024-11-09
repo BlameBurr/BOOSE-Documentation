@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  id: Core.Enums
+  children:
+  - Core.Enums.CommandResult
+  - Core.Enums.CommandsList
+  - Core.Enums.PatternType
+  - Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  type: Namespace
+  assemblies:
+  - Core
+references:
+- uid: Core.Enums.CommandResult
+  commentId: T:Core.Enums.CommandResult
+  parent: Core.Enums
+  href: Core.Enums.CommandResult.html
+  name: CommandResult
+  nameWithType: CommandResult
+  fullName: Core.Enums.CommandResult
+- uid: Core.Enums.CommandsList
+  commentId: T:Core.Enums.CommandsList
+  href: Core.Enums.CommandsList.html
+  name: CommandsList
+  nameWithType: CommandsList
+  fullName: Core.Enums.CommandsList
+- uid: Core.Enums.PatternType
+  commentId: T:Core.Enums.PatternType
+  parent: Core.Enums
+  href: Core.Enums.PatternType.html
+  name: PatternType
+  nameWithType: PatternType
+  fullName: Core.Enums.PatternType
+- uid: Core.Enums.TokenType
+  commentId: T:Core.Enums.TokenType
+  parent: Core.Enums
+  href: Core.Enums.TokenType.html
+  name: TokenType
+  nameWithType: TokenType
+  fullName: Core.Enums.TokenType
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  href: Core.html
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html

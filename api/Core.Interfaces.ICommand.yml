@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Interfaces.ICommand
+  commentId: T:Core.Interfaces.ICommand
+  id: ICommand
+  parent: Core.Interfaces
+  children:
+  - Core.Interfaces.ICommand.Description
+  - Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  - Core.Interfaces.ICommand.Name
+  - Core.Interfaces.ICommand.Usage
+  langs:
+  - csharp
+  - vb
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Core.Interfaces.ICommand
+  type: Interface
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommand.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ICommand
+    path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
+    startLine: 10
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  syntax:
+    content: public interface ICommand
+    content.vb: Public Interface ICommand
+- uid: Core.Interfaces.ICommand.Name
+  commentId: P:Core.Interfaces.ICommand.Name
+  id: Name
+  parent: Core.Interfaces.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ICommand.Name
+  fullName: Core.Interfaces.ICommand.Name
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommand.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Name
+    path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
+    startLine: 12
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Core.Interfaces.ICommand.Name*
+- uid: Core.Interfaces.ICommand.Usage
+  commentId: P:Core.Interfaces.ICommand.Usage
+  id: Usage
+  parent: Core.Interfaces.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Usage
+  nameWithType: ICommand.Usage
+  fullName: Core.Interfaces.ICommand.Usage
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommand.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Usage
+    path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
+    startLine: 13
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  syntax:
+    content: string Usage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Usage As String
+  overload: Core.Interfaces.ICommand.Usage*
+- uid: Core.Interfaces.ICommand.Description
+  commentId: P:Core.Interfaces.ICommand.Description
+  id: Description
+  parent: Core.Interfaces.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ICommand.Description
+  fullName: Core.Interfaces.ICommand.Description
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommand.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Description
+    path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
+    startLine: 14
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  syntax:
+    content: string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Description As String
+  overload: Core.Interfaces.ICommand.Description*
+- uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  commentId: M:Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  id: Execute(System.Collections.Generic.List{System.Object})
+  parent: Core.Interfaces.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Execute(List<object>)
+  nameWithType: ICommand.Execute(List<object>)
+  fullName: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List<object>)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommand.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Execute
+    path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
+    startLine: 16
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  syntax:
+    content: CommandResult Execute(List<object> parameters)
+    parameters:
+    - id: parameters
+      type: System.Collections.Generic.List{System.Object}
+    return:
+      type: Core.Enums.CommandResult
+    content.vb: Function Execute(parameters As List(Of Object)) As CommandResult
+  overload: Core.Interfaces.ICommand.Execute*
+  nameWithType.vb: ICommand.Execute(List(Of Object))
+  fullName.vb: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List(Of Object))
+  name.vb: Execute(List(Of Object))
+references:
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: Core.Interfaces.ICommand.Name*
+  commentId: Overload:Core.Interfaces.ICommand.Name
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Name
+  name: Name
+  nameWithType: ICommand.Name
+  fullName: Core.Interfaces.ICommand.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Core.Interfaces.ICommand.Usage*
+  commentId: Overload:Core.Interfaces.ICommand.Usage
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Usage
+  name: Usage
+  nameWithType: ICommand.Usage
+  fullName: Core.Interfaces.ICommand.Usage
+- uid: Core.Interfaces.ICommand.Description*
+  commentId: Overload:Core.Interfaces.ICommand.Description
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Description
+  name: Description
+  nameWithType: ICommand.Description
+  fullName: Core.Interfaces.ICommand.Description
+- uid: Core.Interfaces.ICommand.Execute*
+  commentId: Overload:Core.Interfaces.ICommand.Execute
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
+  name: Execute
+  nameWithType: ICommand.Execute
+  fullName: Core.Interfaces.ICommand.Execute
+- uid: System.Collections.Generic.List{System.Object}
+  commentId: T:System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<object>
+  nameWithType: List<object>
+  fullName: System.Collections.Generic.List<object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Core.Enums.CommandResult
+  commentId: T:Core.Enums.CommandResult
+  parent: Core.Enums
+  href: Core.Enums.CommandResult.html
+  name: CommandResult
+  nameWithType: CommandResult
+  fullName: Core.Enums.CommandResult
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  href: Core.html
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html

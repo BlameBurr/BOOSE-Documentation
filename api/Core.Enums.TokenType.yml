@@ -1,0 +1,328 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Enums.TokenType
+  commentId: T:Core.Enums.TokenType
+  id: TokenType
+  parent: Core.Enums
+  children:
+  - Core.Enums.TokenType.command
+  - Core.Enums.TokenType.conditional
+  - Core.Enums.TokenType.integer
+  - Core.Enums.TokenType.invalid
+  - Core.Enums.TokenType.iteration
+  - Core.Enums.TokenType.operation
+  - Core.Enums.TokenType.punctuation
+  - Core.Enums.TokenType.real
+  - Core.Enums.TokenType.variableName
+  - Core.Enums.TokenType.variableType
+  langs:
+  - csharp
+  - vb
+  name: TokenType
+  nameWithType: TokenType
+  fullName: Core.Enums.TokenType
+  type: Enum
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: TokenType
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 8
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: public enum TokenType
+    content.vb: Public Enum TokenType
+- uid: Core.Enums.TokenType.command
+  commentId: F:Core.Enums.TokenType.command
+  id: command
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: command
+  nameWithType: TokenType.command
+  fullName: Core.Enums.TokenType.command
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: command
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 10
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: command = 0
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.conditional
+  commentId: F:Core.Enums.TokenType.conditional
+  id: conditional
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: conditional
+  nameWithType: TokenType.conditional
+  fullName: Core.Enums.TokenType.conditional
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: conditional
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 11
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: conditional = 1
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.iteration
+  commentId: F:Core.Enums.TokenType.iteration
+  id: iteration
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: iteration
+  nameWithType: TokenType.iteration
+  fullName: Core.Enums.TokenType.iteration
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: iteration
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 12
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: iteration = 2
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.variableType
+  commentId: F:Core.Enums.TokenType.variableType
+  id: variableType
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: variableType
+  nameWithType: TokenType.variableType
+  fullName: Core.Enums.TokenType.variableType
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: variableType
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 13
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: variableType = 3
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.variableName
+  commentId: F:Core.Enums.TokenType.variableName
+  id: variableName
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: variableName
+  nameWithType: TokenType.variableName
+  fullName: Core.Enums.TokenType.variableName
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: variableName
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 14
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: variableName = 4
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.integer
+  commentId: F:Core.Enums.TokenType.integer
+  id: integer
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: integer
+  nameWithType: TokenType.integer
+  fullName: Core.Enums.TokenType.integer
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: integer
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 15
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: integer = 5
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.real
+  commentId: F:Core.Enums.TokenType.real
+  id: real
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: real
+  nameWithType: TokenType.real
+  fullName: Core.Enums.TokenType.real
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: real
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 16
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: real = 6
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.operation
+  commentId: F:Core.Enums.TokenType.operation
+  id: operation
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: operation
+  nameWithType: TokenType.operation
+  fullName: Core.Enums.TokenType.operation
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: operation
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 17
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: operation = 7
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.punctuation
+  commentId: F:Core.Enums.TokenType.punctuation
+  id: punctuation
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: punctuation
+  nameWithType: TokenType.punctuation
+  fullName: Core.Enums.TokenType.punctuation
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: punctuation
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 18
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: punctuation = 8
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.invalid
+  commentId: F:Core.Enums.TokenType.invalid
+  id: invalid
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: invalid
+  nameWithType: TokenType.invalid
+  fullName: Core.Enums.TokenType.invalid
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: invalid
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 19
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: invalid = -1
+    return:
+      type: Core.Enums.TokenType
+references:
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  href: Core.html
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+- uid: Core.Enums.TokenType
+  commentId: T:Core.Enums.TokenType
+  parent: Core.Enums
+  href: Core.Enums.TokenType.html
+  name: TokenType
+  nameWithType: TokenType
+  fullName: Core.Enums.TokenType

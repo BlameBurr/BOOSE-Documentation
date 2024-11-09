@@ -1,0 +1,1182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Canvas
+  commentId: T:Core.Canvas
+  id: Canvas
+  parent: Core
+  children:
+  - Core.Canvas.#ctor(System.Int32,System.Int32)
+  - Core.Canvas.#ctor(System.Windows.Forms.Panel)
+  - Core.Canvas.BackgroundColour
+  - Core.Canvas.Bounds
+  - Core.Canvas.Clear
+  - Core.Canvas.Clear(System.Drawing.Color)
+  - Core.Canvas.FreeDraw(System.Int32,System.Int32)
+  - Core.Canvas.GraphicsBuffer
+  - Core.Canvas.GraphicsBufferContext
+  - Core.Canvas.IsPainting
+  - Core.Canvas.IsPenDown
+  - Core.Canvas.Pen
+  - Core.Canvas.PenColour
+  - Core.Canvas.PenPosition
+  - Core.Canvas.Reset
+  langs:
+  - csharp
+  - vb
+  name: Canvas
+  nameWithType: Canvas
+  fullName: Core.Canvas
+  type: Class
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Canvas
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 6
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: 'public class Canvas : ICanvas'
+    content.vb: Public Class Canvas Implements ICanvas
+  inheritance:
+  - System.Object
+  implements:
+  - Core.Interfaces.ICanvas
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Core.Canvas.Pen
+  commentId: P:Core.Canvas.Pen
+  id: Pen
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: Pen
+  nameWithType: Canvas.Pen
+  fullName: Core.Canvas.Pen
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Pen
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 8
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public Pen Pen { get; }
+    parameters: []
+    return:
+      type: System.Drawing.Pen
+    content.vb: Public ReadOnly Property Pen As Pen
+  overload: Core.Canvas.Pen*
+  implements:
+  - Core.Interfaces.ICanvas.Pen
+- uid: Core.Canvas.IsPainting
+  commentId: P:Core.Canvas.IsPainting
+  id: IsPainting
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: IsPainting
+  nameWithType: Canvas.IsPainting
+  fullName: Core.Canvas.IsPainting
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: IsPainting
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 9
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public bool IsPainting { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPainting As Boolean
+  overload: Core.Canvas.IsPainting*
+  implements:
+  - Core.Interfaces.ICanvas.IsPainting
+- uid: Core.Canvas.PenColour
+  commentId: P:Core.Canvas.PenColour
+  id: PenColour
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: PenColour
+  nameWithType: Canvas.PenColour
+  fullName: Core.Canvas.PenColour
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: PenColour
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 10
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public Color PenColour { get; set; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Public Property PenColour As Color
+  overload: Core.Canvas.PenColour*
+  implements:
+  - Core.Interfaces.ICanvas.PenColour
+- uid: Core.Canvas.BackgroundColour
+  commentId: P:Core.Canvas.BackgroundColour
+  id: BackgroundColour
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColour
+  nameWithType: Canvas.BackgroundColour
+  fullName: Core.Canvas.BackgroundColour
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: BackgroundColour
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 11
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public Color BackgroundColour { get; set; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Public Property BackgroundColour As Color
+  overload: Core.Canvas.BackgroundColour*
+  implements:
+  - Core.Interfaces.ICanvas.BackgroundColour
+- uid: Core.Canvas.IsPenDown
+  commentId: P:Core.Canvas.IsPenDown
+  id: IsPenDown
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: IsPenDown
+  nameWithType: Canvas.IsPenDown
+  fullName: Core.Canvas.IsPenDown
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: IsPenDown
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 13
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public bool IsPenDown { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPenDown As Boolean
+  overload: Core.Canvas.IsPenDown*
+  implements:
+  - Core.Interfaces.ICanvas.IsPenDown
+- uid: Core.Canvas.PenPosition
+  commentId: P:Core.Canvas.PenPosition
+  id: PenPosition
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: PenPosition
+  nameWithType: Canvas.PenPosition
+  fullName: Core.Canvas.PenPosition
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: PenPosition
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 14
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public Point PenPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Drawing.Point
+    content.vb: Public Property PenPosition As Point
+  overload: Core.Canvas.PenPosition*
+  implements:
+  - Core.Interfaces.ICanvas.PenPosition
+- uid: Core.Canvas.Bounds
+  commentId: P:Core.Canvas.Bounds
+  id: Bounds
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: Bounds
+  nameWithType: Canvas.Bounds
+  fullName: Core.Canvas.Bounds
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Bounds
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 15
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public Rectangle Bounds { get; }
+    parameters: []
+    return:
+      type: System.Drawing.Rectangle
+    content.vb: Public ReadOnly Property Bounds As Rectangle
+  overload: Core.Canvas.Bounds*
+  implements:
+  - Core.Interfaces.ICanvas.Bounds
+- uid: Core.Canvas.GraphicsBufferContext
+  commentId: P:Core.Canvas.GraphicsBufferContext
+  id: GraphicsBufferContext
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: GraphicsBufferContext
+  nameWithType: Canvas.GraphicsBufferContext
+  fullName: Core.Canvas.GraphicsBufferContext
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: GraphicsBufferContext
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 18
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public BufferedGraphicsContext GraphicsBufferContext { get; }
+    parameters: []
+    return:
+      type: System.Drawing.BufferedGraphicsContext
+    content.vb: Public ReadOnly Property GraphicsBufferContext As BufferedGraphicsContext
+  overload: Core.Canvas.GraphicsBufferContext*
+  implements:
+  - Core.Interfaces.ICanvas.GraphicsBufferContext
+- uid: Core.Canvas.GraphicsBuffer
+  commentId: P:Core.Canvas.GraphicsBuffer
+  id: GraphicsBuffer
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: GraphicsBuffer
+  nameWithType: Canvas.GraphicsBuffer
+  fullName: Core.Canvas.GraphicsBuffer
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: GraphicsBuffer
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 19
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public BufferedGraphics GraphicsBuffer { get; }
+    parameters: []
+    return:
+      type: System.Drawing.BufferedGraphics
+    content.vb: Public ReadOnly Property GraphicsBuffer As BufferedGraphics
+  overload: Core.Canvas.GraphicsBuffer*
+  implements:
+  - Core.Interfaces.ICanvas.GraphicsBuffer
+- uid: Core.Canvas.#ctor(System.Int32,System.Int32)
+  commentId: M:Core.Canvas.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: Canvas(int, int)
+  nameWithType: Canvas.Canvas(int, int)
+  fullName: Core.Canvas.Canvas(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: .ctor
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 21
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: public Canvas(int width, int height)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    content.vb: Public Sub New(width As Integer, height As Integer)
+  overload: Core.Canvas.#ctor*
+  nameWithType.vb: Canvas.New(Integer, Integer)
+  fullName.vb: Core.Canvas.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: Core.Canvas.#ctor(System.Windows.Forms.Panel)
+  commentId: M:Core.Canvas.#ctor(System.Windows.Forms.Panel)
+  id: '#ctor(System.Windows.Forms.Panel)'
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: Canvas(Panel)
+  nameWithType: Canvas.Canvas(Panel)
+  fullName: Core.Canvas.Canvas(System.Windows.Forms.Panel)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: .ctor
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 39
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: public Canvas(Panel panel)
+    parameters:
+    - id: panel
+      type: System.Windows.Forms.Panel
+    content.vb: Public Sub New(panel As Panel)
+  overload: Core.Canvas.#ctor*
+  nameWithType.vb: Canvas.New(Panel)
+  fullName.vb: Core.Canvas.New(System.Windows.Forms.Panel)
+  name.vb: New(Panel)
+- uid: Core.Canvas.Reset
+  commentId: M:Core.Canvas.Reset
+  id: Reset
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: Canvas.Reset()
+  fullName: Core.Canvas.Reset()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Reset
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 56
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: Core.Canvas.Reset*
+- uid: Core.Canvas.Clear
+  commentId: M:Core.Canvas.Clear
+  id: Clear
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: Canvas.Clear()
+  fullName: Core.Canvas.Clear()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Clear
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 61
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Core.Canvas.Clear*
+  implements:
+  - Core.Interfaces.ICanvas.Clear
+- uid: Core.Canvas.Clear(System.Drawing.Color)
+  commentId: M:Core.Canvas.Clear(System.Drawing.Color)
+  id: Clear(System.Drawing.Color)
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: Clear(Color)
+  nameWithType: Canvas.Clear(Color)
+  fullName: Core.Canvas.Clear(System.Drawing.Color)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Clear
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 63
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public void Clear(Color colour)
+    parameters:
+    - id: colour
+      type: System.Drawing.Color
+    content.vb: Public Sub Clear(colour As Color)
+  overload: Core.Canvas.Clear*
+  implements:
+  - Core.Interfaces.ICanvas.Clear(System.Drawing.Color)
+- uid: Core.Canvas.FreeDraw(System.Int32,System.Int32)
+  commentId: M:Core.Canvas.FreeDraw(System.Int32,System.Int32)
+  id: FreeDraw(System.Int32,System.Int32)
+  parent: Core.Canvas
+  langs:
+  - csharp
+  - vb
+  name: FreeDraw(int, int)
+  nameWithType: Canvas.FreeDraw(int, int)
+  fullName: Core.Canvas.FreeDraw(int, int)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Canvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: FreeDraw
+    path: ../BOOSE-Application/Core/Canvas.cs
+    startLine: 69
+  assemblies:
+  - Core
+  namespace: Core
+  example: []
+  syntax:
+    content: public void FreeDraw(int xPos, int yPos)
+    parameters:
+    - id: xPos
+      type: System.Int32
+    - id: yPos
+      type: System.Int32
+    content.vb: Public Sub FreeDraw(xPos As Integer, yPos As Integer)
+  overload: Core.Canvas.FreeDraw*
+  implements:
+  - Core.Interfaces.ICanvas.FreeDraw(System.Int32,System.Int32)
+  nameWithType.vb: Canvas.FreeDraw(Integer, Integer)
+  fullName.vb: Core.Canvas.FreeDraw(Integer, Integer)
+  name.vb: FreeDraw(Integer, Integer)
+references:
+- uid: Core
+  commentId: N:Core
+  href: Core.html
+  name: Core
+  nameWithType: Core
+  fullName: Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Core.Interfaces.ICanvas
+  commentId: T:Core.Interfaces.ICanvas
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICanvas.html
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: Core.Interfaces.ICanvas
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: Core.Canvas.Pen*
+  commentId: Overload:Core.Canvas.Pen
+  href: Core.Canvas.html#Core_Canvas_Pen
+  name: Pen
+  nameWithType: Canvas.Pen
+  fullName: Core.Canvas.Pen
+- uid: Core.Interfaces.ICanvas.Pen
+  commentId: P:Core.Interfaces.ICanvas.Pen
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Pen
+  name: Pen
+  nameWithType: ICanvas.Pen
+  fullName: Core.Interfaces.ICanvas.Pen
+- uid: System.Drawing.Pen
+  commentId: T:System.Drawing.Pen
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.pen
+  name: Pen
+  nameWithType: Pen
+  fullName: System.Drawing.Pen
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+- uid: Core.Canvas.IsPainting*
+  commentId: Overload:Core.Canvas.IsPainting
+  href: Core.Canvas.html#Core_Canvas_IsPainting
+  name: IsPainting
+  nameWithType: Canvas.IsPainting
+  fullName: Core.Canvas.IsPainting
+- uid: Core.Interfaces.ICanvas.IsPainting
+  commentId: P:Core.Interfaces.ICanvas.IsPainting
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_IsPainting
+  name: IsPainting
+  nameWithType: ICanvas.IsPainting
+  fullName: Core.Interfaces.ICanvas.IsPainting
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Core.Canvas.PenColour*
+  commentId: Overload:Core.Canvas.PenColour
+  href: Core.Canvas.html#Core_Canvas_PenColour
+  name: PenColour
+  nameWithType: Canvas.PenColour
+  fullName: Core.Canvas.PenColour
+- uid: Core.Interfaces.ICanvas.PenColour
+  commentId: P:Core.Interfaces.ICanvas.PenColour
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_PenColour
+  name: PenColour
+  nameWithType: ICanvas.PenColour
+  fullName: Core.Interfaces.ICanvas.PenColour
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: Core.Canvas.BackgroundColour*
+  commentId: Overload:Core.Canvas.BackgroundColour
+  href: Core.Canvas.html#Core_Canvas_BackgroundColour
+  name: BackgroundColour
+  nameWithType: Canvas.BackgroundColour
+  fullName: Core.Canvas.BackgroundColour
+- uid: Core.Interfaces.ICanvas.BackgroundColour
+  commentId: P:Core.Interfaces.ICanvas.BackgroundColour
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_BackgroundColour
+  name: BackgroundColour
+  nameWithType: ICanvas.BackgroundColour
+  fullName: Core.Interfaces.ICanvas.BackgroundColour
+- uid: Core.Canvas.IsPenDown*
+  commentId: Overload:Core.Canvas.IsPenDown
+  href: Core.Canvas.html#Core_Canvas_IsPenDown
+  name: IsPenDown
+  nameWithType: Canvas.IsPenDown
+  fullName: Core.Canvas.IsPenDown
+- uid: Core.Interfaces.ICanvas.IsPenDown
+  commentId: P:Core.Interfaces.ICanvas.IsPenDown
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_IsPenDown
+  name: IsPenDown
+  nameWithType: ICanvas.IsPenDown
+  fullName: Core.Interfaces.ICanvas.IsPenDown
+- uid: Core.Canvas.PenPosition*
+  commentId: Overload:Core.Canvas.PenPosition
+  href: Core.Canvas.html#Core_Canvas_PenPosition
+  name: PenPosition
+  nameWithType: Canvas.PenPosition
+  fullName: Core.Canvas.PenPosition
+- uid: Core.Interfaces.ICanvas.PenPosition
+  commentId: P:Core.Interfaces.ICanvas.PenPosition
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_PenPosition
+  name: PenPosition
+  nameWithType: ICanvas.PenPosition
+  fullName: Core.Interfaces.ICanvas.PenPosition
+- uid: System.Drawing.Point
+  commentId: T:System.Drawing.Point
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.point
+  name: Point
+  nameWithType: Point
+  fullName: System.Drawing.Point
+- uid: Core.Canvas.Bounds*
+  commentId: Overload:Core.Canvas.Bounds
+  href: Core.Canvas.html#Core_Canvas_Bounds
+  name: Bounds
+  nameWithType: Canvas.Bounds
+  fullName: Core.Canvas.Bounds
+- uid: Core.Interfaces.ICanvas.Bounds
+  commentId: P:Core.Interfaces.ICanvas.Bounds
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Bounds
+  name: Bounds
+  nameWithType: ICanvas.Bounds
+  fullName: Core.Interfaces.ICanvas.Bounds
+- uid: System.Drawing.Rectangle
+  commentId: T:System.Drawing.Rectangle
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.rectangle
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: System.Drawing.Rectangle
+- uid: Core.Canvas.GraphicsBufferContext*
+  commentId: Overload:Core.Canvas.GraphicsBufferContext
+  href: Core.Canvas.html#Core_Canvas_GraphicsBufferContext
+  name: GraphicsBufferContext
+  nameWithType: Canvas.GraphicsBufferContext
+  fullName: Core.Canvas.GraphicsBufferContext
+- uid: Core.Interfaces.ICanvas.GraphicsBufferContext
+  commentId: P:Core.Interfaces.ICanvas.GraphicsBufferContext
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_GraphicsBufferContext
+  name: GraphicsBufferContext
+  nameWithType: ICanvas.GraphicsBufferContext
+  fullName: Core.Interfaces.ICanvas.GraphicsBufferContext
+- uid: System.Drawing.BufferedGraphicsContext
+  commentId: T:System.Drawing.BufferedGraphicsContext
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.bufferedgraphicscontext
+  name: BufferedGraphicsContext
+  nameWithType: BufferedGraphicsContext
+  fullName: System.Drawing.BufferedGraphicsContext
+- uid: Core.Canvas.GraphicsBuffer*
+  commentId: Overload:Core.Canvas.GraphicsBuffer
+  href: Core.Canvas.html#Core_Canvas_GraphicsBuffer
+  name: GraphicsBuffer
+  nameWithType: Canvas.GraphicsBuffer
+  fullName: Core.Canvas.GraphicsBuffer
+- uid: Core.Interfaces.ICanvas.GraphicsBuffer
+  commentId: P:Core.Interfaces.ICanvas.GraphicsBuffer
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_GraphicsBuffer
+  name: GraphicsBuffer
+  nameWithType: ICanvas.GraphicsBuffer
+  fullName: Core.Interfaces.ICanvas.GraphicsBuffer
+- uid: System.Drawing.BufferedGraphics
+  commentId: T:System.Drawing.BufferedGraphics
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.bufferedgraphics
+  name: BufferedGraphics
+  nameWithType: BufferedGraphics
+  fullName: System.Drawing.BufferedGraphics
+- uid: Core.Canvas.#ctor*
+  commentId: Overload:Core.Canvas.#ctor
+  href: Core.Canvas.html#Core_Canvas__ctor_System_Int32_System_Int32_
+  name: Canvas
+  nameWithType: Canvas.Canvas
+  fullName: Core.Canvas.Canvas
+  nameWithType.vb: Canvas.New
+  fullName.vb: Core.Canvas.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Windows.Forms.Panel
+  commentId: T:System.Windows.Forms.Panel
+  parent: System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.forms.panel
+  name: Panel
+  nameWithType: Panel
+  fullName: System.Windows.Forms.Panel
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+- uid: Core.Canvas.Reset*
+  commentId: Overload:Core.Canvas.Reset
+  href: Core.Canvas.html#Core_Canvas_Reset
+  name: Reset
+  nameWithType: Canvas.Reset
+  fullName: Core.Canvas.Reset
+- uid: Core.Canvas.Clear*
+  commentId: Overload:Core.Canvas.Clear
+  href: Core.Canvas.html#Core_Canvas_Clear
+  name: Clear
+  nameWithType: Canvas.Clear
+  fullName: Core.Canvas.Clear
+- uid: Core.Interfaces.ICanvas.Clear
+  commentId: M:Core.Interfaces.ICanvas.Clear
+  parent: Core.Interfaces.ICanvas
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Clear
+  name: Clear()
+  nameWithType: ICanvas.Clear()
+  fullName: Core.Interfaces.ICanvas.Clear()
+  spec.csharp:
+  - uid: Core.Interfaces.ICanvas.Clear
+    name: Clear
+    href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.ICanvas.Clear
+    name: Clear
+    href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Clear
+  - name: (
+  - name: )
+- uid: Core.Interfaces.ICanvas.Clear(System.Drawing.Color)
+  commentId: M:Core.Interfaces.ICanvas.Clear(System.Drawing.Color)
+  parent: Core.Interfaces.ICanvas
+  isExternal: true
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Clear_System_Drawing_Color_
+  name: Clear(Color)
+  nameWithType: ICanvas.Clear(Color)
+  fullName: Core.Interfaces.ICanvas.Clear(System.Drawing.Color)
+  spec.csharp:
+  - uid: Core.Interfaces.ICanvas.Clear(System.Drawing.Color)
+    name: Clear
+    href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Clear_System_Drawing_Color_
+  - name: (
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.ICanvas.Clear(System.Drawing.Color)
+    name: Clear
+    href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Clear_System_Drawing_Color_
+  - name: (
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: )
+- uid: Core.Canvas.FreeDraw*
+  commentId: Overload:Core.Canvas.FreeDraw
+  href: Core.Canvas.html#Core_Canvas_FreeDraw_System_Int32_System_Int32_
+  name: FreeDraw
+  nameWithType: Canvas.FreeDraw
+  fullName: Core.Canvas.FreeDraw
+- uid: Core.Interfaces.ICanvas.FreeDraw(System.Int32,System.Int32)
+  commentId: M:Core.Interfaces.ICanvas.FreeDraw(System.Int32,System.Int32)
+  parent: Core.Interfaces.ICanvas
+  isExternal: true
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_FreeDraw_System_Int32_System_Int32_
+  name: FreeDraw(int, int)
+  nameWithType: ICanvas.FreeDraw(int, int)
+  fullName: Core.Interfaces.ICanvas.FreeDraw(int, int)
+  nameWithType.vb: ICanvas.FreeDraw(Integer, Integer)
+  fullName.vb: Core.Interfaces.ICanvas.FreeDraw(Integer, Integer)
+  name.vb: FreeDraw(Integer, Integer)
+  spec.csharp:
+  - uid: Core.Interfaces.ICanvas.FreeDraw(System.Int32,System.Int32)
+    name: FreeDraw
+    href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_FreeDraw_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.ICanvas.FreeDraw(System.Int32,System.Int32)
+    name: FreeDraw
+    href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_FreeDraw_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )

@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core
+  commentId: N:Core
+  id: Core
+  children:
+  - Core.Canvas
+  - Core.Parser
+  - Core.StoredProgramExecutor
+  - Core.Token
+  - Core.Tokeniser
+  langs:
+  - csharp
+  - vb
+  name: Core
+  nameWithType: Core
+  fullName: Core
+  type: Namespace
+  assemblies:
+  - Core
+references:
+- uid: Core.Canvas
+  commentId: T:Core.Canvas
+  parent: Core
+  href: Core.Canvas.html
+  name: Canvas
+  nameWithType: Canvas
+  fullName: Core.Canvas
+- uid: Core.Parser
+  commentId: T:Core.Parser
+  href: Core.Parser.html
+  name: Parser
+  nameWithType: Parser
+  fullName: Core.Parser
+- uid: Core.StoredProgramExecutor
+  commentId: T:Core.StoredProgramExecutor
+  href: Core.StoredProgramExecutor.html
+  name: StoredProgramExecutor
+  nameWithType: StoredProgramExecutor
+  fullName: Core.StoredProgramExecutor
+- uid: Core.Token
+  commentId: T:Core.Token
+  href: Core.Token.html
+  name: Token
+  nameWithType: Token
+  fullName: Core.Token
+- uid: Core.Tokeniser
+  commentId: T:Core.Tokeniser
+  href: Core.Tokeniser.html
+  name: Tokeniser
+  nameWithType: Tokeniser
+  fullName: Core.Tokeniser
+- uid: Core
+  commentId: N:Core
+  href: Core.html
+  name: Core
+  nameWithType: Core
+  fullName: Core

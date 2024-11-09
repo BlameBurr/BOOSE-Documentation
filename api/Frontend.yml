@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Frontend
+  commentId: N:Frontend
+  id: Frontend
+  children:
+  - Frontend.MainWindow
+  langs:
+  - csharp
+  - vb
+  name: Frontend
+  nameWithType: Frontend
+  fullName: Frontend
+  type: Namespace
+  assemblies:
+  - Frontend
+references:
+- uid: Frontend.MainWindow
+  commentId: T:Frontend.MainWindow
+  href: Frontend.MainWindow.html
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: Frontend.MainWindow

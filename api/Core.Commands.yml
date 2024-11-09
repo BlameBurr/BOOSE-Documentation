@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Commands
+  commentId: N:Core.Commands
+  id: Core.Commands
+  children:
+  - Core.Commands.Circle
+  - Core.Commands.Clear
+  - Core.Commands.DrawTo
+  - Core.Commands.MoveTo
+  - Core.Commands.Peek
+  - Core.Commands.Poke
+  - Core.Commands.Rectangle
+  - Core.Commands.Triangle
+  langs:
+  - csharp
+  - vb
+  name: Core.Commands
+  nameWithType: Core.Commands
+  fullName: Core.Commands
+  type: Namespace
+  assemblies:
+  - Core
+references:
+- uid: Core.Commands.Circle
+  commentId: T:Core.Commands.Circle
+  href: Core.Commands.Circle.html
+  name: Circle
+  nameWithType: Circle
+  fullName: Core.Commands.Circle
+- uid: Core.Commands.Clear
+  commentId: T:Core.Commands.Clear
+  href: Core.Commands.Clear.html
+  name: Clear
+  nameWithType: Clear
+  fullName: Core.Commands.Clear
+- uid: Core.Commands.DrawTo
+  commentId: T:Core.Commands.DrawTo
+  href: Core.Commands.DrawTo.html
+  name: DrawTo
+  nameWithType: DrawTo
+  fullName: Core.Commands.DrawTo
+- uid: Core.Commands.MoveTo
+  commentId: T:Core.Commands.MoveTo
+  href: Core.Commands.MoveTo.html
+  name: MoveTo
+  nameWithType: MoveTo
+  fullName: Core.Commands.MoveTo
+- uid: Core.Commands.Peek
+  commentId: T:Core.Commands.Peek
+  href: Core.Commands.Peek.html
+  name: Peek
+  nameWithType: Peek
+  fullName: Core.Commands.Peek
+- uid: Core.Commands.Poke
+  commentId: T:Core.Commands.Poke
+  href: Core.Commands.Poke.html
+  name: Poke
+  nameWithType: Poke
+  fullName: Core.Commands.Poke
+- uid: Core.Commands.Rectangle
+  commentId: T:Core.Commands.Rectangle
+  href: Core.Commands.Rectangle.html
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: Core.Commands.Rectangle
+- uid: Core.Commands.Triangle
+  commentId: T:Core.Commands.Triangle
+  href: Core.Commands.Triangle.html
+  name: Triangle
+  nameWithType: Triangle
+  fullName: Core.Commands.Triangle

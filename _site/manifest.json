@@ -1,0 +1,460 @@
+{
+  "source_base_path": "F:/ase-boose-assignment-BlameBurr/BOOSE-Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Canvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Canvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.Circle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.Circle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.Clear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.Clear.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.DrawTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.DrawTo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.MoveTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.MoveTo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.Peek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.Peek.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.Poke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.Poke.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.Rectangle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.Rectangle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.Triangle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.Triangle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Commands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Enums.CommandResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Enums.CommandResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Enums.CommandsList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Enums.CommandsList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Enums.PatternType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Enums.PatternType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Enums.TokenType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Enums.TokenType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Evaluators.ExpressionEvaluator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Evaluators.ExpressionEvaluator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Evaluators.TokenEvaluator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Evaluators.TokenEvaluator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Evaluators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Evaluators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Exceptions.BooseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Exceptions.BooseException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Exceptions.CanvasException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Exceptions.CanvasException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Exceptions.CommandException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Exceptions.CommandException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Exceptions.ParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Exceptions.ParserException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Exceptions.StoredProgramException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Exceptions.StoredProgramException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Exceptions.TokeniserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Exceptions.TokeniserException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Exceptions.VariableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Exceptions.VariableException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Exceptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Interfaces.ICanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Interfaces.ICanvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Interfaces.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Interfaces.ICommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Parser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.StoredProgramExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.StoredProgramExecutor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Token.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Token.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.Tokeniser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.Tokeniser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CoreUnitTest.CoreUnitTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CoreUnitTest.CoreUnitTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CoreUnitTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CoreUnitTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Frontend.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Frontend.MainWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Frontend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Frontend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

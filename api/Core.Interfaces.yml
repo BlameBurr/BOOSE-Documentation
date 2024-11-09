@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  id: Core.Interfaces
+  children:
+  - Core.Interfaces.ICanvas
+  - Core.Interfaces.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  type: Namespace
+  assemblies:
+  - Core
+references:
+- uid: Core.Interfaces.ICanvas
+  commentId: T:Core.Interfaces.ICanvas
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICanvas.html
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: Core.Interfaces.ICanvas
+- uid: Core.Interfaces.ICommand
+  commentId: T:Core.Interfaces.ICommand
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Core.Interfaces.ICommand
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html

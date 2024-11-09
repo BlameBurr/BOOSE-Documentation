@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Exceptions
+  commentId: N:Core.Exceptions
+  id: Core.Exceptions
+  children:
+  - Core.Exceptions.BooseException
+  - Core.Exceptions.CanvasException
+  - Core.Exceptions.CommandException
+  - Core.Exceptions.ParserException
+  - Core.Exceptions.StoredProgramException
+  - Core.Exceptions.TokeniserException
+  - Core.Exceptions.VariableException
+  langs:
+  - csharp
+  - vb
+  name: Core.Exceptions
+  nameWithType: Core.Exceptions
+  fullName: Core.Exceptions
+  type: Namespace
+  assemblies:
+  - Core
+references:
+- uid: Core.Exceptions.BooseException
+  commentId: T:Core.Exceptions.BooseException
+  parent: Core.Exceptions
+  href: Core.Exceptions.BooseException.html
+  name: BooseException
+  nameWithType: BooseException
+  fullName: Core.Exceptions.BooseException
+- uid: Core.Exceptions.CanvasException
+  commentId: T:Core.Exceptions.CanvasException
+  href: Core.Exceptions.CanvasException.html
+  name: CanvasException
+  nameWithType: CanvasException
+  fullName: Core.Exceptions.CanvasException
+- uid: Core.Exceptions.CommandException
+  commentId: T:Core.Exceptions.CommandException
+  href: Core.Exceptions.CommandException.html
+  name: CommandException
+  nameWithType: CommandException
+  fullName: Core.Exceptions.CommandException
+- uid: Core.Exceptions.ParserException
+  commentId: T:Core.Exceptions.ParserException
+  href: Core.Exceptions.ParserException.html
+  name: ParserException
+  nameWithType: ParserException
+  fullName: Core.Exceptions.ParserException
+- uid: Core.Exceptions.StoredProgramException
+  commentId: T:Core.Exceptions.StoredProgramException
+  href: Core.Exceptions.StoredProgramException.html
+  name: StoredProgramException
+  nameWithType: StoredProgramException
+  fullName: Core.Exceptions.StoredProgramException
+- uid: Core.Exceptions.TokeniserException
+  commentId: T:Core.Exceptions.TokeniserException
+  href: Core.Exceptions.TokeniserException.html
+  name: TokeniserException
+  nameWithType: TokeniserException
+  fullName: Core.Exceptions.TokeniserException
+- uid: Core.Exceptions.VariableException
+  commentId: T:Core.Exceptions.VariableException
+  href: Core.Exceptions.VariableException.html
+  name: VariableException
+  nameWithType: VariableException
+  fullName: Core.Exceptions.VariableException
+- uid: Core.Exceptions
+  commentId: N:Core.Exceptions
+  href: Core.html
+  name: Core.Exceptions
+  nameWithType: Core.Exceptions
+  fullName: Core.Exceptions
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Exceptions
+    name: Exceptions
+    href: Core.Exceptions.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Exceptions
+    name: Exceptions
+    href: Core.Exceptions.html

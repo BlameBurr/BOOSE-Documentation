@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Evaluators
+  commentId: N:Core.Evaluators
+  id: Core.Evaluators
+  children:
+  - Core.Evaluators.ExpressionEvaluator
+  - Core.Evaluators.TokenEvaluator
+  langs:
+  - csharp
+  - vb
+  name: Core.Evaluators
+  nameWithType: Core.Evaluators
+  fullName: Core.Evaluators
+  type: Namespace
+  assemblies:
+  - Core
+references:
+- uid: Core.Evaluators.ExpressionEvaluator
+  commentId: T:Core.Evaluators.ExpressionEvaluator
+  href: Core.Evaluators.ExpressionEvaluator.html
+  name: ExpressionEvaluator
+  nameWithType: ExpressionEvaluator
+  fullName: Core.Evaluators.ExpressionEvaluator
+- uid: Core.Evaluators.TokenEvaluator
+  commentId: T:Core.Evaluators.TokenEvaluator
+  href: Core.Evaluators.TokenEvaluator.html
+  name: TokenEvaluator
+  nameWithType: TokenEvaluator
+  fullName: Core.Evaluators.TokenEvaluator

@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Enums.CommandResult
+  commentId: T:Core.Enums.CommandResult
+  id: CommandResult
+  parent: Core.Enums
+  children:
+  - Core.Enums.CommandResult.Error
+  - Core.Enums.CommandResult.Finished
+  - Core.Enums.CommandResult.Success
+  langs:
+  - csharp
+  - vb
+  name: CommandResult
+  nameWithType: CommandResult
+  fullName: Core.Enums.CommandResult
+  type: Enum
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/CommandResult.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: CommandResult
+    path: ../BOOSE-Application/Core/Enums/CommandResult.cs
+    startLine: 8
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: public enum CommandResult
+    content.vb: Public Enum CommandResult
+- uid: Core.Enums.CommandResult.Error
+  commentId: F:Core.Enums.CommandResult.Error
+  id: Error
+  parent: Core.Enums.CommandResult
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: CommandResult.Error
+  fullName: Core.Enums.CommandResult.Error
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/CommandResult.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Error
+    path: ../BOOSE-Application/Core/Enums/CommandResult.cs
+    startLine: 10
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: Error = -1
+    return:
+      type: Core.Enums.CommandResult
+- uid: Core.Enums.CommandResult.Success
+  commentId: F:Core.Enums.CommandResult.Success
+  id: Success
+  parent: Core.Enums.CommandResult
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: CommandResult.Success
+  fullName: Core.Enums.CommandResult.Success
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/CommandResult.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Success
+    path: ../BOOSE-Application/Core/Enums/CommandResult.cs
+    startLine: 11
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: Success = 1
+    return:
+      type: Core.Enums.CommandResult
+- uid: Core.Enums.CommandResult.Finished
+  commentId: F:Core.Enums.CommandResult.Finished
+  id: Finished
+  parent: Core.Enums.CommandResult
+  langs:
+  - csharp
+  - vb
+  name: Finished
+  nameWithType: CommandResult.Finished
+  fullName: Core.Enums.CommandResult.Finished
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/CommandResult.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Finished
+    path: ../BOOSE-Application/Core/Enums/CommandResult.cs
+    startLine: 12
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: Finished = 2
+    return:
+      type: Core.Enums.CommandResult
+references:
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  href: Core.html
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+- uid: Core.Enums.CommandResult
+  commentId: T:Core.Enums.CommandResult
+  parent: Core.Enums
+  href: Core.Enums.CommandResult.html
+  name: CommandResult
+  nameWithType: CommandResult
+  fullName: Core.Enums.CommandResult
