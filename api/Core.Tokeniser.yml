@@ -21,10 +21,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Tokeniser
     path: ../BOOSE-Application/Core/Tokeniser.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Core
   namespace: Core
+  summary: Interpretter for producing lists of tokens from a line of script
+  example: []
   syntax:
     content: public class Tokeniser
     content.vb: Public Class Tokeniser
@@ -56,7 +58,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Tokeniser.cs
-    startLine: 18
+    startLine: 30
   assemblies:
   - Core
   namespace: Core
@@ -94,7 +96,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Tokenise
     path: ../BOOSE-Application/Core/Tokeniser.cs
-    startLine: 45
+    startLine: 58
   assemblies:
   - Core
   namespace: Core

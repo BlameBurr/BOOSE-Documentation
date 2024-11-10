@@ -22,10 +22,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: CommandResult
     path: ../BOOSE-Application/Core/Enums/CommandResult.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Core
   namespace: Core.Enums
+  summary: Enumerable for results of commands
+  example: []
   syntax:
     content: public enum CommandResult
     content.vb: Public Enum CommandResult
@@ -47,7 +49,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Error
     path: ../BOOSE-Application/Core/Enums/CommandResult.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - Core
   namespace: Core.Enums
@@ -73,7 +75,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Success
     path: ../BOOSE-Application/Core/Enums/CommandResult.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - Core
   namespace: Core.Enums
@@ -99,7 +101,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Finished
     path: ../BOOSE-Application/Core/Enums/CommandResult.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - Core
   namespace: Core.Enums

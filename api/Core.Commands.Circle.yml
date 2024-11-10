@@ -24,10 +24,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Circle
     path: ../BOOSE-Application/Core/Commands/Circle.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: Circle command class
+  example: []
   syntax:
     content: 'public class Circle : ICommand'
     content.vb: Public Class Circle Implements ICommand
@@ -61,10 +63,11 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Name
     path: ../BOOSE-Application/Core/Commands/Circle.cs
-    startLine: 8
+    startLine: 15
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: Name of command to be set
   example: []
   syntax:
     content: public string Name { get; }
@@ -93,10 +96,11 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Usage
     path: ../BOOSE-Application/Core/Commands/Circle.cs
-    startLine: 9
+    startLine: 19
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: Command usage to be set
   example: []
   syntax:
     content: public string Usage { get; }
@@ -125,10 +129,11 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Description
     path: ../BOOSE-Application/Core/Commands/Circle.cs
-    startLine: 10
+    startLine: 23
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: Description of what the commmand does
   example: []
   syntax:
     content: public string Description { get; }
@@ -157,7 +162,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Commands/Circle.cs
-    startLine: 18
+    startLine: 34
   assemblies:
   - Core
   namespace: Core.Commands
@@ -195,7 +200,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Execute
     path: ../BOOSE-Application/Core/Commands/Circle.cs
-    startLine: 31
+    startLine: 47
   assemblies:
   - Core
   namespace: Core.Commands

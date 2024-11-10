@@ -16,6 +16,8 @@ items:
 - uid: Core.Commands
   name: Core.Commands
   items:
+  - uid: Core.Commands.About
+    name: About
   - uid: Core.Commands.Circle
     name: Circle
   - uid: Core.Commands.Clear
@@ -26,12 +28,16 @@ items:
     name: MoveTo
   - uid: Core.Commands.Peek
     name: Peek
+  - uid: Core.Commands.PenColour
+    name: PenColour
   - uid: Core.Commands.Poke
     name: Poke
   - uid: Core.Commands.Rectangle
     name: Rectangle
   - uid: Core.Commands.Triangle
     name: Triangle
+  - uid: Core.Commands.Write
+    name: Write
 - uid: Core.Enums
   name: Core.Enums
   items:
@@ -43,6 +49,8 @@ items:
     name: PatternType
   - uid: Core.Enums.TokenType
     name: TokenType
+  - uid: Core.Enums.VariableType
+    name: VariableType
 - uid: Core.Evaluators
   name: Core.Evaluators
   items:
@@ -50,6 +58,8 @@ items:
     name: ExpressionEvaluator
   - uid: Core.Evaluators.TokenEvaluator
     name: TokenEvaluator
+  - uid: Core.Evaluators.Variable
+    name: Variable
 - uid: Core.Exceptions
   name: Core.Exceptions
   items:

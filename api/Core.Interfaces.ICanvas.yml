@@ -15,8 +15,8 @@ items:
   - Core.Interfaces.ICanvas.IsPainting
   - Core.Interfaces.ICanvas.IsPenDown
   - Core.Interfaces.ICanvas.Pen
-  - Core.Interfaces.ICanvas.PenColour
   - Core.Interfaces.ICanvas.PenPosition
+  - Core.Interfaces.ICanvas.Reset
   langs:
   - csharp
   - vb
@@ -31,10 +31,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ICanvas
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Canvas interface for drawing
+  example: []
   syntax:
     content: public interface ICanvas
     content.vb: Public Interface ICanvas
@@ -56,10 +58,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Pen
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 6
+    startLine: 12
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Pen used for drawing
+  example: []
   syntax:
     content: Pen Pen { get; }
     parameters: []
@@ -85,10 +89,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: IsPainting
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 7
+    startLine: 16
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Free-drawing status
+  example: []
   syntax:
     content: bool IsPainting { get; set; }
     parameters: []
@@ -96,35 +102,6 @@ items:
       type: System.Boolean
     content.vb: Property IsPainting As Boolean
   overload: Core.Interfaces.ICanvas.IsPainting*
-- uid: Core.Interfaces.ICanvas.PenColour
-  commentId: P:Core.Interfaces.ICanvas.PenColour
-  id: PenColour
-  parent: Core.Interfaces.ICanvas
-  langs:
-  - csharp
-  - vb
-  name: PenColour
-  nameWithType: ICanvas.PenColour
-  fullName: Core.Interfaces.ICanvas.PenColour
-  type: Property
-  source:
-    remote:
-      path: BOOSE-Application/Core/Interfaces/ICanvas.cs
-      branch: main
-      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
-    id: PenColour
-    path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 8
-  assemblies:
-  - Core
-  namespace: Core.Interfaces
-  syntax:
-    content: Color PenColour { get; set; }
-    parameters: []
-    return:
-      type: System.Drawing.Color
-    content.vb: Property PenColour As Color
-  overload: Core.Interfaces.ICanvas.PenColour*
 - uid: Core.Interfaces.ICanvas.BackgroundColour
   commentId: P:Core.Interfaces.ICanvas.BackgroundColour
   id: BackgroundColour
@@ -143,10 +120,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: BackgroundColour
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 9
+    startLine: 20
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Current background colour (for when cleared)
+  example: []
   syntax:
     content: Color BackgroundColour { get; set; }
     parameters: []
@@ -154,35 +133,6 @@ items:
       type: System.Drawing.Color
     content.vb: Property BackgroundColour As Color
   overload: Core.Interfaces.ICanvas.BackgroundColour*
-- uid: Core.Interfaces.ICanvas.PenPosition
-  commentId: P:Core.Interfaces.ICanvas.PenPosition
-  id: PenPosition
-  parent: Core.Interfaces.ICanvas
-  langs:
-  - csharp
-  - vb
-  name: PenPosition
-  nameWithType: ICanvas.PenPosition
-  fullName: Core.Interfaces.ICanvas.PenPosition
-  type: Property
-  source:
-    remote:
-      path: BOOSE-Application/Core/Interfaces/ICanvas.cs
-      branch: main
-      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
-    id: PenPosition
-    path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 11
-  assemblies:
-  - Core
-  namespace: Core.Interfaces
-  syntax:
-    content: Point PenPosition { get; set; }
-    parameters: []
-    return:
-      type: System.Drawing.Point
-    content.vb: Property PenPosition As Point
-  overload: Core.Interfaces.ICanvas.PenPosition*
 - uid: Core.Interfaces.ICanvas.IsPenDown
   commentId: P:Core.Interfaces.ICanvas.IsPenDown
   id: IsPenDown
@@ -201,10 +151,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: IsPenDown
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 12
+    startLine: 24
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Pen drawing status
+  example: []
   syntax:
     content: bool IsPenDown { get; set; }
     parameters: []
@@ -212,6 +164,37 @@ items:
       type: System.Boolean
     content.vb: Property IsPenDown As Boolean
   overload: Core.Interfaces.ICanvas.IsPenDown*
+- uid: Core.Interfaces.ICanvas.PenPosition
+  commentId: P:Core.Interfaces.ICanvas.PenPosition
+  id: PenPosition
+  parent: Core.Interfaces.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: PenPosition
+  nameWithType: ICanvas.PenPosition
+  fullName: Core.Interfaces.ICanvas.PenPosition
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: PenPosition
+    path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
+    startLine: 28
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Current pen position on canvas
+  example: []
+  syntax:
+    content: Point PenPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Drawing.Point
+    content.vb: Property PenPosition As Point
+  overload: Core.Interfaces.ICanvas.PenPosition*
 - uid: Core.Interfaces.ICanvas.Bounds
   commentId: P:Core.Interfaces.ICanvas.Bounds
   id: Bounds
@@ -230,10 +213,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Bounds
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 13
+    startLine: 32
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Canvas boundaries
+  example: []
   syntax:
     content: Rectangle Bounds { get; }
     parameters: []
@@ -259,10 +244,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: GraphicsBufferContext
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 15
+    startLine: 36
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: The context of the buffered graphics
+  example: []
   syntax:
     content: BufferedGraphicsContext GraphicsBufferContext { get; }
     parameters: []
@@ -288,10 +275,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: GraphicsBuffer
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 16
+    startLine: 40
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: The buffered graphics instance for the original graphics instance
+  example: []
   syntax:
     content: BufferedGraphics GraphicsBuffer { get; }
     parameters: []
@@ -317,22 +306,54 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: FreeDraw
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 18
+    startLine: 46
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Function for passing to panel for free-drawing
+  example: []
   syntax:
     content: void FreeDraw(int xPos, int yPos)
     parameters:
     - id: xPos
       type: System.Int32
+      description: x position to draw at
     - id: yPos
       type: System.Int32
+      description: y position to draw at
     content.vb: Sub FreeDraw(xPos As Integer, yPos As Integer)
   overload: Core.Interfaces.ICanvas.FreeDraw*
   nameWithType.vb: ICanvas.FreeDraw(Integer, Integer)
   fullName.vb: Core.Interfaces.ICanvas.FreeDraw(Integer, Integer)
   name.vb: FreeDraw(Integer, Integer)
+- uid: Core.Interfaces.ICanvas.Reset
+  commentId: M:Core.Interfaces.ICanvas.Reset
+  id: Reset
+  parent: Core.Interfaces.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: ICanvas.Reset()
+  fullName: Core.Interfaces.ICanvas.Reset()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Reset
+    path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
+    startLine: 50
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Clears canvas and resets pen position
+  example: []
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: Core.Interfaces.ICanvas.Reset*
 - uid: Core.Interfaces.ICanvas.Clear
   commentId: M:Core.Interfaces.ICanvas.Clear
   id: Clear
@@ -351,10 +372,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Clear
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 20
+    startLine: 54
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Polymorphic of clear which defaults to background colour
+  example: []
   syntax:
     content: void Clear()
     content.vb: Sub Clear()
@@ -377,15 +400,18 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Clear
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 21
+    startLine: 59
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Clears the graphics buffer and re-renders
+  example: []
   syntax:
     content: void Clear(Color colour)
     parameters:
     - id: colour
       type: System.Drawing.Color
+      description: ''
     content.vb: Sub Clear(colour As Color)
   overload: Core.Interfaces.ICanvas.Clear*
 references:
@@ -476,12 +502,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Core.Interfaces.ICanvas.PenColour*
-  commentId: Overload:Core.Interfaces.ICanvas.PenColour
-  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_PenColour
-  name: PenColour
-  nameWithType: ICanvas.PenColour
-  fullName: Core.Interfaces.ICanvas.PenColour
+- uid: Core.Interfaces.ICanvas.BackgroundColour*
+  commentId: Overload:Core.Interfaces.ICanvas.BackgroundColour
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_BackgroundColour
+  name: BackgroundColour
+  nameWithType: ICanvas.BackgroundColour
+  fullName: Core.Interfaces.ICanvas.BackgroundColour
 - uid: System.Drawing.Color
   commentId: T:System.Drawing.Color
   parent: System.Drawing
@@ -490,12 +516,12 @@ references:
   name: Color
   nameWithType: Color
   fullName: System.Drawing.Color
-- uid: Core.Interfaces.ICanvas.BackgroundColour*
-  commentId: Overload:Core.Interfaces.ICanvas.BackgroundColour
-  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_BackgroundColour
-  name: BackgroundColour
-  nameWithType: ICanvas.BackgroundColour
-  fullName: Core.Interfaces.ICanvas.BackgroundColour
+- uid: Core.Interfaces.ICanvas.IsPenDown*
+  commentId: Overload:Core.Interfaces.ICanvas.IsPenDown
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_IsPenDown
+  name: IsPenDown
+  nameWithType: ICanvas.IsPenDown
+  fullName: Core.Interfaces.ICanvas.IsPenDown
 - uid: Core.Interfaces.ICanvas.PenPosition*
   commentId: Overload:Core.Interfaces.ICanvas.PenPosition
   href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_PenPosition
@@ -510,12 +536,6 @@ references:
   name: Point
   nameWithType: Point
   fullName: System.Drawing.Point
-- uid: Core.Interfaces.ICanvas.IsPenDown*
-  commentId: Overload:Core.Interfaces.ICanvas.IsPenDown
-  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_IsPenDown
-  name: IsPenDown
-  nameWithType: ICanvas.IsPenDown
-  fullName: Core.Interfaces.ICanvas.IsPenDown
 - uid: Core.Interfaces.ICanvas.Bounds*
   commentId: Overload:Core.Interfaces.ICanvas.Bounds
   href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Bounds
@@ -575,6 +595,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Core.Interfaces.ICanvas.Reset*
+  commentId: Overload:Core.Interfaces.ICanvas.Reset
+  href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Reset
+  name: Reset
+  nameWithType: ICanvas.Reset
+  fullName: Core.Interfaces.ICanvas.Reset
 - uid: Core.Interfaces.ICanvas.Clear*
   commentId: Overload:Core.Interfaces.ICanvas.Clear
   href: Core.Interfaces.ICanvas.html#Core_Interfaces_ICanvas_Clear

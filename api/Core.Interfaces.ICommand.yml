@@ -23,10 +23,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ICommand
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Base command class used to implement commands
+  example: []
   syntax:
     content: public interface ICommand
     content.vb: Public Interface ICommand
@@ -48,10 +50,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Name
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 12
+    startLine: 18
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Name used for adding command to list
+  example: []
   syntax:
     content: string Name { get; }
     parameters: []
@@ -77,10 +81,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Usage
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 13
+    startLine: 22
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Usage used to help generate help message
+  example: []
   syntax:
     content: string Usage { get; }
     parameters: []
@@ -106,10 +112,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Description
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 14
+    startLine: 26
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Description of what the commmand does as part of the help message
+  example: []
   syntax:
     content: string Description { get; }
     parameters: []
@@ -135,17 +143,21 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Execute
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 16
+    startLine: 32
   assemblies:
   - Core
   namespace: Core.Interfaces
+  summary: Function containing the code executed when the command is run
+  example: []
   syntax:
     content: CommandResult Execute(List<object> parameters)
     parameters:
     - id: parameters
       type: System.Collections.Generic.List{System.Object}
+      description: List of parameters as un-parsed objects
     return:
       type: Core.Enums.CommandResult
+      description: ''
     content.vb: Function Execute(parameters As List(Of Object)) As CommandResult
   overload: Core.Interfaces.ICommand.Execute*
   nameWithType.vb: ICommand.Execute(List(Of Object))

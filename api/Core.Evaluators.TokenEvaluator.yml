@@ -22,10 +22,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: TokenEvaluator
     path: ../BOOSE-Application/Core/Evaluators/TokenEvaluator.cs
-    startLine: 8
+    startLine: 10
   assemblies:
   - Core
   namespace: Core.Evaluators
+  summary: Evaluator for tokens
+  example: []
   syntax:
     content: public class TokenEvaluator
     content.vb: Public Class TokenEvaluator
@@ -57,15 +59,17 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: variables
     path: ../BOOSE-Application/Core/Evaluators/TokenEvaluator.cs
-    startLine: 10
+    startLine: 15
   assemblies:
   - Core
   namespace: Core.Evaluators
+  summary: List of evaluated variables
+  example: []
   syntax:
-    content: public Dictionary<string, double> variables
+    content: public Dictionary<string, Variable> variables
     return:
-      type: System.Collections.Generic.Dictionary{System.String,System.Double}
-    content.vb: Public variables As Dictionary(Of String, Double)
+      type: System.Collections.Generic.Dictionary{System.String,Core.Evaluators.Variable}
+    content.vb: Public variables As Dictionary(Of String, Variable)
 - uid: Core.Evaluators.TokenEvaluator.#ctor(Core.Canvas)
   commentId: M:Core.Evaluators.TokenEvaluator.#ctor(Core.Canvas)
   id: '#ctor(Core.Canvas)'
@@ -84,15 +88,18 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Evaluators/TokenEvaluator.cs
-    startLine: 14
+    startLine: 32
   assemblies:
   - Core
   namespace: Core.Evaluators
+  summary: Constructor takes canvas and uses it to initialise evaluators
+  example: []
   syntax:
     content: public TokenEvaluator(Canvas canvas)
     parameters:
     - id: canvas
       type: Core.Canvas
+      description: ''
     content.vb: Public Sub New(canvas As Canvas)
   overload: Core.Evaluators.TokenEvaluator.#ctor*
   nameWithType.vb: TokenEvaluator.New(Canvas)
@@ -116,7 +123,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Execute
     path: ../BOOSE-Application/Core/Evaluators/TokenEvaluator.cs
-    startLine: 25
+    startLine: 43
   assemblies:
   - Core
   namespace: Core.Evaluators
@@ -396,17 +403,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Collections.Generic.Dictionary{System.String,System.Double}
-  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Double}
+- uid: System.Collections.Generic.Dictionary{System.String,Core.Evaluators.Variable}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Core.Evaluators.Variable}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.Dictionary`2
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
-  name: Dictionary<string, double>
-  nameWithType: Dictionary<string, double>
-  fullName: System.Collections.Generic.Dictionary<string, double>
-  nameWithType.vb: Dictionary(Of String, Double)
-  fullName.vb: System.Collections.Generic.Dictionary(Of String, Double)
-  name.vb: Dictionary(Of String, Double)
+  name: Dictionary<string, Variable>
+  nameWithType: Dictionary<string, Variable>
+  fullName: System.Collections.Generic.Dictionary<string, Core.Evaluators.Variable>
+  nameWithType.vb: Dictionary(Of String, Variable)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Core.Evaluators.Variable)
+  name.vb: Dictionary(Of String, Variable)
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
@@ -419,10 +426,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: System.Double
-    name: double
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.double
+  - uid: Core.Evaluators.Variable
+    name: Variable
+    href: Core.Evaluators.Variable.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.Dictionary`2
@@ -438,10 +444,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: System.Double
-    name: Double
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.double
+  - uid: Core.Evaluators.Variable
+    name: Variable
+    href: Core.Evaluators.Variable.html
   - name: )
 - uid: System.Collections.Generic.Dictionary`2
   commentId: T:System.Collections.Generic.Dictionary`2

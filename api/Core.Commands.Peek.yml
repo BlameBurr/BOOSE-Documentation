@@ -24,10 +24,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Peek
     path: ../BOOSE-Application/Core/Commands/Peek.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: Peek command class
+  example: []
   syntax:
     content: 'public class Peek : ICommand'
     content.vb: Public Class Peek Implements ICommand
@@ -61,10 +63,11 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Name
     path: ../BOOSE-Application/Core/Commands/Peek.cs
-    startLine: 8
+    startLine: 15
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: Name of command to be set
   example: []
   syntax:
     content: public string Name { get; }
@@ -93,10 +96,11 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Usage
     path: ../BOOSE-Application/Core/Commands/Peek.cs
-    startLine: 9
+    startLine: 19
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: Command usage to be set
   example: []
   syntax:
     content: public string Usage { get; }
@@ -125,10 +129,11 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Description
     path: ../BOOSE-Application/Core/Commands/Peek.cs
-    startLine: 10
+    startLine: 23
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: Description of what the commmand does
   example: []
   syntax:
     content: public string Description { get; }
@@ -157,15 +162,21 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Commands/Peek.cs
-    startLine: 13
+    startLine: 34
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: >-
+    Constructor for the peek command
+
+    Contains information about the command itself
+  example: []
   syntax:
     content: public Peek(Canvas canvas)
     parameters:
     - id: canvas
       type: Core.Canvas
+      description: ''
     content.vb: Public Sub New(canvas As Canvas)
   overload: Core.Commands.Peek.#ctor*
   nameWithType.vb: Peek.New(Canvas)
@@ -189,18 +200,21 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Execute
     path: ../BOOSE-Application/Core/Commands/Peek.cs
-    startLine: 21
+    startLine: 46
   assemblies:
   - Core
   namespace: Core.Commands
+  summary: The method which will be invoked when the command is run
   example: []
   syntax:
     content: public CommandResult Execute(List<object> parameters)
     parameters:
     - id: parameters
       type: System.Collections.Generic.List{System.Object}
+      description: A list of objects for parsing in the function which may be used when running the command
     return:
       type: Core.Enums.CommandResult
+      description: Result of whether the command was successful or not
     content.vb: Public Function Execute(parameters As List(Of Object)) As CommandResult
   overload: Core.Commands.Peek.Execute*
   implements:

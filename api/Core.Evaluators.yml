@@ -6,6 +6,7 @@ items:
   children:
   - Core.Evaluators.ExpressionEvaluator
   - Core.Evaluators.TokenEvaluator
+  - Core.Evaluators.Variable
   langs:
   - csharp
   - vb
@@ -28,3 +29,9 @@ references:
   name: TokenEvaluator
   nameWithType: TokenEvaluator
   fullName: Core.Evaluators.TokenEvaluator
+- uid: Core.Evaluators.Variable
+  commentId: T:Core.Evaluators.Variable
+  href: Core.Evaluators.Variable.html
+  name: Variable
+  nameWithType: Variable
+  fullName: Core.Evaluators.Variable

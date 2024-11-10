@@ -21,10 +21,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: StoredProgramExecutor
     path: ../BOOSE-Application/Core/StoredProgramExecutor.cs
-    startLine: 12
+    startLine: 16
   assemblies:
   - Core
   namespace: Core
+  summary: Uses tokeniser, parser and evaluators to handle a script and execute it
+  example: []
   syntax:
     content: public class StoredProgramExecutor
     content.vb: Public Class StoredProgramExecutor
@@ -56,15 +58,18 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/StoredProgramExecutor.cs
-    startLine: 17
+    startLine: 34
   assemblies:
   - Core
   namespace: Core
+  summary: Constructor for defining the evaluator and tokeniser
+  example: []
   syntax:
     content: public StoredProgramExecutor(Canvas canvas)
     parameters:
     - id: canvas
       type: Core.Canvas
+      description: ''
     content.vb: Public Sub New(canvas As Canvas)
   overload: Core.StoredProgramExecutor.#ctor*
   nameWithType.vb: StoredProgramExecutor.New(Canvas)
@@ -88,19 +93,27 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Execute
     path: ../BOOSE-Application/Core/StoredProgramExecutor.cs
-    startLine: 22
+    startLine: 45
   assemblies:
   - Core
   namespace: Core
+  summary: Executes script using parser, tokeniser and evaluator
+  example: []
   syntax:
     content: public CommandResult Execute(string lines)
     parameters:
     - id: lines
       type: System.String
+      description: Lines of script for execution
     return:
       type: Core.Enums.CommandResult
+      description: Result of final command
     content.vb: Public Function Execute(lines As String) As CommandResult
   overload: Core.StoredProgramExecutor.Execute*
+  exceptions:
+  - type: Core.Exceptions.StoredProgramException
+    commentId: T:Core.Exceptions.StoredProgramException
+    description: ''
   nameWithType.vb: StoredProgramExecutor.Execute(String)
   fullName.vb: Core.StoredProgramExecutor.Execute(String)
   name.vb: Execute(String)
@@ -364,6 +377,12 @@ references:
   name: Canvas
   nameWithType: Canvas
   fullName: Core.Canvas
+- uid: Core.Exceptions.StoredProgramException
+  commentId: T:Core.Exceptions.StoredProgramException
+  href: Core.Exceptions.StoredProgramException.html
+  name: StoredProgramException
+  nameWithType: StoredProgramException
+  fullName: Core.Exceptions.StoredProgramException
 - uid: Core.StoredProgramExecutor.Execute*
   commentId: Overload:Core.StoredProgramExecutor.Execute
   href: Core.StoredProgramExecutor.html#Core_StoredProgramExecutor_Execute_System_String_

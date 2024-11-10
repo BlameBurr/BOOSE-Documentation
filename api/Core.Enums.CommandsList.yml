@@ -147,7 +147,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: AddCommand
     path: ../BOOSE-Application/Core/Enums/CommandsList.cs
-    startLine: 27
+    startLine: 30
   assemblies:
   - Core
   namespace: Core.Enums
@@ -176,7 +176,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: getCommandsRegex
     path: ../BOOSE-Application/Core/Enums/CommandsList.cs
-    startLine: 32
+    startLine: 35
   assemblies:
   - Core
   namespace: Core.Enums

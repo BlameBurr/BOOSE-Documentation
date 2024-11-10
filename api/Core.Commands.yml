@@ -4,14 +4,17 @@ items:
   commentId: N:Core.Commands
   id: Core.Commands
   children:
+  - Core.Commands.About
   - Core.Commands.Circle
   - Core.Commands.Clear
   - Core.Commands.DrawTo
   - Core.Commands.MoveTo
   - Core.Commands.Peek
+  - Core.Commands.PenColour
   - Core.Commands.Poke
   - Core.Commands.Rectangle
   - Core.Commands.Triangle
+  - Core.Commands.Write
   langs:
   - csharp
   - vb
@@ -22,6 +25,12 @@ items:
   assemblies:
   - Core
 references:
+- uid: Core.Commands.About
+  commentId: T:Core.Commands.About
+  href: Core.Commands.About.html
+  name: About
+  nameWithType: About
+  fullName: Core.Commands.About
 - uid: Core.Commands.Circle
   commentId: T:Core.Commands.Circle
   href: Core.Commands.Circle.html
@@ -52,6 +61,12 @@ references:
   name: Peek
   nameWithType: Peek
   fullName: Core.Commands.Peek
+- uid: Core.Commands.PenColour
+  commentId: T:Core.Commands.PenColour
+  href: Core.Commands.PenColour.html
+  name: PenColour
+  nameWithType: PenColour
+  fullName: Core.Commands.PenColour
 - uid: Core.Commands.Poke
   commentId: T:Core.Commands.Poke
   href: Core.Commands.Poke.html
@@ -70,3 +85,9 @@ references:
   name: Triangle
   nameWithType: Triangle
   fullName: Core.Commands.Triangle
+- uid: Core.Commands.Write
+  commentId: T:Core.Commands.Write
+  href: Core.Commands.Write.html
+  name: Write
+  nameWithType: Write
+  fullName: Core.Commands.Write

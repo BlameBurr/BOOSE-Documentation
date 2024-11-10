@@ -23,10 +23,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Token
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 9
+    startLine: 12
   assemblies:
   - Core
   namespace: Core
+  summary: Token used to represent interpretted
+  example: []
   syntax:
     content: public class Token
     content.vb: Public Class Token
@@ -57,10 +59,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Type
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 11
+    startLine: 17
   assemblies:
   - Core
   namespace: Core
+  summary: The type of token being created
+  example: []
   syntax:
     content: public TokenType Type { get; }
     parameters: []
@@ -86,10 +90,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Value
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 12
+    startLine: 22
   assemblies:
   - Core
   namespace: Core
+  summary: The value said token contains
+  example: []
   syntax:
     content: public string Value { get; }
     parameters: []
@@ -115,7 +121,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 19
+    startLine: 29
   assemblies:
   - Core
   namespace: Core
@@ -153,7 +159,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ToString
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 29
+    startLine: 39
   assemblies:
   - Core
   namespace: Core

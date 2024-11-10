@@ -8,6 +8,7 @@ items:
   - Core.Enums.CommandsList
   - Core.Enums.PatternType
   - Core.Enums.TokenType
+  - Core.Enums.VariableType
   langs:
   - csharp
   - vb
@@ -45,6 +46,13 @@ references:
   name: TokenType
   nameWithType: TokenType
   fullName: Core.Enums.TokenType
+- uid: Core.Enums.VariableType
+  commentId: T:Core.Enums.VariableType
+  parent: Core.Enums
+  href: Core.Enums.VariableType.html
+  name: VariableType
+  nameWithType: VariableType
+  fullName: Core.Enums.VariableType
 - uid: Core.Enums
   commentId: N:Core.Enums
   href: Core.html

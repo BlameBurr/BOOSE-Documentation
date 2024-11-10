@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Enums.VariableType
+  commentId: T:Core.Enums.VariableType
+  id: VariableType
+  parent: Core.Enums
+  children:
+  - Core.Enums.VariableType.Integer
+  - Core.Enums.VariableType.ListInt
+  - Core.Enums.VariableType.ListReal
+  - Core.Enums.VariableType.ListStr
+  - Core.Enums.VariableType.Real
+  - Core.Enums.VariableType.String
+  langs:
+  - csharp
+  - vb
+  name: VariableType
+  nameWithType: VariableType
+  fullName: Core.Enums.VariableType
+  type: Enum
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/VariableType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: VariableType
+    path: ../BOOSE-Application/Core/Enums/VariableType.cs
+    startLine: 8
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: public enum VariableType
+    content.vb: Public Enum VariableType
+- uid: Core.Enums.VariableType.Integer
+  commentId: F:Core.Enums.VariableType.Integer
+  id: Integer
+  parent: Core.Enums.VariableType
+  langs:
+  - csharp
+  - vb
+  name: Integer
+  nameWithType: VariableType.Integer
+  fullName: Core.Enums.VariableType.Integer
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/VariableType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Integer
+    path: ../BOOSE-Application/Core/Enums/VariableType.cs
+    startLine: 10
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: Integer = 0
+    return:
+      type: Core.Enums.VariableType
+- uid: Core.Enums.VariableType.Real
+  commentId: F:Core.Enums.VariableType.Real
+  id: Real
+  parent: Core.Enums.VariableType
+  langs:
+  - csharp
+  - vb
+  name: Real
+  nameWithType: VariableType.Real
+  fullName: Core.Enums.VariableType.Real
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/VariableType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Real
+    path: ../BOOSE-Application/Core/Enums/VariableType.cs
+    startLine: 11
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: Real = 1
+    return:
+      type: Core.Enums.VariableType
+- uid: Core.Enums.VariableType.String
+  commentId: F:Core.Enums.VariableType.String
+  id: String
+  parent: Core.Enums.VariableType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: VariableType.String
+  fullName: Core.Enums.VariableType.String
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/VariableType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: String
+    path: ../BOOSE-Application/Core/Enums/VariableType.cs
+    startLine: 12
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: String = 2
+    return:
+      type: Core.Enums.VariableType
+- uid: Core.Enums.VariableType.ListInt
+  commentId: F:Core.Enums.VariableType.ListInt
+  id: ListInt
+  parent: Core.Enums.VariableType
+  langs:
+  - csharp
+  - vb
+  name: ListInt
+  nameWithType: VariableType.ListInt
+  fullName: Core.Enums.VariableType.ListInt
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/VariableType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ListInt
+    path: ../BOOSE-Application/Core/Enums/VariableType.cs
+    startLine: 13
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: ListInt = 3
+    return:
+      type: Core.Enums.VariableType
+- uid: Core.Enums.VariableType.ListReal
+  commentId: F:Core.Enums.VariableType.ListReal
+  id: ListReal
+  parent: Core.Enums.VariableType
+  langs:
+  - csharp
+  - vb
+  name: ListReal
+  nameWithType: VariableType.ListReal
+  fullName: Core.Enums.VariableType.ListReal
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/VariableType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ListReal
+    path: ../BOOSE-Application/Core/Enums/VariableType.cs
+    startLine: 14
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: ListReal = 4
+    return:
+      type: Core.Enums.VariableType
+- uid: Core.Enums.VariableType.ListStr
+  commentId: F:Core.Enums.VariableType.ListStr
+  id: ListStr
+  parent: Core.Enums.VariableType
+  langs:
+  - csharp
+  - vb
+  name: ListStr
+  nameWithType: VariableType.ListStr
+  fullName: Core.Enums.VariableType.ListStr
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/VariableType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ListStr
+    path: ../BOOSE-Application/Core/Enums/VariableType.cs
+    startLine: 15
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: ListStr = 5
+    return:
+      type: Core.Enums.VariableType
+references:
+- uid: Core.Enums
+  commentId: N:Core.Enums
+  href: Core.html
+  name: Core.Enums
+  nameWithType: Core.Enums
+  fullName: Core.Enums
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Enums
+    name: Enums
+    href: Core.Enums.html
+- uid: Core.Enums.VariableType
+  commentId: T:Core.Enums.VariableType
+  parent: Core.Enums
+  href: Core.Enums.VariableType.html
+  name: VariableType
+  nameWithType: VariableType
+  fullName: Core.Enums.VariableType
