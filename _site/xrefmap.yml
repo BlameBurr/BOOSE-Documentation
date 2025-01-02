@@ -13,23 +13,14 @@ references:
   commentId: T:Core.Canvas
   fullName: Core.Canvas
   nameWithType: Canvas
-- uid: Core.Canvas.#ctor(System.Int32,System.Int32)
-  name: Canvas(int, int)
-  href: api/Core.Canvas.html#Core_Canvas__ctor_System_Int32_System_Int32_
-  commentId: M:Core.Canvas.#ctor(System.Int32,System.Int32)
-  name.vb: New(Integer, Integer)
-  fullName: Core.Canvas.Canvas(int, int)
-  fullName.vb: Core.Canvas.New(Integer, Integer)
-  nameWithType: Canvas.Canvas(int, int)
-  nameWithType.vb: Canvas.New(Integer, Integer)
 - uid: Core.Canvas.#ctor(System.Windows.Forms.Panel)
-  name: Canvas(Panel)
+  name: Canvas(Panel?)
   href: api/Core.Canvas.html#Core_Canvas__ctor_System_Windows_Forms_Panel_
   commentId: M:Core.Canvas.#ctor(System.Windows.Forms.Panel)
   name.vb: New(Panel)
-  fullName: Core.Canvas.Canvas(System.Windows.Forms.Panel)
+  fullName: Core.Canvas.Canvas(System.Windows.Forms.Panel?)
   fullName.vb: Core.Canvas.New(System.Windows.Forms.Panel)
-  nameWithType: Canvas.Canvas(Panel)
+  nameWithType: Canvas.Canvas(Panel?)
   nameWithType.vb: Canvas.New(Panel)
 - uid: Core.Canvas.#ctor*
   name: Canvas
@@ -193,6 +184,73 @@ references:
   isSpec: "True"
   fullName: Core.Canvas.Reset
   nameWithType: Canvas.Reset
+- uid: Core.CommandFactory
+  name: CommandFactory
+  href: api/Core.CommandFactory.html
+  commentId: T:Core.CommandFactory
+  fullName: Core.CommandFactory
+  nameWithType: CommandFactory
+- uid: Core.CommandFactory.#ctor
+  name: CommandFactory()
+  href: api/Core.CommandFactory.html#Core_CommandFactory__ctor
+  commentId: M:Core.CommandFactory.#ctor
+  name.vb: New()
+  fullName: Core.CommandFactory.CommandFactory()
+  fullName.vb: Core.CommandFactory.New()
+  nameWithType: CommandFactory.CommandFactory()
+  nameWithType.vb: CommandFactory.New()
+- uid: Core.CommandFactory.#ctor*
+  name: CommandFactory
+  href: api/Core.CommandFactory.html#Core_CommandFactory__ctor_
+  commentId: Overload:Core.CommandFactory.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Core.CommandFactory.CommandFactory
+  fullName.vb: Core.CommandFactory.New
+  nameWithType: CommandFactory.CommandFactory
+  nameWithType.vb: CommandFactory.New
+- uid: Core.CommandFactory.AddCommand(Core.Interfaces.ICommand)
+  name: AddCommand(ICommand)
+  href: api/Core.CommandFactory.html#Core_CommandFactory_AddCommand_Core_Interfaces_ICommand_
+  commentId: M:Core.CommandFactory.AddCommand(Core.Interfaces.ICommand)
+  fullName: Core.CommandFactory.AddCommand(Core.Interfaces.ICommand)
+  nameWithType: CommandFactory.AddCommand(ICommand)
+- uid: Core.CommandFactory.AddCommand*
+  name: AddCommand
+  href: api/Core.CommandFactory.html#Core_CommandFactory_AddCommand_
+  commentId: Overload:Core.CommandFactory.AddCommand
+  isSpec: "True"
+  fullName: Core.CommandFactory.AddCommand
+  nameWithType: CommandFactory.AddCommand
+- uid: Core.CommandFactory.GetCommand(System.String)
+  name: GetCommand(string)
+  href: api/Core.CommandFactory.html#Core_CommandFactory_GetCommand_System_String_
+  commentId: M:Core.CommandFactory.GetCommand(System.String)
+  name.vb: GetCommand(String)
+  fullName: Core.CommandFactory.GetCommand(string)
+  fullName.vb: Core.CommandFactory.GetCommand(String)
+  nameWithType: CommandFactory.GetCommand(string)
+  nameWithType.vb: CommandFactory.GetCommand(String)
+- uid: Core.CommandFactory.GetCommand*
+  name: GetCommand
+  href: api/Core.CommandFactory.html#Core_CommandFactory_GetCommand_
+  commentId: Overload:Core.CommandFactory.GetCommand
+  isSpec: "True"
+  fullName: Core.CommandFactory.GetCommand
+  nameWithType: CommandFactory.GetCommand
+- uid: Core.CommandFactory.GetCommandsRegex
+  name: GetCommandsRegex()
+  href: api/Core.CommandFactory.html#Core_CommandFactory_GetCommandsRegex
+  commentId: M:Core.CommandFactory.GetCommandsRegex
+  fullName: Core.CommandFactory.GetCommandsRegex()
+  nameWithType: CommandFactory.GetCommandsRegex()
+- uid: Core.CommandFactory.GetCommandsRegex*
+  name: GetCommandsRegex
+  href: api/Core.CommandFactory.html#Core_CommandFactory_GetCommandsRegex_
+  commentId: Overload:Core.CommandFactory.GetCommandsRegex
+  isSpec: "True"
+  fullName: Core.CommandFactory.GetCommandsRegex
+  nameWithType: CommandFactory.GetCommandsRegex
 - uid: Core.Commands
   name: Core.Commands
   href: api/Core.Commands.html
@@ -205,15 +263,15 @@ references:
   commentId: T:Core.Commands.About
   fullName: Core.Commands.About
   nameWithType: About
-- uid: Core.Commands.About.#ctor(Core.Canvas)
-  name: About(Canvas)
-  href: api/Core.Commands.About.html#Core_Commands_About__ctor_Core_Canvas_
-  commentId: M:Core.Commands.About.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.About.About(Core.Canvas)
-  fullName.vb: Core.Commands.About.New(Core.Canvas)
-  nameWithType: About.About(Canvas)
-  nameWithType.vb: About.New(Canvas)
+- uid: Core.Commands.About.#ctor
+  name: About()
+  href: api/Core.Commands.About.html#Core_Commands_About__ctor
+  commentId: M:Core.Commands.About.#ctor
+  name.vb: New()
+  fullName: Core.Commands.About.About()
+  fullName.vb: Core.Commands.About.New()
+  nameWithType: About.About()
+  nameWithType.vb: About.New()
 - uid: Core.Commands.About.#ctor*
   name: About
   href: api/Core.Commands.About.html#Core_Commands_About__ctor_
@@ -237,15 +295,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.About.Description
   nameWithType: About.Description
-- uid: Core.Commands.About.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.About.html#Core_Commands_About_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.About.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.About.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.About.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: About.Execute(List<object>)
-  nameWithType.vb: About.Execute(List(Of Object))
+- uid: Core.Commands.About.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.About.html#Core_Commands_About_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.About.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.About.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.About.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: About.Execute(ICanvas, List<object>)
+  nameWithType.vb: About.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.About.Execute*
   name: Execute
   href: api/Core.Commands.About.html#Core_Commands_About_Execute_
@@ -285,15 +343,15 @@ references:
   commentId: T:Core.Commands.Circle
   fullName: Core.Commands.Circle
   nameWithType: Circle
-- uid: Core.Commands.Circle.#ctor(Core.Canvas)
-  name: Circle(Canvas)
-  href: api/Core.Commands.Circle.html#Core_Commands_Circle__ctor_Core_Canvas_
-  commentId: M:Core.Commands.Circle.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.Circle.Circle(Core.Canvas)
-  fullName.vb: Core.Commands.Circle.New(Core.Canvas)
-  nameWithType: Circle.Circle(Canvas)
-  nameWithType.vb: Circle.New(Canvas)
+- uid: Core.Commands.Circle.#ctor
+  name: Circle()
+  href: api/Core.Commands.Circle.html#Core_Commands_Circle__ctor
+  commentId: M:Core.Commands.Circle.#ctor
+  name.vb: New()
+  fullName: Core.Commands.Circle.Circle()
+  fullName.vb: Core.Commands.Circle.New()
+  nameWithType: Circle.Circle()
+  nameWithType.vb: Circle.New()
 - uid: Core.Commands.Circle.#ctor*
   name: Circle
   href: api/Core.Commands.Circle.html#Core_Commands_Circle__ctor_
@@ -317,15 +375,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.Circle.Description
   nameWithType: Circle.Description
-- uid: Core.Commands.Circle.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.Circle.html#Core_Commands_Circle_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.Circle.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.Circle.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.Circle.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: Circle.Execute(List<object>)
-  nameWithType.vb: Circle.Execute(List(Of Object))
+- uid: Core.Commands.Circle.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.Circle.html#Core_Commands_Circle_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.Circle.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.Circle.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.Circle.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: Circle.Execute(ICanvas, List<object>)
+  nameWithType.vb: Circle.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.Circle.Execute*
   name: Execute
   href: api/Core.Commands.Circle.html#Core_Commands_Circle_Execute_
@@ -365,15 +423,15 @@ references:
   commentId: T:Core.Commands.Clear
   fullName: Core.Commands.Clear
   nameWithType: Clear
-- uid: Core.Commands.Clear.#ctor(Core.Canvas)
-  name: Clear(Canvas)
-  href: api/Core.Commands.Clear.html#Core_Commands_Clear__ctor_Core_Canvas_
-  commentId: M:Core.Commands.Clear.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.Clear.Clear(Core.Canvas)
-  fullName.vb: Core.Commands.Clear.New(Core.Canvas)
-  nameWithType: Clear.Clear(Canvas)
-  nameWithType.vb: Clear.New(Canvas)
+- uid: Core.Commands.Clear.#ctor
+  name: Clear()
+  href: api/Core.Commands.Clear.html#Core_Commands_Clear__ctor
+  commentId: M:Core.Commands.Clear.#ctor
+  name.vb: New()
+  fullName: Core.Commands.Clear.Clear()
+  fullName.vb: Core.Commands.Clear.New()
+  nameWithType: Clear.Clear()
+  nameWithType.vb: Clear.New()
 - uid: Core.Commands.Clear.#ctor*
   name: Clear
   href: api/Core.Commands.Clear.html#Core_Commands_Clear__ctor_
@@ -397,15 +455,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.Clear.Description
   nameWithType: Clear.Description
-- uid: Core.Commands.Clear.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.Clear.html#Core_Commands_Clear_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.Clear.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.Clear.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.Clear.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: Clear.Execute(List<object>)
-  nameWithType.vb: Clear.Execute(List(Of Object))
+- uid: Core.Commands.Clear.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.Clear.html#Core_Commands_Clear_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.Clear.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.Clear.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.Clear.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: Clear.Execute(ICanvas, List<object>)
+  nameWithType.vb: Clear.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.Clear.Execute*
   name: Execute
   href: api/Core.Commands.Clear.html#Core_Commands_Clear_Execute_
@@ -445,15 +503,15 @@ references:
   commentId: T:Core.Commands.DrawTo
   fullName: Core.Commands.DrawTo
   nameWithType: DrawTo
-- uid: Core.Commands.DrawTo.#ctor(Core.Canvas)
-  name: DrawTo(Canvas)
-  href: api/Core.Commands.DrawTo.html#Core_Commands_DrawTo__ctor_Core_Canvas_
-  commentId: M:Core.Commands.DrawTo.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.DrawTo.DrawTo(Core.Canvas)
-  fullName.vb: Core.Commands.DrawTo.New(Core.Canvas)
-  nameWithType: DrawTo.DrawTo(Canvas)
-  nameWithType.vb: DrawTo.New(Canvas)
+- uid: Core.Commands.DrawTo.#ctor
+  name: DrawTo()
+  href: api/Core.Commands.DrawTo.html#Core_Commands_DrawTo__ctor
+  commentId: M:Core.Commands.DrawTo.#ctor
+  name.vb: New()
+  fullName: Core.Commands.DrawTo.DrawTo()
+  fullName.vb: Core.Commands.DrawTo.New()
+  nameWithType: DrawTo.DrawTo()
+  nameWithType.vb: DrawTo.New()
 - uid: Core.Commands.DrawTo.#ctor*
   name: DrawTo
   href: api/Core.Commands.DrawTo.html#Core_Commands_DrawTo__ctor_
@@ -477,15 +535,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.DrawTo.Description
   nameWithType: DrawTo.Description
-- uid: Core.Commands.DrawTo.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.DrawTo.html#Core_Commands_DrawTo_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.DrawTo.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.DrawTo.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.DrawTo.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: DrawTo.Execute(List<object>)
-  nameWithType.vb: DrawTo.Execute(List(Of Object))
+- uid: Core.Commands.DrawTo.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.DrawTo.html#Core_Commands_DrawTo_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.DrawTo.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.DrawTo.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.DrawTo.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: DrawTo.Execute(ICanvas, List<object>)
+  nameWithType.vb: DrawTo.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.DrawTo.Execute*
   name: Execute
   href: api/Core.Commands.DrawTo.html#Core_Commands_DrawTo_Execute_
@@ -525,15 +583,15 @@ references:
   commentId: T:Core.Commands.MoveTo
   fullName: Core.Commands.MoveTo
   nameWithType: MoveTo
-- uid: Core.Commands.MoveTo.#ctor(Core.Canvas)
-  name: MoveTo(Canvas)
-  href: api/Core.Commands.MoveTo.html#Core_Commands_MoveTo__ctor_Core_Canvas_
-  commentId: M:Core.Commands.MoveTo.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.MoveTo.MoveTo(Core.Canvas)
-  fullName.vb: Core.Commands.MoveTo.New(Core.Canvas)
-  nameWithType: MoveTo.MoveTo(Canvas)
-  nameWithType.vb: MoveTo.New(Canvas)
+- uid: Core.Commands.MoveTo.#ctor
+  name: MoveTo()
+  href: api/Core.Commands.MoveTo.html#Core_Commands_MoveTo__ctor
+  commentId: M:Core.Commands.MoveTo.#ctor
+  name.vb: New()
+  fullName: Core.Commands.MoveTo.MoveTo()
+  fullName.vb: Core.Commands.MoveTo.New()
+  nameWithType: MoveTo.MoveTo()
+  nameWithType.vb: MoveTo.New()
 - uid: Core.Commands.MoveTo.#ctor*
   name: MoveTo
   href: api/Core.Commands.MoveTo.html#Core_Commands_MoveTo__ctor_
@@ -557,15 +615,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.MoveTo.Description
   nameWithType: MoveTo.Description
-- uid: Core.Commands.MoveTo.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.MoveTo.html#Core_Commands_MoveTo_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.MoveTo.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.MoveTo.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.MoveTo.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: MoveTo.Execute(List<object>)
-  nameWithType.vb: MoveTo.Execute(List(Of Object))
+- uid: Core.Commands.MoveTo.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.MoveTo.html#Core_Commands_MoveTo_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.MoveTo.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.MoveTo.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.MoveTo.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: MoveTo.Execute(ICanvas, List<object>)
+  nameWithType.vb: MoveTo.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.MoveTo.Execute*
   name: Execute
   href: api/Core.Commands.MoveTo.html#Core_Commands_MoveTo_Execute_
@@ -685,15 +743,15 @@ references:
   commentId: T:Core.Commands.PenColour
   fullName: Core.Commands.PenColour
   nameWithType: PenColour
-- uid: Core.Commands.PenColour.#ctor(Core.Canvas)
-  name: PenColour(Canvas)
-  href: api/Core.Commands.PenColour.html#Core_Commands_PenColour__ctor_Core_Canvas_
-  commentId: M:Core.Commands.PenColour.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.PenColour.PenColour(Core.Canvas)
-  fullName.vb: Core.Commands.PenColour.New(Core.Canvas)
-  nameWithType: PenColour.PenColour(Canvas)
-  nameWithType.vb: PenColour.New(Canvas)
+- uid: Core.Commands.PenColour.#ctor
+  name: PenColour()
+  href: api/Core.Commands.PenColour.html#Core_Commands_PenColour__ctor
+  commentId: M:Core.Commands.PenColour.#ctor
+  name.vb: New()
+  fullName: Core.Commands.PenColour.PenColour()
+  fullName.vb: Core.Commands.PenColour.New()
+  nameWithType: PenColour.PenColour()
+  nameWithType.vb: PenColour.New()
 - uid: Core.Commands.PenColour.#ctor*
   name: PenColour
   href: api/Core.Commands.PenColour.html#Core_Commands_PenColour__ctor_
@@ -717,15 +775,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.PenColour.Description
   nameWithType: PenColour.Description
-- uid: Core.Commands.PenColour.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.PenColour.html#Core_Commands_PenColour_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.PenColour.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.PenColour.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.PenColour.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: PenColour.Execute(List<object>)
-  nameWithType.vb: PenColour.Execute(List(Of Object))
+- uid: Core.Commands.PenColour.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.PenColour.html#Core_Commands_PenColour_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.PenColour.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.PenColour.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.PenColour.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: PenColour.Execute(ICanvas, List<object>)
+  nameWithType.vb: PenColour.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.PenColour.Execute*
   name: Execute
   href: api/Core.Commands.PenColour.html#Core_Commands_PenColour_Execute_
@@ -845,15 +903,15 @@ references:
   commentId: T:Core.Commands.Rectangle
   fullName: Core.Commands.Rectangle
   nameWithType: Rectangle
-- uid: Core.Commands.Rectangle.#ctor(Core.Canvas)
-  name: Rectangle(Canvas)
-  href: api/Core.Commands.Rectangle.html#Core_Commands_Rectangle__ctor_Core_Canvas_
-  commentId: M:Core.Commands.Rectangle.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.Rectangle.Rectangle(Core.Canvas)
-  fullName.vb: Core.Commands.Rectangle.New(Core.Canvas)
-  nameWithType: Rectangle.Rectangle(Canvas)
-  nameWithType.vb: Rectangle.New(Canvas)
+- uid: Core.Commands.Rectangle.#ctor
+  name: Rectangle()
+  href: api/Core.Commands.Rectangle.html#Core_Commands_Rectangle__ctor
+  commentId: M:Core.Commands.Rectangle.#ctor
+  name.vb: New()
+  fullName: Core.Commands.Rectangle.Rectangle()
+  fullName.vb: Core.Commands.Rectangle.New()
+  nameWithType: Rectangle.Rectangle()
+  nameWithType.vb: Rectangle.New()
 - uid: Core.Commands.Rectangle.#ctor*
   name: Rectangle
   href: api/Core.Commands.Rectangle.html#Core_Commands_Rectangle__ctor_
@@ -877,15 +935,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.Rectangle.Description
   nameWithType: Rectangle.Description
-- uid: Core.Commands.Rectangle.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.Rectangle.html#Core_Commands_Rectangle_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.Rectangle.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.Rectangle.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.Rectangle.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: Rectangle.Execute(List<object>)
-  nameWithType.vb: Rectangle.Execute(List(Of Object))
+- uid: Core.Commands.Rectangle.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.Rectangle.html#Core_Commands_Rectangle_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.Rectangle.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.Rectangle.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.Rectangle.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: Rectangle.Execute(ICanvas, List<object>)
+  nameWithType.vb: Rectangle.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.Rectangle.Execute*
   name: Execute
   href: api/Core.Commands.Rectangle.html#Core_Commands_Rectangle_Execute_
@@ -925,15 +983,15 @@ references:
   commentId: T:Core.Commands.Triangle
   fullName: Core.Commands.Triangle
   nameWithType: Triangle
-- uid: Core.Commands.Triangle.#ctor(Core.Canvas)
-  name: Triangle(Canvas)
-  href: api/Core.Commands.Triangle.html#Core_Commands_Triangle__ctor_Core_Canvas_
-  commentId: M:Core.Commands.Triangle.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.Triangle.Triangle(Core.Canvas)
-  fullName.vb: Core.Commands.Triangle.New(Core.Canvas)
-  nameWithType: Triangle.Triangle(Canvas)
-  nameWithType.vb: Triangle.New(Canvas)
+- uid: Core.Commands.Triangle.#ctor
+  name: Triangle()
+  href: api/Core.Commands.Triangle.html#Core_Commands_Triangle__ctor
+  commentId: M:Core.Commands.Triangle.#ctor
+  name.vb: New()
+  fullName: Core.Commands.Triangle.Triangle()
+  fullName.vb: Core.Commands.Triangle.New()
+  nameWithType: Triangle.Triangle()
+  nameWithType.vb: Triangle.New()
 - uid: Core.Commands.Triangle.#ctor*
   name: Triangle
   href: api/Core.Commands.Triangle.html#Core_Commands_Triangle__ctor_
@@ -957,15 +1015,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.Triangle.Description
   nameWithType: Triangle.Description
-- uid: Core.Commands.Triangle.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.Triangle.html#Core_Commands_Triangle_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.Triangle.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.Triangle.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.Triangle.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: Triangle.Execute(List<object>)
-  nameWithType.vb: Triangle.Execute(List(Of Object))
+- uid: Core.Commands.Triangle.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.Triangle.html#Core_Commands_Triangle_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.Triangle.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.Triangle.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.Triangle.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: Triangle.Execute(ICanvas, List<object>)
+  nameWithType.vb: Triangle.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.Triangle.Execute*
   name: Execute
   href: api/Core.Commands.Triangle.html#Core_Commands_Triangle_Execute_
@@ -1005,15 +1063,15 @@ references:
   commentId: T:Core.Commands.Write
   fullName: Core.Commands.Write
   nameWithType: Write
-- uid: Core.Commands.Write.#ctor(Core.Canvas)
-  name: Write(Canvas)
-  href: api/Core.Commands.Write.html#Core_Commands_Write__ctor_Core_Canvas_
-  commentId: M:Core.Commands.Write.#ctor(Core.Canvas)
-  name.vb: New(Canvas)
-  fullName: Core.Commands.Write.Write(Core.Canvas)
-  fullName.vb: Core.Commands.Write.New(Core.Canvas)
-  nameWithType: Write.Write(Canvas)
-  nameWithType.vb: Write.New(Canvas)
+- uid: Core.Commands.Write.#ctor
+  name: Write()
+  href: api/Core.Commands.Write.html#Core_Commands_Write__ctor
+  commentId: M:Core.Commands.Write.#ctor
+  name.vb: New()
+  fullName: Core.Commands.Write.Write()
+  fullName.vb: Core.Commands.Write.New()
+  nameWithType: Write.Write()
+  nameWithType.vb: Write.New()
 - uid: Core.Commands.Write.#ctor*
   name: Write
   href: api/Core.Commands.Write.html#Core_Commands_Write__ctor_
@@ -1037,15 +1095,15 @@ references:
   isSpec: "True"
   fullName: Core.Commands.Write.Description
   nameWithType: Write.Description
-- uid: Core.Commands.Write.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Commands.Write.html#Core_Commands_Write_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Commands.Write.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Commands.Write.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Commands.Write.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: Write.Execute(List<object>)
-  nameWithType.vb: Write.Execute(List(Of Object))
+- uid: Core.Commands.Write.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Commands.Write.html#Core_Commands_Write_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Commands.Write.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Commands.Write.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Commands.Write.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: Write.Execute(ICanvas, List<object>)
+  nameWithType.vb: Write.Execute(ICanvas, List(Of Object))
 - uid: Core.Commands.Write.Execute*
   name: Execute
   href: api/Core.Commands.Write.html#Core_Commands_Write_Execute_
@@ -1239,6 +1297,12 @@ references:
   commentId: F:Core.Enums.TokenType.String
   fullName: Core.Enums.TokenType.String
   nameWithType: TokenType.String
+- uid: Core.Enums.TokenType.array_manipulation
+  name: array_manipulation
+  href: api/Core.Enums.TokenType.html#Core_Enums_TokenType_array_manipulation
+  commentId: F:Core.Enums.TokenType.array_manipulation
+  fullName: Core.Enums.TokenType.array_manipulation
+  nameWithType: TokenType.array_manipulation
 - uid: Core.Enums.TokenType.command
   name: command
   href: api/Core.Enums.TokenType.html#Core_Enums_TokenType_command
@@ -1762,6 +1826,75 @@ references:
   fullName.vb: Core.Exceptions.VariableException.New
   nameWithType: VariableException.VariableException
   nameWithType.vb: VariableException.New
+- uid: Core.ExpressionEvaluator
+  name: ExpressionEvaluator
+  href: api/Core.ExpressionEvaluator.html
+  commentId: T:Core.ExpressionEvaluator
+  fullName: Core.ExpressionEvaluator
+  nameWithType: ExpressionEvaluator
+- uid: Core.ExpressionEvaluator.EvaluateBinaryComparison(System.String,System.Double,System.Double)
+  name: EvaluateBinaryComparison(string, double, double)
+  href: api/Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_EvaluateBinaryComparison_System_String_System_Double_System_Double_
+  commentId: M:Core.ExpressionEvaluator.EvaluateBinaryComparison(System.String,System.Double,System.Double)
+  name.vb: EvaluateBinaryComparison(String, Double, Double)
+  fullName: Core.ExpressionEvaluator.EvaluateBinaryComparison(string, double, double)
+  fullName.vb: Core.ExpressionEvaluator.EvaluateBinaryComparison(String, Double, Double)
+  nameWithType: ExpressionEvaluator.EvaluateBinaryComparison(string, double, double)
+  nameWithType.vb: ExpressionEvaluator.EvaluateBinaryComparison(String, Double, Double)
+- uid: Core.ExpressionEvaluator.EvaluateBinaryComparison*
+  name: EvaluateBinaryComparison
+  href: api/Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_EvaluateBinaryComparison_
+  commentId: Overload:Core.ExpressionEvaluator.EvaluateBinaryComparison
+  isSpec: "True"
+  fullName: Core.ExpressionEvaluator.EvaluateBinaryComparison
+  nameWithType: ExpressionEvaluator.EvaluateBinaryComparison
+- uid: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  name: EvaluateExpression(List<Token>, ref int)
+  href: api/Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_EvaluateExpression_System_Collections_Generic_List_Core_Token__System_Int32__
+  commentId: M:Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  name.vb: EvaluateExpression(List(Of Token), Integer)
+  fullName: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List<Core.Token>, ref int)
+  fullName.vb: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List(Of Core.Token), Integer)
+  nameWithType: ExpressionEvaluator.EvaluateExpression(List<Token>, ref int)
+  nameWithType.vb: ExpressionEvaluator.EvaluateExpression(List(Of Token), Integer)
+- uid: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  name: EvaluateExpression(List<Token>, ref int, Dictionary<string, Variable>)
+  href: api/Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_EvaluateExpression_System_Collections_Generic_List_Core_Token__System_Int32__System_Collections_Generic_Dictionary_System_String_Core_Variable__
+  commentId: M:Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  name.vb: EvaluateExpression(List(Of Token), Integer, Dictionary(Of String, Variable))
+  fullName: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List<Core.Token>, ref int, System.Collections.Generic.Dictionary<string, Core.Variable>)
+  fullName.vb: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List(Of Core.Token), Integer, System.Collections.Generic.Dictionary(Of String, Core.Variable))
+  nameWithType: ExpressionEvaluator.EvaluateExpression(List<Token>, ref int, Dictionary<string, Variable>)
+  nameWithType.vb: ExpressionEvaluator.EvaluateExpression(List(Of Token), Integer, Dictionary(Of String, Variable))
+- uid: Core.ExpressionEvaluator.EvaluateExpression*
+  name: EvaluateExpression
+  href: api/Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_EvaluateExpression_
+  commentId: Overload:Core.ExpressionEvaluator.EvaluateExpression
+  isSpec: "True"
+  fullName: Core.ExpressionEvaluator.EvaluateExpression
+  nameWithType: ExpressionEvaluator.EvaluateExpression
+- uid: Core.ExpressionEvaluator._variables
+  name: _variables
+  href: api/Core.ExpressionEvaluator.html#Core_ExpressionEvaluator__variables
+  commentId: F:Core.ExpressionEvaluator._variables
+  fullName: Core.ExpressionEvaluator._variables
+  nameWithType: ExpressionEvaluator._variables
+- uid: Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  name: evaluateStringExpression(List<Token>, ref int, Dictionary<string, Variable>)
+  href: api/Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_evaluateStringExpression_System_Collections_Generic_List_Core_Token__System_Int32__System_Collections_Generic_Dictionary_System_String_Core_Variable__
+  commentId: M:Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  name.vb: evaluateStringExpression(List(Of Token), Integer, Dictionary(Of String, Variable))
+  fullName: Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List<Core.Token>, ref int, System.Collections.Generic.Dictionary<string, Core.Variable>)
+  fullName.vb: Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List(Of Core.Token), Integer, System.Collections.Generic.Dictionary(Of String, Core.Variable))
+  nameWithType: ExpressionEvaluator.evaluateStringExpression(List<Token>, ref int, Dictionary<string, Variable>)
+  nameWithType.vb: ExpressionEvaluator.evaluateStringExpression(List(Of Token), Integer, Dictionary(Of String, Variable))
+- uid: Core.ExpressionEvaluator.evaluateStringExpression*
+  name: evaluateStringExpression
+  href: api/Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_evaluateStringExpression_
+  commentId: Overload:Core.ExpressionEvaluator.evaluateStringExpression
+  isSpec: "True"
+  fullName: Core.ExpressionEvaluator.evaluateStringExpression
+  nameWithType: ExpressionEvaluator.evaluateStringExpression
 - uid: Core.Interfaces
   name: Core.Interfaces
   href: api/Core.Interfaces.html
@@ -1945,15 +2078,15 @@ references:
   isSpec: "True"
   fullName: Core.Interfaces.ICommand.Description
   nameWithType: ICommand.Description
-- uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
-  name: Execute(List<object>)
-  href: api/Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
-  commentId: M:Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
-  name.vb: Execute(List(Of Object))
-  fullName: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List<object>)
-  fullName.vb: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List(Of Object))
-  nameWithType: ICommand.Execute(List<object>)
-  nameWithType.vb: ICommand.Execute(List(Of Object))
+- uid: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: ICommand.Execute(ICanvas, List<object>)
+  nameWithType.vb: ICommand.Execute(ICanvas, List(Of Object))
 - uid: Core.Interfaces.ICommand.Execute*
   name: Execute
   href: api/Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_
@@ -1987,44 +2120,338 @@ references:
   isSpec: "True"
   fullName: Core.Interfaces.ICommand.Usage
   nameWithType: ICommand.Usage
+- uid: Core.Interfaces.ICommandFactory
+  name: ICommandFactory
+  href: api/Core.Interfaces.ICommandFactory.html
+  commentId: T:Core.Interfaces.ICommandFactory
+  fullName: Core.Interfaces.ICommandFactory
+  nameWithType: ICommandFactory
+- uid: Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  name: AddCommand(ICommand)
+  href: api/Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_AddCommand_Core_Interfaces_ICommand_
+  commentId: M:Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  fullName: Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  nameWithType: ICommandFactory.AddCommand(ICommand)
+- uid: Core.Interfaces.ICommandFactory.AddCommand*
+  name: AddCommand
+  href: api/Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_AddCommand_
+  commentId: Overload:Core.Interfaces.ICommandFactory.AddCommand
+  isSpec: "True"
+  fullName: Core.Interfaces.ICommandFactory.AddCommand
+  nameWithType: ICommandFactory.AddCommand
+- uid: Core.Interfaces.ICommandFactory.GetCommand(System.String)
+  name: GetCommand(string)
+  href: api/Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommand_System_String_
+  commentId: M:Core.Interfaces.ICommandFactory.GetCommand(System.String)
+  name.vb: GetCommand(String)
+  fullName: Core.Interfaces.ICommandFactory.GetCommand(string)
+  fullName.vb: Core.Interfaces.ICommandFactory.GetCommand(String)
+  nameWithType: ICommandFactory.GetCommand(string)
+  nameWithType.vb: ICommandFactory.GetCommand(String)
+- uid: Core.Interfaces.ICommandFactory.GetCommand*
+  name: GetCommand
+  href: api/Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommand_
+  commentId: Overload:Core.Interfaces.ICommandFactory.GetCommand
+  isSpec: "True"
+  fullName: Core.Interfaces.ICommandFactory.GetCommand
+  nameWithType: ICommandFactory.GetCommand
+- uid: Core.Interfaces.ICommandFactory.GetCommandsRegex
+  name: GetCommandsRegex()
+  href: api/Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommandsRegex
+  commentId: M:Core.Interfaces.ICommandFactory.GetCommandsRegex
+  fullName: Core.Interfaces.ICommandFactory.GetCommandsRegex()
+  nameWithType: ICommandFactory.GetCommandsRegex()
+- uid: Core.Interfaces.ICommandFactory.GetCommandsRegex*
+  name: GetCommandsRegex
+  href: api/Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommandsRegex_
+  commentId: Overload:Core.Interfaces.ICommandFactory.GetCommandsRegex
+  isSpec: "True"
+  fullName: Core.Interfaces.ICommandFactory.GetCommandsRegex
+  nameWithType: ICommandFactory.GetCommandsRegex
+- uid: Core.Interfaces.IExpressionEvaluator
+  name: IExpressionEvaluator
+  href: api/Core.Interfaces.IExpressionEvaluator.html
+  commentId: T:Core.Interfaces.IExpressionEvaluator
+  fullName: Core.Interfaces.IExpressionEvaluator
+  nameWithType: IExpressionEvaluator
+- uid: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  name: EvaluateExpression(List<Token>, ref int)
+  href: api/Core.Interfaces.IExpressionEvaluator.html#Core_Interfaces_IExpressionEvaluator_EvaluateExpression_System_Collections_Generic_List_Core_Token__System_Int32__
+  commentId: M:Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  name.vb: EvaluateExpression(List(Of Token), Integer)
+  fullName: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List<Core.Token>, ref int)
+  fullName.vb: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List(Of Core.Token), Integer)
+  nameWithType: IExpressionEvaluator.EvaluateExpression(List<Token>, ref int)
+  nameWithType.vb: IExpressionEvaluator.EvaluateExpression(List(Of Token), Integer)
+- uid: Core.Interfaces.IExpressionEvaluator.EvaluateExpression*
+  name: EvaluateExpression
+  href: api/Core.Interfaces.IExpressionEvaluator.html#Core_Interfaces_IExpressionEvaluator_EvaluateExpression_
+  commentId: Overload:Core.Interfaces.IExpressionEvaluator.EvaluateExpression
+  isSpec: "True"
+  fullName: Core.Interfaces.IExpressionEvaluator.EvaluateExpression
+  nameWithType: IExpressionEvaluator.EvaluateExpression
+- uid: Core.Interfaces.IParser
+  name: IParser
+  href: api/Core.Interfaces.IParser.html
+  commentId: T:Core.Interfaces.IParser
+  fullName: Core.Interfaces.IParser
+  nameWithType: IParser
+- uid: Core.Interfaces.IParser.parseProgram(System.String)
+  name: parseProgram(string)
+  href: api/Core.Interfaces.IParser.html#Core_Interfaces_IParser_parseProgram_System_String_
+  commentId: M:Core.Interfaces.IParser.parseProgram(System.String)
+  name.vb: parseProgram(String)
+  fullName: Core.Interfaces.IParser.parseProgram(string)
+  fullName.vb: Core.Interfaces.IParser.parseProgram(String)
+  nameWithType: IParser.parseProgram(string)
+  nameWithType.vb: IParser.parseProgram(String)
+- uid: Core.Interfaces.IParser.parseProgram*
+  name: parseProgram
+  href: api/Core.Interfaces.IParser.html#Core_Interfaces_IParser_parseProgram_
+  commentId: Overload:Core.Interfaces.IParser.parseProgram
+  isSpec: "True"
+  fullName: Core.Interfaces.IParser.parseProgram
+  nameWithType: IParser.parseProgram
+- uid: Core.Interfaces.IStoredProgram
+  name: IStoredProgram
+  href: api/Core.Interfaces.IStoredProgram.html
+  commentId: T:Core.Interfaces.IStoredProgram
+  fullName: Core.Interfaces.IStoredProgram
+  nameWithType: IStoredProgram
+- uid: Core.Interfaces.IStoredProgram.Execute
+  name: Execute()
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_Execute
+  commentId: M:Core.Interfaces.IStoredProgram.Execute
+  fullName: Core.Interfaces.IStoredProgram.Execute()
+  nameWithType: IStoredProgram.Execute()
+- uid: Core.Interfaces.IStoredProgram.Execute*
+  name: Execute
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_Execute_
+  commentId: Overload:Core.Interfaces.IStoredProgram.Execute
+  isSpec: "True"
+  fullName: Core.Interfaces.IStoredProgram.Execute
+  nameWithType: IStoredProgram.Execute
+- uid: Core.Interfaces.IStoredProgram.LineIndex
+  name: LineIndex
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_LineIndex
+  commentId: P:Core.Interfaces.IStoredProgram.LineIndex
+  fullName: Core.Interfaces.IStoredProgram.LineIndex
+  nameWithType: IStoredProgram.LineIndex
+- uid: Core.Interfaces.IStoredProgram.LineIndex*
+  name: LineIndex
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_LineIndex_
+  commentId: Overload:Core.Interfaces.IStoredProgram.LineIndex
+  isSpec: "True"
+  fullName: Core.Interfaces.IStoredProgram.LineIndex
+  nameWithType: IStoredProgram.LineIndex
+- uid: Core.Interfaces.IStoredProgram.ResetProgram
+  name: ResetProgram()
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_ResetProgram
+  commentId: M:Core.Interfaces.IStoredProgram.ResetProgram
+  fullName: Core.Interfaces.IStoredProgram.ResetProgram()
+  nameWithType: IStoredProgram.ResetProgram()
+- uid: Core.Interfaces.IStoredProgram.ResetProgram*
+  name: ResetProgram
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_ResetProgram_
+  commentId: Overload:Core.Interfaces.IStoredProgram.ResetProgram
+  isSpec: "True"
+  fullName: Core.Interfaces.IStoredProgram.ResetProgram
+  nameWithType: IStoredProgram.ResetProgram
+- uid: Core.Interfaces.IStoredProgram.addLine(System.Collections.Generic.List{Core.Token})
+  name: addLine(List<Token>)
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_addLine_System_Collections_Generic_List_Core_Token__
+  commentId: M:Core.Interfaces.IStoredProgram.addLine(System.Collections.Generic.List{Core.Token})
+  name.vb: addLine(List(Of Token))
+  fullName: Core.Interfaces.IStoredProgram.addLine(System.Collections.Generic.List<Core.Token>)
+  fullName.vb: Core.Interfaces.IStoredProgram.addLine(System.Collections.Generic.List(Of Core.Token))
+  nameWithType: IStoredProgram.addLine(List<Token>)
+  nameWithType.vb: IStoredProgram.addLine(List(Of Token))
+- uid: Core.Interfaces.IStoredProgram.addLine*
+  name: addLine
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_addLine_
+  commentId: Overload:Core.Interfaces.IStoredProgram.addLine
+  isSpec: "True"
+  fullName: Core.Interfaces.IStoredProgram.addLine
+  nameWithType: IStoredProgram.addLine
+- uid: Core.Interfaces.IStoredProgram.canvas
+  name: canvas
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_canvas
+  commentId: P:Core.Interfaces.IStoredProgram.canvas
+  fullName: Core.Interfaces.IStoredProgram.canvas
+  nameWithType: IStoredProgram.canvas
+- uid: Core.Interfaces.IStoredProgram.canvas*
+  name: canvas
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_canvas_
+  commentId: Overload:Core.Interfaces.IStoredProgram.canvas
+  isSpec: "True"
+  fullName: Core.Interfaces.IStoredProgram.canvas
+  nameWithType: IStoredProgram.canvas
+- uid: Core.Interfaces.IStoredProgram.tokens
+  name: tokens
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_tokens
+  commentId: P:Core.Interfaces.IStoredProgram.tokens
+  fullName: Core.Interfaces.IStoredProgram.tokens
+  nameWithType: IStoredProgram.tokens
+- uid: Core.Interfaces.IStoredProgram.tokens*
+  name: tokens
+  href: api/Core.Interfaces.IStoredProgram.html#Core_Interfaces_IStoredProgram_tokens_
+  commentId: Overload:Core.Interfaces.IStoredProgram.tokens
+  isSpec: "True"
+  fullName: Core.Interfaces.IStoredProgram.tokens
+  nameWithType: IStoredProgram.tokens
 - uid: Core.Parser
   name: Parser
   href: api/Core.Parser.html
   commentId: T:Core.Parser
   fullName: Core.Parser
   nameWithType: Parser
-- uid: Core.Parser.parseLine(System.String)
-  name: parseLine(string)
-  href: api/Core.Parser.html#Core_Parser_parseLine_System_String_
-  commentId: M:Core.Parser.parseLine(System.String)
-  name.vb: parseLine(String)
-  fullName: Core.Parser.parseLine(string)
-  fullName.vb: Core.Parser.parseLine(String)
-  nameWithType: Parser.parseLine(string)
-  nameWithType.vb: Parser.parseLine(String)
-- uid: Core.Parser.parseLine*
-  name: parseLine
-  href: api/Core.Parser.html#Core_Parser_parseLine_
-  commentId: Overload:Core.Parser.parseLine
+- uid: Core.Parser.#ctor(Core.Interfaces.ICommandFactory,Core.StoredProgram)
+  name: Parser(ICommandFactory, StoredProgram)
+  href: api/Core.Parser.html#Core_Parser__ctor_Core_Interfaces_ICommandFactory_Core_StoredProgram_
+  commentId: M:Core.Parser.#ctor(Core.Interfaces.ICommandFactory,Core.StoredProgram)
+  name.vb: New(ICommandFactory, StoredProgram)
+  fullName: Core.Parser.Parser(Core.Interfaces.ICommandFactory, Core.StoredProgram)
+  fullName.vb: Core.Parser.New(Core.Interfaces.ICommandFactory, Core.StoredProgram)
+  nameWithType: Parser.Parser(ICommandFactory, StoredProgram)
+  nameWithType.vb: Parser.New(ICommandFactory, StoredProgram)
+- uid: Core.Parser.#ctor*
+  name: Parser
+  href: api/Core.Parser.html#Core_Parser__ctor_
+  commentId: Overload:Core.Parser.#ctor
   isSpec: "True"
-  fullName: Core.Parser.parseLine
-  nameWithType: Parser.parseLine
-- uid: Core.Parser.parseLines(System.String)
-  name: parseLines(string)
-  href: api/Core.Parser.html#Core_Parser_parseLines_System_String_
-  commentId: M:Core.Parser.parseLines(System.String)
-  name.vb: parseLines(String)
-  fullName: Core.Parser.parseLines(string)
-  fullName.vb: Core.Parser.parseLines(String)
-  nameWithType: Parser.parseLines(string)
-  nameWithType.vb: Parser.parseLines(String)
-- uid: Core.Parser.parseLines*
-  name: parseLines
-  href: api/Core.Parser.html#Core_Parser_parseLines_
-  commentId: Overload:Core.Parser.parseLines
+  name.vb: New
+  fullName: Core.Parser.Parser
+  fullName.vb: Core.Parser.New
+  nameWithType: Parser.Parser
+  nameWithType.vb: Parser.New
+- uid: Core.Parser.parseProgram(System.String)
+  name: parseProgram(string)
+  href: api/Core.Parser.html#Core_Parser_parseProgram_System_String_
+  commentId: M:Core.Parser.parseProgram(System.String)
+  name.vb: parseProgram(String)
+  fullName: Core.Parser.parseProgram(string)
+  fullName.vb: Core.Parser.parseProgram(String)
+  nameWithType: Parser.parseProgram(string)
+  nameWithType.vb: Parser.parseProgram(String)
+- uid: Core.Parser.parseProgram*
+  name: parseProgram
+  href: api/Core.Parser.html#Core_Parser_parseProgram_
+  commentId: Overload:Core.Parser.parseProgram
   isSpec: "True"
-  fullName: Core.Parser.parseLines
-  nameWithType: Parser.parseLines
+  fullName: Core.Parser.parseProgram
+  nameWithType: Parser.parseProgram
+- uid: Core.StoredProgram
+  name: StoredProgram
+  href: api/Core.StoredProgram.html
+  commentId: T:Core.StoredProgram
+  fullName: Core.StoredProgram
+  nameWithType: StoredProgram
+- uid: Core.StoredProgram.#ctor(Core.Interfaces.ICanvas)
+  name: StoredProgram(ICanvas)
+  href: api/Core.StoredProgram.html#Core_StoredProgram__ctor_Core_Interfaces_ICanvas_
+  commentId: M:Core.StoredProgram.#ctor(Core.Interfaces.ICanvas)
+  name.vb: New(ICanvas)
+  fullName: Core.StoredProgram.StoredProgram(Core.Interfaces.ICanvas)
+  fullName.vb: Core.StoredProgram.New(Core.Interfaces.ICanvas)
+  nameWithType: StoredProgram.StoredProgram(ICanvas)
+  nameWithType.vb: StoredProgram.New(ICanvas)
+- uid: Core.StoredProgram.#ctor*
+  name: StoredProgram
+  href: api/Core.StoredProgram.html#Core_StoredProgram__ctor_
+  commentId: Overload:Core.StoredProgram.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Core.StoredProgram.StoredProgram
+  fullName.vb: Core.StoredProgram.New
+  nameWithType: StoredProgram.StoredProgram
+  nameWithType.vb: StoredProgram.New
+- uid: Core.StoredProgram.Execute
+  name: Execute()
+  href: api/Core.StoredProgram.html#Core_StoredProgram_Execute
+  commentId: M:Core.StoredProgram.Execute
+  fullName: Core.StoredProgram.Execute()
+  nameWithType: StoredProgram.Execute()
+- uid: Core.StoredProgram.Execute*
+  name: Execute
+  href: api/Core.StoredProgram.html#Core_StoredProgram_Execute_
+  commentId: Overload:Core.StoredProgram.Execute
+  isSpec: "True"
+  fullName: Core.StoredProgram.Execute
+  nameWithType: StoredProgram.Execute
+- uid: Core.StoredProgram.LineIndex
+  name: LineIndex
+  href: api/Core.StoredProgram.html#Core_StoredProgram_LineIndex
+  commentId: P:Core.StoredProgram.LineIndex
+  fullName: Core.StoredProgram.LineIndex
+  nameWithType: StoredProgram.LineIndex
+- uid: Core.StoredProgram.LineIndex*
+  name: LineIndex
+  href: api/Core.StoredProgram.html#Core_StoredProgram_LineIndex_
+  commentId: Overload:Core.StoredProgram.LineIndex
+  isSpec: "True"
+  fullName: Core.StoredProgram.LineIndex
+  nameWithType: StoredProgram.LineIndex
+- uid: Core.StoredProgram.ResetProgram
+  name: ResetProgram()
+  href: api/Core.StoredProgram.html#Core_StoredProgram_ResetProgram
+  commentId: M:Core.StoredProgram.ResetProgram
+  fullName: Core.StoredProgram.ResetProgram()
+  nameWithType: StoredProgram.ResetProgram()
+- uid: Core.StoredProgram.ResetProgram*
+  name: ResetProgram
+  href: api/Core.StoredProgram.html#Core_StoredProgram_ResetProgram_
+  commentId: Overload:Core.StoredProgram.ResetProgram
+  isSpec: "True"
+  fullName: Core.StoredProgram.ResetProgram
+  nameWithType: StoredProgram.ResetProgram
+- uid: Core.StoredProgram.addLine(System.Collections.Generic.List{Core.Token})
+  name: addLine(List<Token>)
+  href: api/Core.StoredProgram.html#Core_StoredProgram_addLine_System_Collections_Generic_List_Core_Token__
+  commentId: M:Core.StoredProgram.addLine(System.Collections.Generic.List{Core.Token})
+  name.vb: addLine(List(Of Token))
+  fullName: Core.StoredProgram.addLine(System.Collections.Generic.List<Core.Token>)
+  fullName.vb: Core.StoredProgram.addLine(System.Collections.Generic.List(Of Core.Token))
+  nameWithType: StoredProgram.addLine(List<Token>)
+  nameWithType.vb: StoredProgram.addLine(List(Of Token))
+- uid: Core.StoredProgram.addLine*
+  name: addLine
+  href: api/Core.StoredProgram.html#Core_StoredProgram_addLine_
+  commentId: Overload:Core.StoredProgram.addLine
+  isSpec: "True"
+  fullName: Core.StoredProgram.addLine
+  nameWithType: StoredProgram.addLine
+- uid: Core.StoredProgram.canvas
+  name: canvas
+  href: api/Core.StoredProgram.html#Core_StoredProgram_canvas
+  commentId: P:Core.StoredProgram.canvas
+  fullName: Core.StoredProgram.canvas
+  nameWithType: StoredProgram.canvas
+- uid: Core.StoredProgram.canvas*
+  name: canvas
+  href: api/Core.StoredProgram.html#Core_StoredProgram_canvas_
+  commentId: Overload:Core.StoredProgram.canvas
+  isSpec: "True"
+  fullName: Core.StoredProgram.canvas
+  nameWithType: StoredProgram.canvas
+- uid: Core.StoredProgram.tokens
+  name: tokens
+  href: api/Core.StoredProgram.html#Core_StoredProgram_tokens
+  commentId: P:Core.StoredProgram.tokens
+  fullName: Core.StoredProgram.tokens
+  nameWithType: StoredProgram.tokens
+- uid: Core.StoredProgram.tokens*
+  name: tokens
+  href: api/Core.StoredProgram.html#Core_StoredProgram_tokens_
+  commentId: Overload:Core.StoredProgram.tokens
+  isSpec: "True"
+  fullName: Core.StoredProgram.tokens
+  nameWithType: StoredProgram.tokens
+- uid: Core.StoredProgram.variables
+  name: variables
+  href: api/Core.StoredProgram.html#Core_StoredProgram_variables
+  commentId: F:Core.StoredProgram.variables
+  fullName: Core.StoredProgram.variables
+  nameWithType: StoredProgram.variables
 - uid: Core.StoredProgramExecutor
   name: StoredProgramExecutor
   href: api/Core.StoredProgramExecutor.html
@@ -2081,6 +2508,15 @@ references:
   fullName.vb: Core.Token.New(Core.Enums.TokenType, String)
   nameWithType: Token.Token(TokenType, string)
   nameWithType.vb: Token.New(TokenType, String)
+- uid: Core.Token.#ctor(System.String,Core.Interfaces.ICommand)
+  name: Token(string, ICommand?)
+  href: api/Core.Token.html#Core_Token__ctor_System_String_Core_Interfaces_ICommand_
+  commentId: M:Core.Token.#ctor(System.String,Core.Interfaces.ICommand)
+  name.vb: New(String, ICommand)
+  fullName: Core.Token.Token(string, Core.Interfaces.ICommand?)
+  fullName.vb: Core.Token.New(String, Core.Interfaces.ICommand)
+  nameWithType: Token.Token(string, ICommand?)
+  nameWithType.vb: Token.New(String, ICommand)
 - uid: Core.Token.#ctor*
   name: Token
   href: api/Core.Token.html#Core_Token__ctor_
@@ -2091,6 +2527,19 @@ references:
   fullName.vb: Core.Token.New
   nameWithType: Token.Token
   nameWithType.vb: Token.New
+- uid: Core.Token.Command
+  name: Command
+  href: api/Core.Token.html#Core_Token_Command
+  commentId: P:Core.Token.Command
+  fullName: Core.Token.Command
+  nameWithType: Token.Command
+- uid: Core.Token.Command*
+  name: Command
+  href: api/Core.Token.html#Core_Token_Command_
+  commentId: Overload:Core.Token.Command
+  isSpec: "True"
+  fullName: Core.Token.Command
+  nameWithType: Token.Command
 - uid: Core.Token.ToString
   name: ToString()
   href: api/Core.Token.html#Core_Token_ToString
@@ -2171,6 +2620,162 @@ references:
   isSpec: "True"
   fullName: Core.Tokeniser.Tokenise
   nameWithType: Tokeniser.Tokenise
+- uid: Core.Variable
+  name: Variable
+  href: api/Core.Variable.html
+  commentId: T:Core.Variable
+  fullName: Core.Variable
+  nameWithType: Variable
+- uid: Core.Variable.#ctor(System.String,Core.Enums.VariableType)
+  name: Variable(string, VariableType)
+  href: api/Core.Variable.html#Core_Variable__ctor_System_String_Core_Enums_VariableType_
+  commentId: M:Core.Variable.#ctor(System.String,Core.Enums.VariableType)
+  name.vb: New(String, VariableType)
+  fullName: Core.Variable.Variable(string, Core.Enums.VariableType)
+  fullName.vb: Core.Variable.New(String, Core.Enums.VariableType)
+  nameWithType: Variable.Variable(string, VariableType)
+  nameWithType.vb: Variable.New(String, VariableType)
+- uid: Core.Variable.#ctor(System.String,System.Double)
+  name: Variable(string, double)
+  href: api/Core.Variable.html#Core_Variable__ctor_System_String_System_Double_
+  commentId: M:Core.Variable.#ctor(System.String,System.Double)
+  name.vb: New(String, Double)
+  fullName: Core.Variable.Variable(string, double)
+  fullName.vb: Core.Variable.New(String, Double)
+  nameWithType: Variable.Variable(string, double)
+  nameWithType.vb: Variable.New(String, Double)
+- uid: Core.Variable.#ctor(System.String,System.Int32)
+  name: Variable(string, int)
+  href: api/Core.Variable.html#Core_Variable__ctor_System_String_System_Int32_
+  commentId: M:Core.Variable.#ctor(System.String,System.Int32)
+  name.vb: New(String, Integer)
+  fullName: Core.Variable.Variable(string, int)
+  fullName.vb: Core.Variable.New(String, Integer)
+  nameWithType: Variable.Variable(string, int)
+  nameWithType.vb: Variable.New(String, Integer)
+- uid: Core.Variable.#ctor(System.String,System.String)
+  name: Variable(string, string)
+  href: api/Core.Variable.html#Core_Variable__ctor_System_String_System_String_
+  commentId: M:Core.Variable.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: Core.Variable.Variable(string, string)
+  fullName.vb: Core.Variable.New(String, String)
+  nameWithType: Variable.Variable(string, string)
+  nameWithType.vb: Variable.New(String, String)
+- uid: Core.Variable.#ctor*
+  name: Variable
+  href: api/Core.Variable.html#Core_Variable__ctor_
+  commentId: Overload:Core.Variable.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Core.Variable.Variable
+  fullName.vb: Core.Variable.New
+  nameWithType: Variable.Variable
+  nameWithType.vb: Variable.New
+- uid: Core.Variable.IntListValue
+  name: IntListValue
+  href: api/Core.Variable.html#Core_Variable_IntListValue
+  commentId: P:Core.Variable.IntListValue
+  fullName: Core.Variable.IntListValue
+  nameWithType: Variable.IntListValue
+- uid: Core.Variable.IntListValue*
+  name: IntListValue
+  href: api/Core.Variable.html#Core_Variable_IntListValue_
+  commentId: Overload:Core.Variable.IntListValue
+  isSpec: "True"
+  fullName: Core.Variable.IntListValue
+  nameWithType: Variable.IntListValue
+- uid: Core.Variable.IntValue
+  name: IntValue
+  href: api/Core.Variable.html#Core_Variable_IntValue
+  commentId: P:Core.Variable.IntValue
+  fullName: Core.Variable.IntValue
+  nameWithType: Variable.IntValue
+- uid: Core.Variable.IntValue*
+  name: IntValue
+  href: api/Core.Variable.html#Core_Variable_IntValue_
+  commentId: Overload:Core.Variable.IntValue
+  isSpec: "True"
+  fullName: Core.Variable.IntValue
+  nameWithType: Variable.IntValue
+- uid: Core.Variable.Name
+  name: Name
+  href: api/Core.Variable.html#Core_Variable_Name
+  commentId: P:Core.Variable.Name
+  fullName: Core.Variable.Name
+  nameWithType: Variable.Name
+- uid: Core.Variable.Name*
+  name: Name
+  href: api/Core.Variable.html#Core_Variable_Name_
+  commentId: Overload:Core.Variable.Name
+  isSpec: "True"
+  fullName: Core.Variable.Name
+  nameWithType: Variable.Name
+- uid: Core.Variable.RealListValue
+  name: RealListValue
+  href: api/Core.Variable.html#Core_Variable_RealListValue
+  commentId: P:Core.Variable.RealListValue
+  fullName: Core.Variable.RealListValue
+  nameWithType: Variable.RealListValue
+- uid: Core.Variable.RealListValue*
+  name: RealListValue
+  href: api/Core.Variable.html#Core_Variable_RealListValue_
+  commentId: Overload:Core.Variable.RealListValue
+  isSpec: "True"
+  fullName: Core.Variable.RealListValue
+  nameWithType: Variable.RealListValue
+- uid: Core.Variable.RealValue
+  name: RealValue
+  href: api/Core.Variable.html#Core_Variable_RealValue
+  commentId: P:Core.Variable.RealValue
+  fullName: Core.Variable.RealValue
+  nameWithType: Variable.RealValue
+- uid: Core.Variable.RealValue*
+  name: RealValue
+  href: api/Core.Variable.html#Core_Variable_RealValue_
+  commentId: Overload:Core.Variable.RealValue
+  isSpec: "True"
+  fullName: Core.Variable.RealValue
+  nameWithType: Variable.RealValue
+- uid: Core.Variable.StrListValue
+  name: StrListValue
+  href: api/Core.Variable.html#Core_Variable_StrListValue
+  commentId: P:Core.Variable.StrListValue
+  fullName: Core.Variable.StrListValue
+  nameWithType: Variable.StrListValue
+- uid: Core.Variable.StrListValue*
+  name: StrListValue
+  href: api/Core.Variable.html#Core_Variable_StrListValue_
+  commentId: Overload:Core.Variable.StrListValue
+  isSpec: "True"
+  fullName: Core.Variable.StrListValue
+  nameWithType: Variable.StrListValue
+- uid: Core.Variable.StrValue
+  name: StrValue
+  href: api/Core.Variable.html#Core_Variable_StrValue
+  commentId: P:Core.Variable.StrValue
+  fullName: Core.Variable.StrValue
+  nameWithType: Variable.StrValue
+- uid: Core.Variable.StrValue*
+  name: StrValue
+  href: api/Core.Variable.html#Core_Variable_StrValue_
+  commentId: Overload:Core.Variable.StrValue
+  isSpec: "True"
+  fullName: Core.Variable.StrValue
+  nameWithType: Variable.StrValue
+- uid: Core.Variable.Type
+  name: Type
+  href: api/Core.Variable.html#Core_Variable_Type
+  commentId: P:Core.Variable.Type
+  fullName: Core.Variable.Type
+  nameWithType: Variable.Type
+- uid: Core.Variable.Type*
+  name: Type
+  href: api/Core.Variable.html#Core_Variable_Type_
+  commentId: Overload:Core.Variable.Type
+  isSpec: "True"
+  fullName: Core.Variable.Type
+  nameWithType: Variable.Type
 - uid: CoreUnitTest
   name: CoreUnitTest
   href: api/CoreUnitTest.html
@@ -2202,6 +2807,45 @@ references:
   fullName.vb: CoreUnitTest.CoreUnitTest.New
   nameWithType: CoreUnitTest.CoreUnitTest
   nameWithType.vb: CoreUnitTest.New
+- uid: CoreUnitTest.CoreUnitTest.ArrayVariableTest
+  name: ArrayVariableTest()
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ArrayVariableTest
+  commentId: M:CoreUnitTest.CoreUnitTest.ArrayVariableTest
+  fullName: CoreUnitTest.CoreUnitTest.ArrayVariableTest()
+  nameWithType: CoreUnitTest.ArrayVariableTest()
+- uid: CoreUnitTest.CoreUnitTest.ArrayVariableTest*
+  name: ArrayVariableTest
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ArrayVariableTest_
+  commentId: Overload:CoreUnitTest.CoreUnitTest.ArrayVariableTest
+  isSpec: "True"
+  fullName: CoreUnitTest.CoreUnitTest.ArrayVariableTest
+  nameWithType: CoreUnitTest.ArrayVariableTest
+- uid: CoreUnitTest.CoreUnitTest.CommandFactoryTest
+  name: CommandFactoryTest()
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_CommandFactoryTest
+  commentId: M:CoreUnitTest.CoreUnitTest.CommandFactoryTest
+  fullName: CoreUnitTest.CoreUnitTest.CommandFactoryTest()
+  nameWithType: CoreUnitTest.CommandFactoryTest()
+- uid: CoreUnitTest.CoreUnitTest.CommandFactoryTest*
+  name: CommandFactoryTest
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_CommandFactoryTest_
+  commentId: Overload:CoreUnitTest.CoreUnitTest.CommandFactoryTest
+  isSpec: "True"
+  fullName: CoreUnitTest.CoreUnitTest.CommandFactoryTest
+  nameWithType: CoreUnitTest.CommandFactoryTest
+- uid: CoreUnitTest.CoreUnitTest.ConditionalTest
+  name: ConditionalTest()
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ConditionalTest
+  commentId: M:CoreUnitTest.CoreUnitTest.ConditionalTest
+  fullName: CoreUnitTest.CoreUnitTest.ConditionalTest()
+  nameWithType: CoreUnitTest.ConditionalTest()
+- uid: CoreUnitTest.CoreUnitTest.ConditionalTest*
+  name: ConditionalTest
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ConditionalTest_
+  commentId: Overload:CoreUnitTest.CoreUnitTest.ConditionalTest
+  isSpec: "True"
+  fullName: CoreUnitTest.CoreUnitTest.ConditionalTest
+  nameWithType: CoreUnitTest.ConditionalTest
 - uid: CoreUnitTest.CoreUnitTest.DrawToTest
   name: DrawToTest()
   href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_DrawToTest
@@ -2215,6 +2859,45 @@ references:
   isSpec: "True"
   fullName: CoreUnitTest.CoreUnitTest.DrawToTest
   nameWithType: CoreUnitTest.DrawToTest
+- uid: CoreUnitTest.CoreUnitTest.ForIterationTest
+  name: ForIterationTest()
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ForIterationTest
+  commentId: M:CoreUnitTest.CoreUnitTest.ForIterationTest
+  fullName: CoreUnitTest.CoreUnitTest.ForIterationTest()
+  nameWithType: CoreUnitTest.ForIterationTest()
+- uid: CoreUnitTest.CoreUnitTest.ForIterationTest*
+  name: ForIterationTest
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ForIterationTest_
+  commentId: Overload:CoreUnitTest.CoreUnitTest.ForIterationTest
+  isSpec: "True"
+  fullName: CoreUnitTest.CoreUnitTest.ForIterationTest
+  nameWithType: CoreUnitTest.ForIterationTest
+- uid: CoreUnitTest.CoreUnitTest.IntegerVariableTest
+  name: IntegerVariableTest()
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_IntegerVariableTest
+  commentId: M:CoreUnitTest.CoreUnitTest.IntegerVariableTest
+  fullName: CoreUnitTest.CoreUnitTest.IntegerVariableTest()
+  nameWithType: CoreUnitTest.IntegerVariableTest()
+- uid: CoreUnitTest.CoreUnitTest.IntegerVariableTest*
+  name: IntegerVariableTest
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_IntegerVariableTest_
+  commentId: Overload:CoreUnitTest.CoreUnitTest.IntegerVariableTest
+  isSpec: "True"
+  fullName: CoreUnitTest.CoreUnitTest.IntegerVariableTest
+  nameWithType: CoreUnitTest.IntegerVariableTest
+- uid: CoreUnitTest.CoreUnitTest.MethodTest
+  name: MethodTest()
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_MethodTest
+  commentId: M:CoreUnitTest.CoreUnitTest.MethodTest
+  fullName: CoreUnitTest.CoreUnitTest.MethodTest()
+  nameWithType: CoreUnitTest.MethodTest()
+- uid: CoreUnitTest.CoreUnitTest.MethodTest*
+  name: MethodTest
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_MethodTest_
+  commentId: Overload:CoreUnitTest.CoreUnitTest.MethodTest
+  isSpec: "True"
+  fullName: CoreUnitTest.CoreUnitTest.MethodTest
+  nameWithType: CoreUnitTest.MethodTest
 - uid: CoreUnitTest.CoreUnitTest.MoveToTest
   name: MoveToTest()
   href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_MoveToTest
@@ -2241,6 +2924,112 @@ references:
   isSpec: "True"
   fullName: CoreUnitTest.CoreUnitTest.MultiLineTest
   nameWithType: CoreUnitTest.MultiLineTest
+- uid: CoreUnitTest.CoreUnitTest.RealVariableTest
+  name: RealVariableTest()
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_RealVariableTest
+  commentId: M:CoreUnitTest.CoreUnitTest.RealVariableTest
+  fullName: CoreUnitTest.CoreUnitTest.RealVariableTest()
+  nameWithType: CoreUnitTest.RealVariableTest()
+- uid: CoreUnitTest.CoreUnitTest.RealVariableTest*
+  name: RealVariableTest
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_RealVariableTest_
+  commentId: Overload:CoreUnitTest.CoreUnitTest.RealVariableTest
+  isSpec: "True"
+  fullName: CoreUnitTest.CoreUnitTest.RealVariableTest
+  nameWithType: CoreUnitTest.RealVariableTest
+- uid: CoreUnitTest.CoreUnitTest.WhileIterationTest
+  name: WhileIterationTest()
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_WhileIterationTest
+  commentId: M:CoreUnitTest.CoreUnitTest.WhileIterationTest
+  fullName: CoreUnitTest.CoreUnitTest.WhileIterationTest()
+  nameWithType: CoreUnitTest.WhileIterationTest()
+- uid: CoreUnitTest.CoreUnitTest.WhileIterationTest*
+  name: WhileIterationTest
+  href: api/CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_WhileIterationTest_
+  commentId: Overload:CoreUnitTest.CoreUnitTest.WhileIterationTest
+  isSpec: "True"
+  fullName: CoreUnitTest.CoreUnitTest.WhileIterationTest
+  nameWithType: CoreUnitTest.WhileIterationTest
+- uid: CoreUnitTest.TestCommand
+  name: TestCommand
+  href: api/CoreUnitTest.TestCommand.html
+  commentId: T:CoreUnitTest.TestCommand
+  fullName: CoreUnitTest.TestCommand
+  nameWithType: TestCommand
+- uid: CoreUnitTest.TestCommand.#ctor
+  name: TestCommand()
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand__ctor
+  commentId: M:CoreUnitTest.TestCommand.#ctor
+  name.vb: New()
+  fullName: CoreUnitTest.TestCommand.TestCommand()
+  fullName.vb: CoreUnitTest.TestCommand.New()
+  nameWithType: TestCommand.TestCommand()
+  nameWithType.vb: TestCommand.New()
+- uid: CoreUnitTest.TestCommand.#ctor*
+  name: TestCommand
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand__ctor_
+  commentId: Overload:CoreUnitTest.TestCommand.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CoreUnitTest.TestCommand.TestCommand
+  fullName.vb: CoreUnitTest.TestCommand.New
+  nameWithType: TestCommand.TestCommand
+  nameWithType.vb: TestCommand.New
+- uid: CoreUnitTest.TestCommand.Description
+  name: Description
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand_Description
+  commentId: P:CoreUnitTest.TestCommand.Description
+  fullName: CoreUnitTest.TestCommand.Description
+  nameWithType: TestCommand.Description
+- uid: CoreUnitTest.TestCommand.Description*
+  name: Description
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand_Description_
+  commentId: Overload:CoreUnitTest.TestCommand.Description
+  isSpec: "True"
+  fullName: CoreUnitTest.TestCommand.Description
+  nameWithType: TestCommand.Description
+- uid: CoreUnitTest.TestCommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name: Execute(ICanvas, List<object>)
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  commentId: M:CoreUnitTest.TestCommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  name.vb: Execute(ICanvas, List(Of Object))
+  fullName: CoreUnitTest.TestCommand.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  fullName.vb: CoreUnitTest.TestCommand.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  nameWithType: TestCommand.Execute(ICanvas, List<object>)
+  nameWithType.vb: TestCommand.Execute(ICanvas, List(Of Object))
+- uid: CoreUnitTest.TestCommand.Execute*
+  name: Execute
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand_Execute_
+  commentId: Overload:CoreUnitTest.TestCommand.Execute
+  isSpec: "True"
+  fullName: CoreUnitTest.TestCommand.Execute
+  nameWithType: TestCommand.Execute
+- uid: CoreUnitTest.TestCommand.Name
+  name: Name
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand_Name
+  commentId: P:CoreUnitTest.TestCommand.Name
+  fullName: CoreUnitTest.TestCommand.Name
+  nameWithType: TestCommand.Name
+- uid: CoreUnitTest.TestCommand.Name*
+  name: Name
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand_Name_
+  commentId: Overload:CoreUnitTest.TestCommand.Name
+  isSpec: "True"
+  fullName: CoreUnitTest.TestCommand.Name
+  nameWithType: TestCommand.Name
+- uid: CoreUnitTest.TestCommand.Usage
+  name: Usage
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand_Usage
+  commentId: P:CoreUnitTest.TestCommand.Usage
+  fullName: CoreUnitTest.TestCommand.Usage
+  nameWithType: TestCommand.Usage
+- uid: CoreUnitTest.TestCommand.Usage*
+  name: Usage
+  href: api/CoreUnitTest.TestCommand.html#CoreUnitTest_TestCommand_Usage_
+  commentId: Overload:CoreUnitTest.TestCommand.Usage
+  isSpec: "True"
+  fullName: CoreUnitTest.TestCommand.Usage
+  nameWithType: TestCommand.Usage
 - uid: Frontend
   name: Frontend
   href: api/Frontend.html

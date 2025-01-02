@@ -5,11 +5,9 @@ items:
   id: Core.Exceptions
   children:
   - Core.Exceptions.BooseException
-  - Core.Exceptions.CanvasException
   - Core.Exceptions.CommandException
   - Core.Exceptions.ParserException
   - Core.Exceptions.StoredProgramException
-  - Core.Exceptions.TokeniserException
   - Core.Exceptions.VariableException
   langs:
   - csharp
@@ -28,12 +26,6 @@ references:
   name: BooseException
   nameWithType: BooseException
   fullName: Core.Exceptions.BooseException
-- uid: Core.Exceptions.CanvasException
-  commentId: T:Core.Exceptions.CanvasException
-  href: Core.Exceptions.CanvasException.html
-  name: CanvasException
-  nameWithType: CanvasException
-  fullName: Core.Exceptions.CanvasException
 - uid: Core.Exceptions.CommandException
   commentId: T:Core.Exceptions.CommandException
   href: Core.Exceptions.CommandException.html
@@ -48,16 +40,11 @@ references:
   fullName: Core.Exceptions.ParserException
 - uid: Core.Exceptions.StoredProgramException
   commentId: T:Core.Exceptions.StoredProgramException
+  parent: Core.Exceptions
   href: Core.Exceptions.StoredProgramException.html
   name: StoredProgramException
   nameWithType: StoredProgramException
   fullName: Core.Exceptions.StoredProgramException
-- uid: Core.Exceptions.TokeniserException
-  commentId: T:Core.Exceptions.TokeniserException
-  href: Core.Exceptions.TokeniserException.html
-  name: TokeniserException
-  nameWithType: TokeniserException
-  fullName: Core.Exceptions.TokeniserException
 - uid: Core.Exceptions.VariableException
   commentId: T:Core.Exceptions.VariableException
   href: Core.Exceptions.VariableException.html

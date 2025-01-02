@@ -1,0 +1,577 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.CommandFactory
+  commentId: T:Core.CommandFactory
+  id: CommandFactory
+  parent: Core
+  children:
+  - Core.CommandFactory.#ctor
+  - Core.CommandFactory.AddCommand(Core.Interfaces.ICommand)
+  - Core.CommandFactory.GetCommand(System.String)
+  - Core.CommandFactory.GetCommandsRegex
+  langs:
+  - csharp
+  - vb
+  name: CommandFactory
+  nameWithType: CommandFactory
+  fullName: Core.CommandFactory
+  type: Class
+  source:
+    remote:
+      path: BOOSE-Application/Core/CommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: CommandFactory
+    path: ../BOOSE-Application/Core/CommandFactory.cs
+    startLine: 7
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Factory for adding new commands using the command design template
+  example: []
+  syntax:
+    content: 'public class CommandFactory : ICommandFactory'
+    content.vb: Public Class CommandFactory Implements ICommandFactory
+  inheritance:
+  - System.Object
+  implements:
+  - Core.Interfaces.ICommandFactory
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Core.CommandFactory.#ctor
+  commentId: M:Core.CommandFactory.#ctor
+  id: '#ctor'
+  parent: Core.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: CommandFactory()
+  nameWithType: CommandFactory.CommandFactory()
+  fullName: Core.CommandFactory.CommandFactory()
+  type: Constructor
+  source:
+    remote:
+      path: BOOSE-Application/Core/CommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: .ctor
+    path: ../BOOSE-Application/Core/CommandFactory.cs
+    startLine: 17
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Constructor adds default commands to the factory
+  example: []
+  syntax:
+    content: public CommandFactory()
+    content.vb: Public Sub New()
+  overload: Core.CommandFactory.#ctor*
+  nameWithType.vb: CommandFactory.New()
+  fullName.vb: Core.CommandFactory.New()
+  name.vb: New()
+- uid: Core.CommandFactory.AddCommand(Core.Interfaces.ICommand)
+  commentId: M:Core.CommandFactory.AddCommand(Core.Interfaces.ICommand)
+  id: AddCommand(Core.Interfaces.ICommand)
+  parent: Core.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: AddCommand(ICommand)
+  nameWithType: CommandFactory.AddCommand(ICommand)
+  fullName: Core.CommandFactory.AddCommand(Core.Interfaces.ICommand)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/CommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: AddCommand
+    path: ../BOOSE-Application/Core/CommandFactory.cs
+    startLine: 33
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Add new commands to the factory
+  example: []
+  syntax:
+    content: public void AddCommand(ICommand command)
+    parameters:
+    - id: command
+      type: Core.Interfaces.ICommand
+      description: Object of new command
+    content.vb: Public Sub AddCommand(command As ICommand)
+  overload: Core.CommandFactory.AddCommand*
+  implements:
+  - Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+- uid: Core.CommandFactory.GetCommand(System.String)
+  commentId: M:Core.CommandFactory.GetCommand(System.String)
+  id: GetCommand(System.String)
+  parent: Core.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: GetCommand(string)
+  nameWithType: CommandFactory.GetCommand(string)
+  fullName: Core.CommandFactory.GetCommand(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/CommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: GetCommand
+    path: ../BOOSE-Application/Core/CommandFactory.cs
+    startLine: 43
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Get command from within the factory
+  example: []
+  syntax:
+    content: public ICommand? GetCommand(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Command name
+    return:
+      type: Core.Interfaces.ICommand
+      description: Command object
+    content.vb: Public Function GetCommand(name As String) As ICommand
+  overload: Core.CommandFactory.GetCommand*
+  implements:
+  - Core.Interfaces.ICommandFactory.GetCommand(System.String)
+  nameWithType.vb: CommandFactory.GetCommand(String)
+  fullName.vb: Core.CommandFactory.GetCommand(String)
+  name.vb: GetCommand(String)
+- uid: Core.CommandFactory.GetCommandsRegex
+  commentId: M:Core.CommandFactory.GetCommandsRegex
+  id: GetCommandsRegex
+  parent: Core.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: GetCommandsRegex()
+  nameWithType: CommandFactory.GetCommandsRegex()
+  fullName: Core.CommandFactory.GetCommandsRegex()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/CommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: GetCommandsRegex
+    path: ../BOOSE-Application/Core/CommandFactory.cs
+    startLine: 55
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Utility function for getting a list of commands as a regex string delimited by the or operator ("|")
+  example: []
+  syntax:
+    content: public string GetCommandsRegex()
+    return:
+      type: System.String
+      description: Regex foratted string
+    content.vb: Public Function GetCommandsRegex() As String
+  overload: Core.CommandFactory.GetCommandsRegex*
+  implements:
+  - Core.Interfaces.ICommandFactory.GetCommandsRegex
+references:
+- uid: Core
+  commentId: N:Core
+  href: Core.html
+  name: Core
+  nameWithType: Core
+  fullName: Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Core.Interfaces.ICommandFactory
+  commentId: T:Core.Interfaces.ICommandFactory
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICommandFactory.html
+  name: ICommandFactory
+  nameWithType: ICommandFactory
+  fullName: Core.Interfaces.ICommandFactory
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: Core.CommandFactory.#ctor*
+  commentId: Overload:Core.CommandFactory.#ctor
+  href: Core.CommandFactory.html#Core_CommandFactory__ctor
+  name: CommandFactory
+  nameWithType: CommandFactory.CommandFactory
+  fullName: Core.CommandFactory.CommandFactory
+  nameWithType.vb: CommandFactory.New
+  fullName.vb: Core.CommandFactory.New
+  name.vb: New
+- uid: Core.CommandFactory.AddCommand*
+  commentId: Overload:Core.CommandFactory.AddCommand
+  href: Core.CommandFactory.html#Core_CommandFactory_AddCommand_Core_Interfaces_ICommand_
+  name: AddCommand
+  nameWithType: CommandFactory.AddCommand
+  fullName: Core.CommandFactory.AddCommand
+- uid: Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  commentId: M:Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  parent: Core.Interfaces.ICommandFactory
+  href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_AddCommand_Core_Interfaces_ICommand_
+  name: AddCommand(ICommand)
+  nameWithType: ICommandFactory.AddCommand(ICommand)
+  fullName: Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  spec.csharp:
+  - uid: Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+    name: AddCommand
+    href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_AddCommand_Core_Interfaces_ICommand_
+  - name: (
+  - uid: Core.Interfaces.ICommand
+    name: ICommand
+    href: Core.Interfaces.ICommand.html
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+    name: AddCommand
+    href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_AddCommand_Core_Interfaces_ICommand_
+  - name: (
+  - uid: Core.Interfaces.ICommand
+    name: ICommand
+    href: Core.Interfaces.ICommand.html
+  - name: )
+- uid: Core.Interfaces.ICommand
+  commentId: T:Core.Interfaces.ICommand
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Core.Interfaces.ICommand
+- uid: Core.CommandFactory.GetCommand*
+  commentId: Overload:Core.CommandFactory.GetCommand
+  href: Core.CommandFactory.html#Core_CommandFactory_GetCommand_System_String_
+  name: GetCommand
+  nameWithType: CommandFactory.GetCommand
+  fullName: Core.CommandFactory.GetCommand
+- uid: Core.Interfaces.ICommandFactory.GetCommand(System.String)
+  commentId: M:Core.Interfaces.ICommandFactory.GetCommand(System.String)
+  parent: Core.Interfaces.ICommandFactory
+  isExternal: true
+  href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommand_System_String_
+  name: GetCommand(string)
+  nameWithType: ICommandFactory.GetCommand(string)
+  fullName: Core.Interfaces.ICommandFactory.GetCommand(string)
+  nameWithType.vb: ICommandFactory.GetCommand(String)
+  fullName.vb: Core.Interfaces.ICommandFactory.GetCommand(String)
+  name.vb: GetCommand(String)
+  spec.csharp:
+  - uid: Core.Interfaces.ICommandFactory.GetCommand(System.String)
+    name: GetCommand
+    href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommand_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.ICommandFactory.GetCommand(System.String)
+    name: GetCommand
+    href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommand_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Core.CommandFactory.GetCommandsRegex*
+  commentId: Overload:Core.CommandFactory.GetCommandsRegex
+  href: Core.CommandFactory.html#Core_CommandFactory_GetCommandsRegex
+  name: GetCommandsRegex
+  nameWithType: CommandFactory.GetCommandsRegex
+  fullName: Core.CommandFactory.GetCommandsRegex
+- uid: Core.Interfaces.ICommandFactory.GetCommandsRegex
+  commentId: M:Core.Interfaces.ICommandFactory.GetCommandsRegex
+  parent: Core.Interfaces.ICommandFactory
+  href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommandsRegex
+  name: GetCommandsRegex()
+  nameWithType: ICommandFactory.GetCommandsRegex()
+  fullName: Core.Interfaces.ICommandFactory.GetCommandsRegex()
+  spec.csharp:
+  - uid: Core.Interfaces.ICommandFactory.GetCommandsRegex
+    name: GetCommandsRegex
+    href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommandsRegex
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.ICommandFactory.GetCommandsRegex
+    name: GetCommandsRegex
+    href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommandsRegex
+  - name: (
+  - name: )

@@ -6,7 +6,7 @@ items:
   parent: Core.Interfaces
   children:
   - Core.Interfaces.ICommand.Description
-  - Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  - Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
   - Core.Interfaces.ICommand.Name
   - Core.Interfaces.ICommand.Usage
   langs:
@@ -23,7 +23,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ICommand
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 13
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -50,7 +50,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Name
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 18
+    startLine: 12
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -81,7 +81,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Usage
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 22
+    startLine: 16
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -112,7 +112,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Description
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 26
+    startLine: 20
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -125,16 +125,16 @@ items:
       type: System.String
     content.vb: ReadOnly Property Description As String
   overload: Core.Interfaces.ICommand.Description*
-- uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
-  commentId: M:Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
-  id: Execute(System.Collections.Generic.List{System.Object})
+- uid: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  commentId: M:Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  id: Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
   parent: Core.Interfaces.ICommand
   langs:
   - csharp
   - vb
-  name: Execute(List<object>)
-  nameWithType: ICommand.Execute(List<object>)
-  fullName: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List<object>)
+  name: Execute(ICanvas, List<object>)
+  nameWithType: ICommand.Execute(ICanvas, List<object>)
+  fullName: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
   type: Method
   source:
     remote:
@@ -143,26 +143,28 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Execute
     path: ../BOOSE-Application/Core/Interfaces/ICommand.cs
-    startLine: 32
+    startLine: 26
   assemblies:
   - Core
   namespace: Core.Interfaces
   summary: Function containing the code executed when the command is run
   example: []
   syntax:
-    content: CommandResult Execute(List<object> parameters)
+    content: CommandResult Execute(ICanvas canvas, List<object> parameters)
     parameters:
+    - id: canvas
+      type: Core.Interfaces.ICanvas
     - id: parameters
       type: System.Collections.Generic.List{System.Object}
       description: List of parameters as un-parsed objects
     return:
       type: Core.Enums.CommandResult
       description: ''
-    content.vb: Function Execute(parameters As List(Of Object)) As CommandResult
+    content.vb: Function Execute(canvas As ICanvas, parameters As List(Of Object)) As CommandResult
   overload: Core.Interfaces.ICommand.Execute*
-  nameWithType.vb: ICommand.Execute(List(Of Object))
-  fullName.vb: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List(Of Object))
-  name.vb: Execute(List(Of Object))
+  nameWithType.vb: ICommand.Execute(ICanvas, List(Of Object))
+  fullName.vb: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  name.vb: Execute(ICanvas, List(Of Object))
 references:
 - uid: Core.Interfaces
   commentId: N:Core.Interfaces
@@ -224,10 +226,17 @@ references:
   fullName: Core.Interfaces.ICommand.Description
 - uid: Core.Interfaces.ICommand.Execute*
   commentId: Overload:Core.Interfaces.ICommand.Execute
-  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
   name: Execute
   nameWithType: ICommand.Execute
   fullName: Core.Interfaces.ICommand.Execute
+- uid: Core.Interfaces.ICanvas
+  commentId: T:Core.Interfaces.ICanvas
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICanvas.html
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: Core.Interfaces.ICanvas
 - uid: System.Collections.Generic.List{System.Object}
   commentId: T:System.Collections.Generic.List{System.Object}
   parent: System.Collections.Generic

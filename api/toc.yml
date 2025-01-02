@@ -5,14 +5,18 @@ items:
   items:
   - uid: Core.Canvas
     name: Canvas
+  - uid: Core.CommandFactory
+    name: CommandFactory
+  - uid: Core.ExpressionEvaluator
+    name: ExpressionEvaluator
   - uid: Core.Parser
     name: Parser
-  - uid: Core.StoredProgramExecutor
-    name: StoredProgramExecutor
+  - uid: Core.StoredProgram
+    name: StoredProgram
   - uid: Core.Token
     name: Token
-  - uid: Core.Tokeniser
-    name: Tokeniser
+  - uid: Core.Variable
+    name: Variable
 - uid: Core.Commands
   name: Core.Commands
   items:
@@ -26,12 +30,8 @@ items:
     name: DrawTo
   - uid: Core.Commands.MoveTo
     name: MoveTo
-  - uid: Core.Commands.Peek
-    name: Peek
   - uid: Core.Commands.PenColour
     name: PenColour
-  - uid: Core.Commands.Poke
-    name: Poke
   - uid: Core.Commands.Rectangle
     name: Rectangle
   - uid: Core.Commands.Triangle
@@ -43,38 +43,21 @@ items:
   items:
   - uid: Core.Enums.CommandResult
     name: CommandResult
-  - uid: Core.Enums.CommandsList
-    name: CommandsList
-  - uid: Core.Enums.PatternType
-    name: PatternType
   - uid: Core.Enums.TokenType
     name: TokenType
   - uid: Core.Enums.VariableType
     name: VariableType
-- uid: Core.Evaluators
-  name: Core.Evaluators
-  items:
-  - uid: Core.Evaluators.ExpressionEvaluator
-    name: ExpressionEvaluator
-  - uid: Core.Evaluators.TokenEvaluator
-    name: TokenEvaluator
-  - uid: Core.Evaluators.Variable
-    name: Variable
 - uid: Core.Exceptions
   name: Core.Exceptions
   items:
   - uid: Core.Exceptions.BooseException
     name: BooseException
-  - uid: Core.Exceptions.CanvasException
-    name: CanvasException
   - uid: Core.Exceptions.CommandException
     name: CommandException
   - uid: Core.Exceptions.ParserException
     name: ParserException
   - uid: Core.Exceptions.StoredProgramException
     name: StoredProgramException
-  - uid: Core.Exceptions.TokeniserException
-    name: TokeniserException
   - uid: Core.Exceptions.VariableException
     name: VariableException
 - uid: Core.Interfaces
@@ -84,11 +67,21 @@ items:
     name: ICanvas
   - uid: Core.Interfaces.ICommand
     name: ICommand
+  - uid: Core.Interfaces.ICommandFactory
+    name: ICommandFactory
+  - uid: Core.Interfaces.IExpressionEvaluator
+    name: IExpressionEvaluator
+  - uid: Core.Interfaces.IParser
+    name: IParser
+  - uid: Core.Interfaces.IStoredProgram
+    name: IStoredProgram
 - uid: CoreUnitTest
   name: CoreUnitTest
   items:
   - uid: CoreUnitTest.CoreUnitTest
     name: CoreUnitTest
+  - uid: CoreUnitTest.TestCommand
+    name: TestCommand
 - uid: Frontend
   name: Frontend
   items:

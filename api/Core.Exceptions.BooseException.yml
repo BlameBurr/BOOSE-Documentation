@@ -20,10 +20,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: BooseException
     path: ../BOOSE-Application/Core/Exceptions/BooseException.cs
-    startLine: 8
+    startLine: 5
   assemblies:
   - Core
   namespace: Core.Exceptions
+  summary: Generic Exception Class
+  example: []
   syntax:
     content: 'public class BooseException : Exception, ISerializable'
     content.vb: Public Class BooseException Inherits Exception Implements ISerializable
@@ -31,12 +33,8 @@ items:
   - System.Object
   - System.Exception
   derivedClasses:
-  - Core.Exceptions.CanvasException
-  - Core.Exceptions.CommandException
   - Core.Exceptions.ParserException
   - Core.Exceptions.StoredProgramException
-  - Core.Exceptions.TokeniserException
-  - Core.Exceptions.VariableException
   implements:
   - System.Runtime.Serialization.ISerializable
   inheritedMembers:
@@ -75,7 +73,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Exceptions/BooseException.cs
-    startLine: 10
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Exceptions

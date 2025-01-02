@@ -5,9 +5,9 @@ items:
   id: About
   parent: Core.Commands
   children:
-  - Core.Commands.About.#ctor(Core.Canvas)
+  - Core.Commands.About.#ctor
   - Core.Commands.About.Description
-  - Core.Commands.About.Execute(System.Collections.Generic.List{System.Object})
+  - Core.Commands.About.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
   - Core.Commands.About.Name
   - Core.Commands.About.Usage
   langs:
@@ -144,16 +144,16 @@ items:
   overload: Core.Commands.About.Description*
   implements:
   - Core.Interfaces.ICommand.Description
-- uid: Core.Commands.About.#ctor(Core.Canvas)
-  commentId: M:Core.Commands.About.#ctor(Core.Canvas)
-  id: '#ctor(Core.Canvas)'
+- uid: Core.Commands.About.#ctor
+  commentId: M:Core.Commands.About.#ctor
+  id: '#ctor'
   parent: Core.Commands.About
   langs:
   - csharp
   - vb
-  name: About(Canvas)
-  nameWithType: About.About(Canvas)
-  fullName: Core.Commands.About.About(Core.Canvas)
+  name: About()
+  nameWithType: About.About()
+  fullName: Core.Commands.About.About()
   type: Constructor
   source:
     remote:
@@ -162,7 +162,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Commands/About.cs
-    startLine: 34
+    startLine: 29
   assemblies:
   - Core
   namespace: Core.Commands
@@ -172,26 +172,22 @@ items:
     Contains information about the command itself
   example: []
   syntax:
-    content: public About(Canvas canvas)
-    parameters:
-    - id: canvas
-      type: Core.Canvas
-      description: ''
-    content.vb: Public Sub New(canvas As Canvas)
+    content: public About()
+    content.vb: Public Sub New()
   overload: Core.Commands.About.#ctor*
-  nameWithType.vb: About.New(Canvas)
-  fullName.vb: Core.Commands.About.New(Core.Canvas)
-  name.vb: New(Canvas)
-- uid: Core.Commands.About.Execute(System.Collections.Generic.List{System.Object})
-  commentId: M:Core.Commands.About.Execute(System.Collections.Generic.List{System.Object})
-  id: Execute(System.Collections.Generic.List{System.Object})
+  nameWithType.vb: About.New()
+  fullName.vb: Core.Commands.About.New()
+  name.vb: New()
+- uid: Core.Commands.About.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  commentId: M:Core.Commands.About.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  id: Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
   parent: Core.Commands.About
   langs:
   - csharp
   - vb
-  name: Execute(List<object>)
-  nameWithType: About.Execute(List<object>)
-  fullName: Core.Commands.About.Execute(System.Collections.Generic.List<object>)
+  name: Execute(ICanvas, List<object>)
+  nameWithType: About.Execute(ICanvas, List<object>)
+  fullName: Core.Commands.About.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
   type: Method
   source:
     remote:
@@ -200,28 +196,30 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Execute
     path: ../BOOSE-Application/Core/Commands/About.cs
-    startLine: 47
+    startLine: 41
   assemblies:
   - Core
   namespace: Core.Commands
   summary: The method which will be invoked when the command is run
   example: []
   syntax:
-    content: public CommandResult Execute(List<object> parameters)
+    content: public CommandResult Execute(ICanvas canvas, List<object> parameters)
     parameters:
+    - id: canvas
+      type: Core.Interfaces.ICanvas
     - id: parameters
       type: System.Collections.Generic.List{System.Object}
       description: A list of objects for parsing in the function which may be used when running the command
     return:
       type: Core.Enums.CommandResult
       description: Result of whether the command was successful or not
-    content.vb: Public Function Execute(parameters As List(Of Object)) As CommandResult
+    content.vb: Public Function Execute(canvas As ICanvas, parameters As List(Of Object)) As CommandResult
   overload: Core.Commands.About.Execute*
   implements:
-  - Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
-  nameWithType.vb: About.Execute(List(Of Object))
-  fullName.vb: Core.Commands.About.Execute(System.Collections.Generic.List(Of Object))
-  name.vb: Execute(List(Of Object))
+  - Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  nameWithType.vb: About.Execute(ICanvas, List(Of Object))
+  fullName.vb: Core.Commands.About.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  name.vb: Execute(ICanvas, List(Of Object))
 references:
 - uid: Core.Commands
   commentId: N:Core.Commands
@@ -563,48 +561,40 @@ references:
   fullName: Core.Interfaces.ICommand.Description
 - uid: Core.Commands.About.#ctor*
   commentId: Overload:Core.Commands.About.#ctor
-  href: Core.Commands.About.html#Core_Commands_About__ctor_Core_Canvas_
+  href: Core.Commands.About.html#Core_Commands_About__ctor
   name: About
   nameWithType: About.About
   fullName: Core.Commands.About.About
   nameWithType.vb: About.New
   fullName.vb: Core.Commands.About.New
   name.vb: New
-- uid: Core.Canvas
-  commentId: T:Core.Canvas
-  parent: Core
-  href: Core.Canvas.html
-  name: Canvas
-  nameWithType: Canvas
-  fullName: Core.Canvas
-- uid: Core
-  commentId: N:Core
-  href: Core.html
-  name: Core
-  nameWithType: Core
-  fullName: Core
 - uid: Core.Commands.About.Execute*
   commentId: Overload:Core.Commands.About.Execute
-  href: Core.Commands.About.html#Core_Commands_About_Execute_System_Collections_Generic_List_System_Object__
+  href: Core.Commands.About.html#Core_Commands_About_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
   name: Execute
   nameWithType: About.Execute
   fullName: Core.Commands.About.Execute
-- uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
-  commentId: M:Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+- uid: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
+  commentId: M:Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
   parent: Core.Interfaces.ICommand
   isExternal: true
-  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
-  name: Execute(List<object>)
-  nameWithType: ICommand.Execute(List<object>)
-  fullName: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List<object>)
-  nameWithType.vb: ICommand.Execute(List(Of Object))
-  fullName.vb: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List(Of Object))
-  name.vb: Execute(List(Of Object))
+  href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
+  name: Execute(ICanvas, List<object>)
+  nameWithType: ICommand.Execute(ICanvas, List<object>)
+  fullName: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List<object>)
+  nameWithType.vb: ICommand.Execute(ICanvas, List(Of Object))
+  fullName.vb: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas, System.Collections.Generic.List(Of Object))
+  name.vb: Execute(ICanvas, List(Of Object))
   spec.csharp:
-  - uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  - uid: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
     name: Execute
-    href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
+    href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
   - name: (
+  - uid: Core.Interfaces.ICanvas
+    name: ICanvas
+    href: Core.Interfaces.ICanvas.html
+  - name: ','
+  - name: " "
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
@@ -617,10 +607,15 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})
+  - uid: Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})
     name: Execute
-    href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__
+    href: Core.Interfaces.ICommand.html#Core_Interfaces_ICommand_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__
   - name: (
+  - uid: Core.Interfaces.ICanvas
+    name: ICanvas
+    href: Core.Interfaces.ICanvas.html
+  - name: ','
+  - name: " "
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
@@ -634,6 +629,13 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   - name: )
+- uid: Core.Interfaces.ICanvas
+  commentId: T:Core.Interfaces.ICanvas
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICanvas.html
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: Core.Interfaces.ICanvas
 - uid: System.Collections.Generic.List{System.Object}
   commentId: T:System.Collections.Generic.List{System.Object}
   parent: System.Collections.Generic

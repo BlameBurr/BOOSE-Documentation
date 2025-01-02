@@ -6,6 +6,10 @@ items:
   children:
   - Core.Interfaces.ICanvas
   - Core.Interfaces.ICommand
+  - Core.Interfaces.ICommandFactory
+  - Core.Interfaces.IExpressionEvaluator
+  - Core.Interfaces.IParser
+  - Core.Interfaces.IStoredProgram
   langs:
   - csharp
   - vb
@@ -30,6 +34,34 @@ references:
   name: ICommand
   nameWithType: ICommand
   fullName: Core.Interfaces.ICommand
+- uid: Core.Interfaces.ICommandFactory
+  commentId: T:Core.Interfaces.ICommandFactory
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICommandFactory.html
+  name: ICommandFactory
+  nameWithType: ICommandFactory
+  fullName: Core.Interfaces.ICommandFactory
+- uid: Core.Interfaces.IExpressionEvaluator
+  commentId: T:Core.Interfaces.IExpressionEvaluator
+  parent: Core.Interfaces
+  href: Core.Interfaces.IExpressionEvaluator.html
+  name: IExpressionEvaluator
+  nameWithType: IExpressionEvaluator
+  fullName: Core.Interfaces.IExpressionEvaluator
+- uid: Core.Interfaces.IParser
+  commentId: T:Core.Interfaces.IParser
+  parent: Core.Interfaces
+  href: Core.Interfaces.IParser.html
+  name: IParser
+  nameWithType: IParser
+  fullName: Core.Interfaces.IParser
+- uid: Core.Interfaces.IStoredProgram
+  commentId: T:Core.Interfaces.IStoredProgram
+  parent: Core.Interfaces
+  href: Core.Interfaces.IStoredProgram.html
+  name: IStoredProgram
+  nameWithType: IStoredProgram
+  fullName: Core.Interfaces.IStoredProgram
 - uid: Core.Interfaces
   commentId: N:Core.Interfaces
   href: Core.html

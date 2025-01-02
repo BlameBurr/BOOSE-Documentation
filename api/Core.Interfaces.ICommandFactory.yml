@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Interfaces.ICommandFactory
+  commentId: T:Core.Interfaces.ICommandFactory
+  id: ICommandFactory
+  parent: Core.Interfaces
+  children:
+  - Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  - Core.Interfaces.ICommandFactory.GetCommand(System.String)
+  - Core.Interfaces.ICommandFactory.GetCommandsRegex
+  langs:
+  - csharp
+  - vb
+  name: ICommandFactory
+  nameWithType: ICommandFactory
+  fullName: Core.Interfaces.ICommandFactory
+  type: Interface
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ICommandFactory
+    path: ../BOOSE-Application/Core/Interfaces/ICommandFactory.cs
+    startLine: 5
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Base commandfactory class used for adding custom commands
+  example: []
+  syntax:
+    content: public interface ICommandFactory
+    content.vb: Public Interface ICommandFactory
+- uid: Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  commentId: M:Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  id: AddCommand(Core.Interfaces.ICommand)
+  parent: Core.Interfaces.ICommandFactory
+  langs:
+  - csharp
+  - vb
+  name: AddCommand(ICommand)
+  nameWithType: ICommandFactory.AddCommand(ICommand)
+  fullName: Core.Interfaces.ICommandFactory.AddCommand(Core.Interfaces.ICommand)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: AddCommand
+    path: ../BOOSE-Application/Core/Interfaces/ICommandFactory.cs
+    startLine: 11
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Function for adding a commands to the factory
+  example: []
+  syntax:
+    content: void AddCommand(ICommand command)
+    parameters:
+    - id: command
+      type: Core.Interfaces.ICommand
+      description: Command to add
+    content.vb: Sub AddCommand(command As ICommand)
+  overload: Core.Interfaces.ICommandFactory.AddCommand*
+- uid: Core.Interfaces.ICommandFactory.GetCommand(System.String)
+  commentId: M:Core.Interfaces.ICommandFactory.GetCommand(System.String)
+  id: GetCommand(System.String)
+  parent: Core.Interfaces.ICommandFactory
+  langs:
+  - csharp
+  - vb
+  name: GetCommand(string)
+  nameWithType: ICommandFactory.GetCommand(string)
+  fullName: Core.Interfaces.ICommandFactory.GetCommand(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: GetCommand
+    path: ../BOOSE-Application/Core/Interfaces/ICommandFactory.cs
+    startLine: 17
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Function for returning a command stored in the factory
+  example: []
+  syntax:
+    content: ICommand? GetCommand(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Command name to fetch
+    return:
+      type: Core.Interfaces.ICommand
+      description: ''
+    content.vb: Function GetCommand(name As String) As ICommand
+  overload: Core.Interfaces.ICommandFactory.GetCommand*
+  nameWithType.vb: ICommandFactory.GetCommand(String)
+  fullName.vb: Core.Interfaces.ICommandFactory.GetCommand(String)
+  name.vb: GetCommand(String)
+- uid: Core.Interfaces.ICommandFactory.GetCommandsRegex
+  commentId: M:Core.Interfaces.ICommandFactory.GetCommandsRegex
+  id: GetCommandsRegex
+  parent: Core.Interfaces.ICommandFactory
+  langs:
+  - csharp
+  - vb
+  name: GetCommandsRegex()
+  nameWithType: ICommandFactory.GetCommandsRegex()
+  fullName: Core.Interfaces.ICommandFactory.GetCommandsRegex()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/ICommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: GetCommandsRegex
+    path: ../BOOSE-Application/Core/Interfaces/ICommandFactory.cs
+    startLine: 22
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Returns a regex string used for listing commands
+  example: []
+  syntax:
+    content: string GetCommandsRegex()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetCommandsRegex() As String
+  overload: Core.Interfaces.ICommandFactory.GetCommandsRegex*
+references:
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: Core.Interfaces.ICommandFactory.AddCommand*
+  commentId: Overload:Core.Interfaces.ICommandFactory.AddCommand
+  href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_AddCommand_Core_Interfaces_ICommand_
+  name: AddCommand
+  nameWithType: ICommandFactory.AddCommand
+  fullName: Core.Interfaces.ICommandFactory.AddCommand
+- uid: Core.Interfaces.ICommand
+  commentId: T:Core.Interfaces.ICommand
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Core.Interfaces.ICommand
+- uid: Core.Interfaces.ICommandFactory.GetCommand*
+  commentId: Overload:Core.Interfaces.ICommandFactory.GetCommand
+  href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommand_System_String_
+  name: GetCommand
+  nameWithType: ICommandFactory.GetCommand
+  fullName: Core.Interfaces.ICommandFactory.GetCommand
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Core.Interfaces.ICommandFactory.GetCommandsRegex*
+  commentId: Overload:Core.Interfaces.ICommandFactory.GetCommandsRegex
+  href: Core.Interfaces.ICommandFactory.html#Core_Interfaces_ICommandFactory_GetCommandsRegex
+  name: GetCommandsRegex
+  nameWithType: ICommandFactory.GetCommandsRegex
+  fullName: Core.Interfaces.ICommandFactory.GetCommandsRegex

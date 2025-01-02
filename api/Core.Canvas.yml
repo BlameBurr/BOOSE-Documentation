@@ -5,7 +5,6 @@ items:
   id: Canvas
   parent: Core
   children:
-  - Core.Canvas.#ctor(System.Int32,System.Int32)
   - Core.Canvas.#ctor(System.Windows.Forms.Panel)
   - Core.Canvas.BackgroundColour
   - Core.Canvas.Bounds
@@ -318,44 +317,6 @@ items:
   overload: Core.Canvas.GraphicsBuffer*
   implements:
   - Core.Interfaces.ICanvas.GraphicsBuffer
-- uid: Core.Canvas.#ctor(System.Int32,System.Int32)
-  commentId: M:Core.Canvas.#ctor(System.Int32,System.Int32)
-  id: '#ctor(System.Int32,System.Int32)'
-  parent: Core.Canvas
-  langs:
-  - csharp
-  - vb
-  name: Canvas(int, int)
-  nameWithType: Canvas.Canvas(int, int)
-  fullName: Core.Canvas.Canvas(int, int)
-  type: Constructor
-  source:
-    remote:
-      path: BOOSE-Application/Core/Canvas.cs
-      branch: main
-      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
-    id: .ctor
-    path: ../BOOSE-Application/Core/Canvas.cs
-    startLine: 50
-  assemblies:
-  - Core
-  namespace: Core
-  summary: Canvas constructor for unit testing
-  example: []
-  syntax:
-    content: public Canvas(int width, int height)
-    parameters:
-    - id: width
-      type: System.Int32
-      description: Width of canvas
-    - id: height
-      type: System.Int32
-      description: Height of canvas
-    content.vb: Public Sub New(width As Integer, height As Integer)
-  overload: Core.Canvas.#ctor*
-  nameWithType.vb: Canvas.New(Integer, Integer)
-  fullName.vb: Core.Canvas.New(Integer, Integer)
-  name.vb: New(Integer, Integer)
 - uid: Core.Canvas.#ctor(System.Windows.Forms.Panel)
   commentId: M:Core.Canvas.#ctor(System.Windows.Forms.Panel)
   id: '#ctor(System.Windows.Forms.Panel)'
@@ -363,9 +324,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Canvas(Panel)
-  nameWithType: Canvas.Canvas(Panel)
-  fullName: Core.Canvas.Canvas(System.Windows.Forms.Panel)
+  name: Canvas(Panel?)
+  nameWithType: Canvas.Canvas(Panel?)
+  fullName: Core.Canvas.Canvas(System.Windows.Forms.Panel?)
   type: Constructor
   source:
     remote:
@@ -374,18 +335,18 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Canvas.cs
-    startLine: 70
+    startLine: 49
   assemblies:
   - Core
   namespace: Core
   summary: Canvas constructor for frontend
   example: []
   syntax:
-    content: public Canvas(Panel panel)
+    content: public Canvas(Panel? panel)
     parameters:
     - id: panel
       type: System.Windows.Forms.Panel
-      description: Panel used for drawing to
+      description: Panel used for drawing to, optional for unit testing
     content.vb: Public Sub New(panel As Panel)
   overload: Core.Canvas.#ctor*
   nameWithType.vb: Canvas.New(Panel)
@@ -409,7 +370,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Reset
     path: ../BOOSE-Application/Core/Canvas.cs
-    startLine: 89
+    startLine: 78
   assemblies:
   - Core
   namespace: Core
@@ -439,7 +400,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Clear
     path: ../BOOSE-Application/Core/Canvas.cs
-    startLine: 97
+    startLine: 86
   assemblies:
   - Core
   namespace: Core
@@ -469,7 +430,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Clear
     path: ../BOOSE-Application/Core/Canvas.cs
-    startLine: 102
+    startLine: 91
   assemblies:
   - Core
   namespace: Core
@@ -503,7 +464,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: FreeDraw
     path: ../BOOSE-Application/Core/Canvas.cs
-    startLine: 112
+    startLine: 101
   assemblies:
   - Core
   namespace: Core
@@ -990,24 +951,13 @@ references:
   fullName: System.Drawing.BufferedGraphics
 - uid: Core.Canvas.#ctor*
   commentId: Overload:Core.Canvas.#ctor
-  href: Core.Canvas.html#Core_Canvas__ctor_System_Int32_System_Int32_
+  href: Core.Canvas.html#Core_Canvas__ctor_System_Windows_Forms_Panel_
   name: Canvas
   nameWithType: Canvas.Canvas
   fullName: Core.Canvas.Canvas
   nameWithType.vb: Canvas.New
   fullName.vb: Core.Canvas.New
   name.vb: New
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
 - uid: System.Windows.Forms.Panel
   commentId: T:System.Windows.Forms.Panel
   parent: System.Windows.Forms
@@ -1180,3 +1130,14 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

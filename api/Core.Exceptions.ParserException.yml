@@ -20,10 +20,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ParserException
     path: ../BOOSE-Application/Core/Exceptions/ParserException.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Core
   namespace: Core.Exceptions
+  summary: Error within the parsing and tokenising of a script
+  example: []
   syntax:
     content: 'public class ParserException : BooseException, ISerializable'
     content.vb: Public Class ParserException Inherits BooseException Implements ISerializable
@@ -69,7 +71,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Exceptions/ParserException.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Exceptions

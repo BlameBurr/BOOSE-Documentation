@@ -20,10 +20,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: StoredProgramException
     path: ../BOOSE-Application/Core/Exceptions/StoredProgramException.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Core
   namespace: Core.Exceptions
+  summary: Errors occuring within the stored program
+  example: []
   syntax:
     content: 'public class StoredProgramException : BooseException, ISerializable'
     content.vb: Public Class StoredProgramException Inherits BooseException Implements ISerializable
@@ -31,6 +33,9 @@ items:
   - System.Object
   - System.Exception
   - Core.Exceptions.BooseException
+  derivedClasses:
+  - Core.Exceptions.CommandException
+  - Core.Exceptions.VariableException
   implements:
   - System.Runtime.Serialization.ISerializable
   inheritedMembers:
@@ -69,7 +74,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Exceptions/StoredProgramException.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Exceptions

@@ -6,6 +6,8 @@ items:
   parent: Core
   children:
   - Core.Token.#ctor(Core.Enums.TokenType,System.String)
+  - Core.Token.#ctor(System.String,Core.Interfaces.ICommand)
+  - Core.Token.Command
   - Core.Token.ToString
   - Core.Token.Type
   - Core.Token.Value
@@ -23,7 +25,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Token
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 12
+    startLine: 8
   assemblies:
   - Core
   namespace: Core
@@ -59,7 +61,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Type
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 17
+    startLine: 13
   assemblies:
   - Core
   namespace: Core
@@ -90,7 +92,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Value
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 22
+    startLine: 18
   assemblies:
   - Core
   namespace: Core
@@ -103,6 +105,37 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property Value As String
   overload: Core.Token.Value*
+- uid: Core.Token.Command
+  commentId: P:Core.Token.Command
+  id: Command
+  parent: Core.Token
+  langs:
+  - csharp
+  - vb
+  name: Command
+  nameWithType: Token.Command
+  fullName: Core.Token.Command
+  type: Property
+  source:
+    remote:
+      path: BOOSE-Application/Core/Token.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: Command
+    path: ../BOOSE-Application/Core/Token.cs
+    startLine: 23
+  assemblies:
+  - Core
+  namespace: Core
+  summary: The value said token contains
+  example: []
+  syntax:
+    content: public ICommand? Command { get; }
+    parameters: []
+    return:
+      type: Core.Interfaces.ICommand
+    content.vb: Public ReadOnly Property Command As ICommand
+  overload: Core.Token.Command*
 - uid: Core.Token.#ctor(Core.Enums.TokenType,System.String)
   commentId: M:Core.Token.#ctor(Core.Enums.TokenType,System.String)
   id: '#ctor(Core.Enums.TokenType,System.String)'
@@ -121,7 +154,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Core
   namespace: Core
@@ -141,6 +174,40 @@ items:
   nameWithType.vb: Token.New(TokenType, String)
   fullName.vb: Core.Token.New(Core.Enums.TokenType, String)
   name.vb: New(TokenType, String)
+- uid: Core.Token.#ctor(System.String,Core.Interfaces.ICommand)
+  commentId: M:Core.Token.#ctor(System.String,Core.Interfaces.ICommand)
+  id: '#ctor(System.String,Core.Interfaces.ICommand)'
+  parent: Core.Token
+  langs:
+  - csharp
+  - vb
+  name: Token(string, ICommand?)
+  nameWithType: Token.Token(string, ICommand?)
+  fullName: Core.Token.Token(string, Core.Interfaces.ICommand?)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSE-Application/Core/Token.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: .ctor
+    path: ../BOOSE-Application/Core/Token.cs
+    startLine: 36
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: public Token(string value, ICommand? command)
+    parameters:
+    - id: value
+      type: System.String
+    - id: command
+      type: Core.Interfaces.ICommand
+    content.vb: Public Sub New(value As String, command As ICommand)
+  overload: Core.Token.#ctor*
+  nameWithType.vb: Token.New(String, ICommand)
+  fullName.vb: Core.Token.New(String, Core.Interfaces.ICommand)
+  name.vb: New(String, ICommand)
 - uid: Core.Token.ToString
   commentId: M:Core.Token.ToString
   id: ToString
@@ -159,7 +226,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ToString
     path: ../BOOSE-Application/Core/Token.cs
-    startLine: 39
+    startLine: 47
   assemblies:
   - Core
   namespace: Core
@@ -445,6 +512,41 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Core.Token.Command*
+  commentId: Overload:Core.Token.Command
+  href: Core.Token.html#Core_Token_Command
+  name: Command
+  nameWithType: Token.Command
+  fullName: Core.Token.Command
+- uid: Core.Interfaces.ICommand
+  commentId: T:Core.Interfaces.ICommand
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Core.Interfaces.ICommand
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
 - uid: Core.Token.#ctor*
   commentId: Overload:Core.Token.#ctor
   href: Core.Token.html#Core_Token__ctor_Core_Enums_TokenType_System_String_

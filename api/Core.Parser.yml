@@ -5,8 +5,8 @@ items:
   id: Parser
   parent: Core
   children:
-  - Core.Parser.parseLine(System.String)
-  - Core.Parser.parseLines(System.String)
+  - Core.Parser.#ctor(Core.Interfaces.ICommandFactory,Core.StoredProgram)
+  - Core.Parser.parseProgram(System.String)
   langs:
   - csharp
   - vb
@@ -21,15 +21,19 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Parser
     path: ../BOOSE-Application/Core/Parser.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - Core
   namespace: Core
+  summary: Parser class for handling BOOSE scripts
+  example: []
   syntax:
-    content: public class Parser
-    content.vb: Public Class Parser
+    content: 'public class Parser : IParser'
+    content.vb: Public Class Parser Implements IParser
   inheritance:
   - System.Object
+  implements:
+  - Core.Interfaces.IParser
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -38,82 +42,81 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Core.Parser.parseLines(System.String)
-  commentId: M:Core.Parser.parseLines(System.String)
-  id: parseLines(System.String)
+- uid: Core.Parser.#ctor(Core.Interfaces.ICommandFactory,Core.StoredProgram)
+  commentId: M:Core.Parser.#ctor(Core.Interfaces.ICommandFactory,Core.StoredProgram)
+  id: '#ctor(Core.Interfaces.ICommandFactory,Core.StoredProgram)'
   parent: Core.Parser
   langs:
   - csharp
   - vb
-  name: parseLines(string)
-  nameWithType: Parser.parseLines(string)
-  fullName: Core.Parser.parseLines(string)
+  name: Parser(ICommandFactory, StoredProgram)
+  nameWithType: Parser.Parser(ICommandFactory, StoredProgram)
+  fullName: Core.Parser.Parser(Core.Interfaces.ICommandFactory, Core.StoredProgram)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSE-Application/Core/Parser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: .ctor
+    path: ../BOOSE-Application/Core/Parser.cs
+    startLine: 12
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Parser class for handling BOOSE scripts
+  example: []
+  syntax:
+    content: public Parser(ICommandFactory commandFactory, StoredProgram storedProgram)
+    parameters:
+    - id: commandFactory
+      type: Core.Interfaces.ICommandFactory
+      description: ''
+    - id: storedProgram
+      type: Core.StoredProgram
+      description: ''
+    content.vb: Public Sub New(commandFactory As ICommandFactory, storedProgram As StoredProgram)
+  overload: Core.Parser.#ctor*
+  nameWithType.vb: Parser.New(ICommandFactory, StoredProgram)
+  fullName.vb: Core.Parser.New(Core.Interfaces.ICommandFactory, Core.StoredProgram)
+  name.vb: New(ICommandFactory, StoredProgram)
+- uid: Core.Parser.parseProgram(System.String)
+  commentId: M:Core.Parser.parseProgram(System.String)
+  id: parseProgram(System.String)
+  parent: Core.Parser
+  langs:
+  - csharp
+  - vb
+  name: parseProgram(string)
+  nameWithType: Parser.parseProgram(string)
+  fullName: Core.Parser.parseProgram(string)
   type: Method
   source:
     remote:
       path: BOOSE-Application/Core/Parser.cs
       branch: main
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
-    id: parseLines
+    id: parseProgram
     path: ../BOOSE-Application/Core/Parser.cs
-    startLine: 15
+    startLine: 35
   assemblies:
   - Core
   namespace: Core
-  summary: Takes a multi-line query and splits it into multiple, trimed lines
+  summary: Takes a script, tokenises it and adds it to the stored program
   example: []
   syntax:
-    content: public List<string> parseLines(string lines)
+    content: public void parseProgram(string program)
     parameters:
-    - id: lines
+    - id: program
       type: System.String
-      description: One string containing all lines
-    return:
-      type: System.Collections.Generic.List{System.String}
-      description: An array of strings, each containing one line
-    content.vb: Public Function parseLines(lines As String) As List(Of String)
-  overload: Core.Parser.parseLines*
-  nameWithType.vb: Parser.parseLines(String)
-  fullName.vb: Core.Parser.parseLines(String)
-  name.vb: parseLines(String)
-- uid: Core.Parser.parseLine(System.String)
-  commentId: M:Core.Parser.parseLine(System.String)
-  id: parseLine(System.String)
-  parent: Core.Parser
-  langs:
-  - csharp
-  - vb
-  name: parseLine(string)
-  nameWithType: Parser.parseLine(string)
-  fullName: Core.Parser.parseLine(string)
-  type: Method
-  source:
-    remote:
-      path: BOOSE-Application/Core/Parser.cs
-      branch: main
-      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
-    id: parseLine
-    path: ../BOOSE-Application/Core/Parser.cs
-    startLine: 34
-  assemblies:
-  - Core
-  namespace: Core
-  summary: Takes a line and returns the trimmed result
-  example: []
-  syntax:
-    content: public string parseLine(string line)
-    parameters:
-    - id: line
-      type: System.String
-      description: The line as a string
-    return:
-      type: System.String
-      description: The cleaned up string
-    content.vb: Public Function parseLine(line As String) As String
-  overload: Core.Parser.parseLine*
-  nameWithType.vb: Parser.parseLine(String)
-  fullName.vb: Core.Parser.parseLine(String)
-  name.vb: parseLine(String)
+      description: ''
+    content.vb: Public Sub parseProgram(program As String)
+  overload: Core.Parser.parseProgram*
+  implements:
+  - Core.Interfaces.IParser.parseProgram(System.String)
+  nameWithType.vb: Parser.parseProgram(String)
+  fullName.vb: Core.Parser.parseProgram(String)
+  name.vb: parseProgram(String)
 references:
 - uid: Core
   commentId: N:Core
@@ -132,6 +135,13 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: Core.Interfaces.IParser
+  commentId: T:Core.Interfaces.IParser
+  parent: Core.Interfaces
+  href: Core.Interfaces.IParser.html
+  name: IParser
+  nameWithType: IParser
+  fullName: Core.Interfaces.IParser
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -358,12 +368,88 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Core.Parser.parseLines*
-  commentId: Overload:Core.Parser.parseLines
-  href: Core.Parser.html#Core_Parser_parseLines_System_String_
-  name: parseLines
-  nameWithType: Parser.parseLines
-  fullName: Core.Parser.parseLines
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: Core.Parser.#ctor*
+  commentId: Overload:Core.Parser.#ctor
+  href: Core.Parser.html#Core_Parser__ctor_Core_Interfaces_ICommandFactory_Core_StoredProgram_
+  name: Parser
+  nameWithType: Parser.Parser
+  fullName: Core.Parser.Parser
+  nameWithType.vb: Parser.New
+  fullName.vb: Core.Parser.New
+  name.vb: New
+- uid: Core.Interfaces.ICommandFactory
+  commentId: T:Core.Interfaces.ICommandFactory
+  parent: Core.Interfaces
+  href: Core.Interfaces.ICommandFactory.html
+  name: ICommandFactory
+  nameWithType: ICommandFactory
+  fullName: Core.Interfaces.ICommandFactory
+- uid: Core.StoredProgram
+  commentId: T:Core.StoredProgram
+  parent: Core
+  href: Core.StoredProgram.html
+  name: StoredProgram
+  nameWithType: StoredProgram
+  fullName: Core.StoredProgram
+- uid: Core.Parser.parseProgram*
+  commentId: Overload:Core.Parser.parseProgram
+  href: Core.Parser.html#Core_Parser_parseProgram_System_String_
+  name: parseProgram
+  nameWithType: Parser.parseProgram
+  fullName: Core.Parser.parseProgram
+- uid: Core.Interfaces.IParser.parseProgram(System.String)
+  commentId: M:Core.Interfaces.IParser.parseProgram(System.String)
+  parent: Core.Interfaces.IParser
+  isExternal: true
+  href: Core.Interfaces.IParser.html#Core_Interfaces_IParser_parseProgram_System_String_
+  name: parseProgram(string)
+  nameWithType: IParser.parseProgram(string)
+  fullName: Core.Interfaces.IParser.parseProgram(string)
+  nameWithType.vb: IParser.parseProgram(String)
+  fullName.vb: Core.Interfaces.IParser.parseProgram(String)
+  name.vb: parseProgram(String)
+  spec.csharp:
+  - uid: Core.Interfaces.IParser.parseProgram(System.String)
+    name: parseProgram
+    href: Core.Interfaces.IParser.html#Core_Interfaces_IParser_parseProgram_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.IParser.parseProgram(System.String)
+    name: parseProgram
+    href: Core.Interfaces.IParser.html#Core_Interfaces_IParser_parseProgram_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -375,109 +461,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Collections.Generic.List{System.String}
-  commentId: T:System.Collections.Generic.List{System.String}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<string>
-  nameWithType: List<string>
-  fullName: System.Collections.Generic.List<string>
-  nameWithType.vb: List(Of String)
-  fullName.vb: System.Collections.Generic.List(Of String)
-  name.vb: List(Of String)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: Core.Parser.parseLine*
-  commentId: Overload:Core.Parser.parseLine
-  href: Core.Parser.html#Core_Parser_parseLine_System_String_
-  name: parseLine
-  nameWithType: Parser.parseLine
-  fullName: Core.Parser.parseLine

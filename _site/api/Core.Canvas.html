@@ -157,45 +157,9 @@ Class Canvas  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Core_Canvas__ctor_" data-uid="Core.Canvas.#ctor*"></a>
 
-  <h3 id="Core_Canvas__ctor_System_Int32_System_Int32_" data-uid="Core.Canvas.#ctor(System.Int32,System.Int32)">
-  Canvas(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L51"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Canvas constructor for unit testing</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Canvas(int width, int height)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>Width of canvas</p>
-</dd>
-    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>Height of canvas</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Core_Canvas__ctor_" data-uid="Core.Canvas.#ctor*"></a>
-
   <h3 id="Core_Canvas__ctor_System_Windows_Forms_Panel_" data-uid="Core.Canvas.#ctor(System.Windows.Forms.Panel)">
-  Canvas(Panel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  Canvas(Panel?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Canvas constructor for frontend</p>
@@ -203,13 +167,13 @@ Class Canvas  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Canvas(Panel panel)</code></pre>
+    <pre><code class="lang-csharp hljs">public Canvas(Panel? panel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>panel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.panel">Panel</a></dt>
-    <dd><p>Panel used for drawing to</p>
+    <dd><p>Panel used for drawing to, optional for unit testing</p>
 </dd>
   </dl>
 
@@ -492,7 +456,7 @@ Class Canvas  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Core_Canvas_Clear" data-uid="Core.Canvas.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Polymorphic of clear which defaults to background colour</p>
@@ -519,7 +483,7 @@ Class Canvas  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Core_Canvas_Clear_System_Drawing_Color_" data-uid="Core.Canvas.Clear(System.Drawing.Color)">
   Clear(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears the graphics buffer and re-renders</p>
@@ -551,7 +515,7 @@ Class Canvas  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Core_Canvas_FreeDraw_System_Int32_System_Int32_" data-uid="Core.Canvas.FreeDraw(System.Int32,System.Int32)">
   FreeDraw(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Function for passing to panel for free-drawing</p>
@@ -587,7 +551,7 @@ Class Canvas  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Core_Canvas_Reset" data-uid="Core.Canvas.Reset">
   Reset()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Canvas.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears canvas and resets pen position</p>

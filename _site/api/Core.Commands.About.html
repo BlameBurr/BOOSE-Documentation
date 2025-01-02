@@ -157,9 +157,9 @@ Class About  <a class="header-action link-secondary" title="View source" href="h
 
   <a id="Core_Commands_About__ctor_" data-uid="Core.Commands.About.#ctor*"></a>
 
-  <h3 id="Core_Commands_About__ctor_Core_Canvas_" data-uid="Core.Commands.About.#ctor(Core.Canvas)">
-  About(Canvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Commands/About.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Core_Commands_About__ctor" data-uid="Core.Commands.About.#ctor">
+  About()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Commands/About.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor for the circle command
@@ -168,14 +168,9 @@ Contains information about the command itself</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public About(Canvas canvas)</code></pre>
+    <pre><code class="lang-csharp hljs">public About()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>canvas</code> <a class="xref" href="Core.Canvas.html">Canvas</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -294,9 +289,9 @@ Contains information about the command itself</p>
 
   <a id="Core_Commands_About_Execute_" data-uid="Core.Commands.About.Execute*"></a>
 
-  <h3 id="Core_Commands_About_Execute_System_Collections_Generic_List_System_Object__" data-uid="Core.Commands.About.Execute(System.Collections.Generic.List{System.Object})">
-  Execute(List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Commands/About.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Core_Commands_About_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__" data-uid="Core.Commands.About.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})">
+  Execute(ICanvas, List&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Commands/About.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method which will be invoked when the command is run</p>
@@ -304,11 +299,13 @@ Contains information about the command itself</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommandResult Execute(List&lt;object&gt; parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public CommandResult Execute(ICanvas canvas, List&lt;object&gt; parameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
+    <dt><code>canvas</code> <a class="xref" href="Core.Interfaces.ICanvas.html">ICanvas</a></dt>
+    <dd></dd>
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
     <dd><p>A list of objects for parsing in the function which may be used when running the command</p>
 </dd>

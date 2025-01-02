@@ -1,0 +1,850 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.ExpressionEvaluator
+  commentId: T:Core.ExpressionEvaluator
+  id: ExpressionEvaluator
+  parent: Core
+  children:
+  - Core.ExpressionEvaluator.EvaluateBinaryComparison(System.String,System.Double,System.Double)
+  - Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  - Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  - Core.ExpressionEvaluator._variables
+  - Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  langs:
+  - csharp
+  - vb
+  name: ExpressionEvaluator
+  nameWithType: ExpressionEvaluator
+  fullName: Core.ExpressionEvaluator
+  type: Class
+  source:
+    remote:
+      path: BOOSE-Application/Core/ExpressionEvaluator.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ExpressionEvaluator
+    path: ../BOOSE-Application/Core/ExpressionEvaluator.cs
+    startLine: 9
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Evaluator for expressions
+  example: []
+  syntax:
+    content: 'public class ExpressionEvaluator : IExpressionEvaluator'
+    content.vb: Public Class ExpressionEvaluator Implements IExpressionEvaluator
+  inheritance:
+  - System.Object
+  implements:
+  - Core.Interfaces.IExpressionEvaluator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Core.ExpressionEvaluator._variables
+  commentId: F:Core.ExpressionEvaluator._variables
+  id: _variables
+  parent: Core.ExpressionEvaluator
+  langs:
+  - csharp
+  - vb
+  name: _variables
+  nameWithType: ExpressionEvaluator._variables
+  fullName: Core.ExpressionEvaluator._variables
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/ExpressionEvaluator.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: _variables
+    path: ../BOOSE-Application/Core/ExpressionEvaluator.cs
+    startLine: 14
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Local instance of variables array
+  example: []
+  syntax:
+    content: public Dictionary<string, Variable> _variables
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Core.Variable}
+    content.vb: Public _variables As Dictionary(Of String, Variable)
+- uid: Core.ExpressionEvaluator.EvaluateBinaryComparison(System.String,System.Double,System.Double)
+  commentId: M:Core.ExpressionEvaluator.EvaluateBinaryComparison(System.String,System.Double,System.Double)
+  id: EvaluateBinaryComparison(System.String,System.Double,System.Double)
+  parent: Core.ExpressionEvaluator
+  langs:
+  - csharp
+  - vb
+  name: EvaluateBinaryComparison(string, double, double)
+  nameWithType: ExpressionEvaluator.EvaluateBinaryComparison(string, double, double)
+  fullName: Core.ExpressionEvaluator.EvaluateBinaryComparison(string, double, double)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/ExpressionEvaluator.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: EvaluateBinaryComparison
+    path: ../BOOSE-Application/Core/ExpressionEvaluator.cs
+    startLine: 23
+  assemblies:
+  - Core
+  namespace: Core
+  summary: Function for evaluation of binary comparisons for iteration and conditions
+  example: []
+  syntax:
+    content: public bool EvaluateBinaryComparison(string binaryOperator, double firstValue, double secondValue)
+    parameters:
+    - id: binaryOperator
+      type: System.String
+      description: The operator used for the comparison
+    - id: firstValue
+      type: System.Double
+      description: First value/evaluated expression being compared to
+    - id: secondValue
+      type: System.Double
+      description: Second value/evaluated expression being compared to
+    return:
+      type: System.Boolean
+      description: Boolean of whether the comparison is true or not
+    content.vb: Public Function EvaluateBinaryComparison(binaryOperator As String, firstValue As Double, secondValue As Double) As Boolean
+  overload: Core.ExpressionEvaluator.EvaluateBinaryComparison*
+  exceptions:
+  - type: Core.Exceptions.StoredProgramException
+    commentId: T:Core.Exceptions.StoredProgramException
+    description: ''
+  nameWithType.vb: ExpressionEvaluator.EvaluateBinaryComparison(String, Double, Double)
+  fullName.vb: Core.ExpressionEvaluator.EvaluateBinaryComparison(String, Double, Double)
+  name.vb: EvaluateBinaryComparison(String, Double, Double)
+- uid: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  commentId: M:Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  id: EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  parent: Core.ExpressionEvaluator
+  langs:
+  - csharp
+  - vb
+  name: EvaluateExpression(List<Token>, ref int, Dictionary<string, Variable>)
+  nameWithType: ExpressionEvaluator.EvaluateExpression(List<Token>, ref int, Dictionary<string, Variable>)
+  fullName: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List<Core.Token>, ref int, System.Collections.Generic.Dictionary<string, Core.Variable>)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/ExpressionEvaluator.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: EvaluateExpression
+    path: ../BOOSE-Application/Core/ExpressionEvaluator.cs
+    startLine: 60
+  assemblies:
+  - Core
+  namespace: Core
+  summary: >-
+    A polyorphic implementation of expression evaluation hat allows for a variable list to be passed
+
+    this enables variable resolution for previously assigned variables
+  example: []
+  syntax:
+    content: public double EvaluateExpression(List<Token> tokens, ref int index, Dictionary<string, Variable> variables)
+    parameters:
+    - id: tokens
+      type: System.Collections.Generic.List{Core.Token}
+      description: Expession tokens to be evaluated
+    - id: index
+      type: System.Int32
+      description: Current index within the list of tokens, as a reference so they aren't double parsed elsewhere
+    - id: variables
+      type: System.Collections.Generic.Dictionary{System.String,Core.Variable}
+      description: A list of previously assigned variables
+    return:
+      type: System.Double
+      description: Float result of the evaluation
+    content.vb: Public Function EvaluateExpression(tokens As List(Of Token), index As Integer, variables As Dictionary(Of String, Variable)) As Double
+  overload: Core.ExpressionEvaluator.EvaluateExpression*
+  nameWithType.vb: ExpressionEvaluator.EvaluateExpression(List(Of Token), Integer, Dictionary(Of String, Variable))
+  fullName.vb: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List(Of Core.Token), Integer, System.Collections.Generic.Dictionary(Of String, Core.Variable))
+  name.vb: EvaluateExpression(List(Of Token), Integer, Dictionary(Of String, Variable))
+- uid: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  commentId: M:Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  id: EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  parent: Core.ExpressionEvaluator
+  langs:
+  - csharp
+  - vb
+  name: EvaluateExpression(List<Token>, ref int)
+  nameWithType: ExpressionEvaluator.EvaluateExpression(List<Token>, ref int)
+  fullName: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List<Core.Token>, ref int)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/ExpressionEvaluator.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: EvaluateExpression
+    path: ../BOOSE-Application/Core/ExpressionEvaluator.cs
+    startLine: 73
+  assemblies:
+  - Core
+  namespace: Core
+  summary: An implementation of expression evaluation without memory of previously assigned variables
+  example: []
+  syntax:
+    content: public double EvaluateExpression(List<Token> tokens, ref int index)
+    parameters:
+    - id: tokens
+      type: System.Collections.Generic.List{Core.Token}
+      description: Expession tokens to be evaluated
+    - id: index
+      type: System.Int32
+      description: Current index within the list of tokens, as a reference so they aren't double parsed elsewhere
+    return:
+      type: System.Double
+      description: Float result of the evaluation
+    content.vb: Public Function EvaluateExpression(tokens As List(Of Token), index As Integer) As Double
+  overload: Core.ExpressionEvaluator.EvaluateExpression*
+  implements:
+  - Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  nameWithType.vb: ExpressionEvaluator.EvaluateExpression(List(Of Token), Integer)
+  fullName.vb: Core.ExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List(Of Core.Token), Integer)
+  name.vb: EvaluateExpression(List(Of Token), Integer)
+- uid: Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  commentId: M:Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  id: evaluateStringExpression(System.Collections.Generic.List{Core.Token},System.Int32@,System.Collections.Generic.Dictionary{System.String,Core.Variable})
+  parent: Core.ExpressionEvaluator
+  langs:
+  - csharp
+  - vb
+  name: evaluateStringExpression(List<Token>, ref int, Dictionary<string, Variable>)
+  nameWithType: ExpressionEvaluator.evaluateStringExpression(List<Token>, ref int, Dictionary<string, Variable>)
+  fullName: Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List<Core.Token>, ref int, System.Collections.Generic.Dictionary<string, Core.Variable>)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/ExpressionEvaluator.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: evaluateStringExpression
+    path: ../BOOSE-Application/Core/ExpressionEvaluator.cs
+    startLine: 175
+  assemblies:
+  - Core
+  namespace: Core
+  syntax:
+    content: public string evaluateStringExpression(List<Token> tokens, ref int index, Dictionary<string, Variable> variables)
+    parameters:
+    - id: tokens
+      type: System.Collections.Generic.List{Core.Token}
+    - id: index
+      type: System.Int32
+    - id: variables
+      type: System.Collections.Generic.Dictionary{System.String,Core.Variable}
+    return:
+      type: System.String
+    content.vb: Public Function evaluateStringExpression(tokens As List(Of Token), index As Integer, variables As Dictionary(Of String, Variable)) As String
+  overload: Core.ExpressionEvaluator.evaluateStringExpression*
+  nameWithType.vb: ExpressionEvaluator.evaluateStringExpression(List(Of Token), Integer, Dictionary(Of String, Variable))
+  fullName.vb: Core.ExpressionEvaluator.evaluateStringExpression(System.Collections.Generic.List(Of Core.Token), Integer, System.Collections.Generic.Dictionary(Of String, Core.Variable))
+  name.vb: evaluateStringExpression(List(Of Token), Integer, Dictionary(Of String, Variable))
+references:
+- uid: Core
+  commentId: N:Core
+  href: Core.html
+  name: Core
+  nameWithType: Core
+  fullName: Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Core.Interfaces.IExpressionEvaluator
+  commentId: T:Core.Interfaces.IExpressionEvaluator
+  parent: Core.Interfaces
+  href: Core.Interfaces.IExpressionEvaluator.html
+  name: IExpressionEvaluator
+  nameWithType: IExpressionEvaluator
+  fullName: Core.Interfaces.IExpressionEvaluator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: System.Collections.Generic.Dictionary{System.String,Core.Variable}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Core.Variable}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, Variable>
+  nameWithType: Dictionary<string, Variable>
+  fullName: System.Collections.Generic.Dictionary<string, Core.Variable>
+  nameWithType.vb: Dictionary(Of String, Variable)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Core.Variable)
+  name.vb: Dictionary(Of String, Variable)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Core.Variable
+    name: Variable
+    href: Core.Variable.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Core.Variable
+    name: Variable
+    href: Core.Variable.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Core.Exceptions.StoredProgramException
+  commentId: T:Core.Exceptions.StoredProgramException
+  parent: Core.Exceptions
+  href: Core.Exceptions.StoredProgramException.html
+  name: StoredProgramException
+  nameWithType: StoredProgramException
+  fullName: Core.Exceptions.StoredProgramException
+- uid: Core.ExpressionEvaluator.EvaluateBinaryComparison*
+  commentId: Overload:Core.ExpressionEvaluator.EvaluateBinaryComparison
+  href: Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_EvaluateBinaryComparison_System_String_System_Double_System_Double_
+  name: EvaluateBinaryComparison
+  nameWithType: ExpressionEvaluator.EvaluateBinaryComparison
+  fullName: Core.ExpressionEvaluator.EvaluateBinaryComparison
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Core.Exceptions
+  commentId: N:Core.Exceptions
+  href: Core.html
+  name: Core.Exceptions
+  nameWithType: Core.Exceptions
+  fullName: Core.Exceptions
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Exceptions
+    name: Exceptions
+    href: Core.Exceptions.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Exceptions
+    name: Exceptions
+    href: Core.Exceptions.html
+- uid: Core.ExpressionEvaluator.EvaluateExpression*
+  commentId: Overload:Core.ExpressionEvaluator.EvaluateExpression
+  href: Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_EvaluateExpression_System_Collections_Generic_List_Core_Token__System_Int32__System_Collections_Generic_Dictionary_System_String_Core_Variable__
+  name: EvaluateExpression
+  nameWithType: ExpressionEvaluator.EvaluateExpression
+  fullName: Core.ExpressionEvaluator.EvaluateExpression
+- uid: System.Collections.Generic.List{Core.Token}
+  commentId: T:System.Collections.Generic.List{Core.Token}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Token>
+  nameWithType: List<Token>
+  fullName: System.Collections.Generic.List<Core.Token>
+  nameWithType.vb: List(Of Token)
+  fullName.vb: System.Collections.Generic.List(Of Core.Token)
+  name.vb: List(Of Token)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Core.Token
+    name: Token
+    href: Core.Token.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Core.Token
+    name: Token
+    href: Core.Token.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  commentId: M:Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  parent: Core.Interfaces.IExpressionEvaluator
+  isExternal: true
+  href: Core.Interfaces.IExpressionEvaluator.html#Core_Interfaces_IExpressionEvaluator_EvaluateExpression_System_Collections_Generic_List_Core_Token__System_Int32__
+  name: EvaluateExpression(List<Token>, ref int)
+  nameWithType: IExpressionEvaluator.EvaluateExpression(List<Token>, ref int)
+  fullName: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List<Core.Token>, ref int)
+  nameWithType.vb: IExpressionEvaluator.EvaluateExpression(List(Of Token), Integer)
+  fullName.vb: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List(Of Core.Token), Integer)
+  name.vb: EvaluateExpression(List(Of Token), Integer)
+  spec.csharp:
+  - uid: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+    name: EvaluateExpression
+    href: Core.Interfaces.IExpressionEvaluator.html#Core_Interfaces_IExpressionEvaluator_EvaluateExpression_System_Collections_Generic_List_Core_Token__System_Int32__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Core.Token
+    name: Token
+    href: Core.Token.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+    name: EvaluateExpression
+    href: Core.Interfaces.IExpressionEvaluator.html#Core_Interfaces_IExpressionEvaluator_EvaluateExpression_System_Collections_Generic_List_Core_Token__System_Int32__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Core.Token
+    name: Token
+    href: Core.Token.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Core.ExpressionEvaluator.evaluateStringExpression*
+  commentId: Overload:Core.ExpressionEvaluator.evaluateStringExpression
+  href: Core.ExpressionEvaluator.html#Core_ExpressionEvaluator_evaluateStringExpression_System_Collections_Generic_List_Core_Token__System_Int32__System_Collections_Generic_Dictionary_System_String_Core_Variable__
+  name: evaluateStringExpression
+  nameWithType: ExpressionEvaluator.evaluateStringExpression
+  fullName: Core.ExpressionEvaluator.evaluateStringExpression

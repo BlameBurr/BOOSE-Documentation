@@ -5,10 +5,12 @@ items:
   id: Core
   children:
   - Core.Canvas
+  - Core.CommandFactory
+  - Core.ExpressionEvaluator
   - Core.Parser
-  - Core.StoredProgramExecutor
+  - Core.StoredProgram
   - Core.Token
-  - Core.Tokeniser
+  - Core.Variable
   langs:
   - csharp
   - vb
@@ -21,35 +23,47 @@ items:
 references:
 - uid: Core.Canvas
   commentId: T:Core.Canvas
-  parent: Core
   href: Core.Canvas.html
   name: Canvas
   nameWithType: Canvas
   fullName: Core.Canvas
+- uid: Core.CommandFactory
+  commentId: T:Core.CommandFactory
+  href: Core.CommandFactory.html
+  name: CommandFactory
+  nameWithType: CommandFactory
+  fullName: Core.CommandFactory
+- uid: Core.ExpressionEvaluator
+  commentId: T:Core.ExpressionEvaluator
+  href: Core.ExpressionEvaluator.html
+  name: ExpressionEvaluator
+  nameWithType: ExpressionEvaluator
+  fullName: Core.ExpressionEvaluator
 - uid: Core.Parser
   commentId: T:Core.Parser
   href: Core.Parser.html
   name: Parser
   nameWithType: Parser
   fullName: Core.Parser
-- uid: Core.StoredProgramExecutor
-  commentId: T:Core.StoredProgramExecutor
-  href: Core.StoredProgramExecutor.html
-  name: StoredProgramExecutor
-  nameWithType: StoredProgramExecutor
-  fullName: Core.StoredProgramExecutor
+- uid: Core.StoredProgram
+  commentId: T:Core.StoredProgram
+  parent: Core
+  href: Core.StoredProgram.html
+  name: StoredProgram
+  nameWithType: StoredProgram
+  fullName: Core.StoredProgram
 - uid: Core.Token
   commentId: T:Core.Token
   href: Core.Token.html
   name: Token
   nameWithType: Token
   fullName: Core.Token
-- uid: Core.Tokeniser
-  commentId: T:Core.Tokeniser
-  href: Core.Tokeniser.html
-  name: Tokeniser
-  nameWithType: Tokeniser
-  fullName: Core.Tokeniser
+- uid: Core.Variable
+  commentId: T:Core.Variable
+  href: Core.Variable.html
+  name: Variable
+  nameWithType: Variable
+  fullName: Core.Variable
 - uid: Core
   commentId: N:Core
   href: Core.html

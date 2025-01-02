@@ -157,9 +157,9 @@ Class Rectangle  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Core_Commands_Rectangle__ctor_" data-uid="Core.Commands.Rectangle.#ctor*"></a>
 
-  <h3 id="Core_Commands_Rectangle__ctor_Core_Canvas_" data-uid="Core.Commands.Rectangle.#ctor(Core.Canvas)">
-  Rectangle(Canvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Commands/Rectangle.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Core_Commands_Rectangle__ctor" data-uid="Core.Commands.Rectangle.#ctor">
+  Rectangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Commands/Rectangle.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor for the rectangle command
@@ -168,14 +168,9 @@ Contains information about the command itself</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Rectangle(Canvas canvas)</code></pre>
+    <pre><code class="lang-csharp hljs">public Rectangle()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>canvas</code> <a class="xref" href="Core.Canvas.html">Canvas</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -294,9 +289,9 @@ Contains information about the command itself</p>
 
   <a id="Core_Commands_Rectangle_Execute_" data-uid="Core.Commands.Rectangle.Execute*"></a>
 
-  <h3 id="Core_Commands_Rectangle_Execute_System_Collections_Generic_List_System_Object__" data-uid="Core.Commands.Rectangle.Execute(System.Collections.Generic.List{System.Object})">
-  Execute(List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Commands/Rectangle.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Core_Commands_Rectangle_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__" data-uid="Core.Commands.Rectangle.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})">
+  Execute(ICanvas, List&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Commands/Rectangle.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method which will be invoked when the command is run</p>
@@ -304,11 +299,13 @@ Contains information about the command itself</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommandResult Execute(List&lt;object&gt; parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public CommandResult Execute(ICanvas canvas, List&lt;object&gt; parameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
+    <dt><code>canvas</code> <a class="xref" href="Core.Interfaces.ICanvas.html">ICanvas</a></dt>
+    <dd></dd>
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
     <dd><p>A list of objects for parsing in the function which may be used when running the command</p>
 </dd>

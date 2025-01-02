@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Interfaces.IParser
+  commentId: T:Core.Interfaces.IParser
+  id: IParser
+  parent: Core.Interfaces
+  children:
+  - Core.Interfaces.IParser.parseProgram(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IParser
+  nameWithType: IParser
+  fullName: Core.Interfaces.IParser
+  type: Interface
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/IParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: IParser
+    path: ../BOOSE-Application/Core/Interfaces/IParser.cs
+    startLine: 5
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Parser interface for parsing and tokenising scripts inputted by a user
+  example: []
+  syntax:
+    content: public interface IParser
+    content.vb: Public Interface IParser
+- uid: Core.Interfaces.IParser.parseProgram(System.String)
+  commentId: M:Core.Interfaces.IParser.parseProgram(System.String)
+  id: parseProgram(System.String)
+  parent: Core.Interfaces.IParser
+  langs:
+  - csharp
+  - vb
+  name: parseProgram(string)
+  nameWithType: IParser.parseProgram(string)
+  fullName: Core.Interfaces.IParser.parseProgram(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/IParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: parseProgram
+    path: ../BOOSE-Application/Core/Interfaces/IParser.cs
+    startLine: 11
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Formats and interprets BOOSE script
+  example: []
+  syntax:
+    content: void parseProgram(string program)
+    parameters:
+    - id: program
+      type: System.String
+      description: The raw program as a string
+    content.vb: Sub parseProgram(program As String)
+  overload: Core.Interfaces.IParser.parseProgram*
+  nameWithType.vb: IParser.parseProgram(String)
+  fullName.vb: Core.Interfaces.IParser.parseProgram(String)
+  name.vb: parseProgram(String)
+references:
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: Core.Interfaces.IParser.parseProgram*
+  commentId: Overload:Core.Interfaces.IParser.parseProgram
+  href: Core.Interfaces.IParser.html#Core_Interfaces_IParser_parseProgram_System_String_
+  name: parseProgram
+  nameWithType: IParser.parseProgram
+  fullName: Core.Interfaces.IParser.parseProgram
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

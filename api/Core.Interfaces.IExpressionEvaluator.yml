@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: Core.Interfaces.IExpressionEvaluator
+  commentId: T:Core.Interfaces.IExpressionEvaluator
+  id: IExpressionEvaluator
+  parent: Core.Interfaces
+  children:
+  - Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: IExpressionEvaluator
+  nameWithType: IExpressionEvaluator
+  fullName: Core.Interfaces.IExpressionEvaluator
+  type: Interface
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/IExpressionEvaluator.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: IExpressionEvaluator
+    path: ../BOOSE-Application/Core/Interfaces/IExpressionEvaluator.cs
+    startLine: 5
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Base expression evaluation class for resolving expressions from tokens
+  example: []
+  syntax:
+    content: public interface IExpressionEvaluator
+    content.vb: Public Interface IExpressionEvaluator
+- uid: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  commentId: M:Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  id: EvaluateExpression(System.Collections.Generic.List{Core.Token},System.Int32@)
+  parent: Core.Interfaces.IExpressionEvaluator
+  langs:
+  - csharp
+  - vb
+  name: EvaluateExpression(List<Token>, ref int)
+  nameWithType: IExpressionEvaluator.EvaluateExpression(List<Token>, ref int)
+  fullName: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List<Core.Token>, ref int)
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/Core/Interfaces/IExpressionEvaluator.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: EvaluateExpression
+    path: ../BOOSE-Application/Core/Interfaces/IExpressionEvaluator.cs
+    startLine: 12
+  assemblies:
+  - Core
+  namespace: Core.Interfaces
+  summary: Function for evaluating expressions to doubles
+  example: []
+  syntax:
+    content: double EvaluateExpression(List<Token> tokens, ref int index)
+    parameters:
+    - id: tokens
+      type: System.Collections.Generic.List{Core.Token}
+      description: List of tokens
+    - id: index
+      type: System.Int32
+      description: Current index in list
+    return:
+      type: System.Double
+    content.vb: Function EvaluateExpression(tokens As List(Of Token), index As Integer) As Double
+  overload: Core.Interfaces.IExpressionEvaluator.EvaluateExpression*
+  nameWithType.vb: IExpressionEvaluator.EvaluateExpression(List(Of Token), Integer)
+  fullName.vb: Core.Interfaces.IExpressionEvaluator.EvaluateExpression(System.Collections.Generic.List(Of Core.Token), Integer)
+  name.vb: EvaluateExpression(List(Of Token), Integer)
+references:
+- uid: Core.Interfaces
+  commentId: N:Core.Interfaces
+  href: Core.html
+  name: Core.Interfaces
+  nameWithType: Core.Interfaces
+  fullName: Core.Interfaces
+  spec.csharp:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+  spec.vb:
+  - uid: Core
+    name: Core
+    href: Core.html
+  - name: .
+  - uid: Core.Interfaces
+    name: Interfaces
+    href: Core.Interfaces.html
+- uid: Core.Interfaces.IExpressionEvaluator.EvaluateExpression*
+  commentId: Overload:Core.Interfaces.IExpressionEvaluator.EvaluateExpression
+  href: Core.Interfaces.IExpressionEvaluator.html#Core_Interfaces_IExpressionEvaluator_EvaluateExpression_System_Collections_Generic_List_Core_Token__System_Int32__
+  name: EvaluateExpression
+  nameWithType: IExpressionEvaluator.EvaluateExpression
+  fullName: Core.Interfaces.IExpressionEvaluator.EvaluateExpression
+- uid: System.Collections.Generic.List{Core.Token}
+  commentId: T:System.Collections.Generic.List{Core.Token}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Token>
+  nameWithType: List<Token>
+  fullName: System.Collections.Generic.List<Core.Token>
+  nameWithType.vb: List(Of Token)
+  fullName.vb: System.Collections.Generic.List(Of Core.Token)
+  name.vb: List(Of Token)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Core.Token
+    name: Token
+    href: Core.Token.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Core.Token
+    name: Token
+    href: Core.Token.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

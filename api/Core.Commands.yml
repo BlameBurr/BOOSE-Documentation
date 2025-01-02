@@ -9,9 +9,7 @@ items:
   - Core.Commands.Clear
   - Core.Commands.DrawTo
   - Core.Commands.MoveTo
-  - Core.Commands.Peek
   - Core.Commands.PenColour
-  - Core.Commands.Poke
   - Core.Commands.Rectangle
   - Core.Commands.Triangle
   - Core.Commands.Write
@@ -55,24 +53,12 @@ references:
   name: MoveTo
   nameWithType: MoveTo
   fullName: Core.Commands.MoveTo
-- uid: Core.Commands.Peek
-  commentId: T:Core.Commands.Peek
-  href: Core.Commands.Peek.html
-  name: Peek
-  nameWithType: Peek
-  fullName: Core.Commands.Peek
 - uid: Core.Commands.PenColour
   commentId: T:Core.Commands.PenColour
   href: Core.Commands.PenColour.html
   name: PenColour
   nameWithType: PenColour
   fullName: Core.Commands.PenColour
-- uid: Core.Commands.Poke
-  commentId: T:Core.Commands.Poke
-  href: Core.Commands.Poke.html
-  name: Poke
-  nameWithType: Poke
-  fullName: Core.Commands.Poke
 - uid: Core.Commands.Rectangle
   commentId: T:Core.Commands.Rectangle
   href: Core.Commands.Rectangle.html

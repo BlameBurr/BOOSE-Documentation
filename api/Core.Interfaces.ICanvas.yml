@@ -31,7 +31,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ICanvas
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 7
+    startLine: 5
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -58,7 +58,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Pen
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -89,7 +89,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: IsPainting
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -120,7 +120,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: BackgroundColour
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 20
+    startLine: 18
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -151,7 +151,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: IsPenDown
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 24
+    startLine: 22
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -182,7 +182,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: PenPosition
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 28
+    startLine: 26
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -213,7 +213,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Bounds
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 32
+    startLine: 30
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -244,7 +244,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: GraphicsBufferContext
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 36
+    startLine: 34
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -275,7 +275,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: GraphicsBuffer
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 40
+    startLine: 38
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -306,7 +306,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: FreeDraw
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 46
+    startLine: 44
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -344,7 +344,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Reset
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 50
+    startLine: 48
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -372,7 +372,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Clear
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 54
+    startLine: 52
   assemblies:
   - Core
   namespace: Core.Interfaces
@@ -400,7 +400,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Clear
     path: ../BOOSE-Application/Core/Interfaces/ICanvas.cs
-    startLine: 59
+    startLine: 57
   assemblies:
   - Core
   namespace: Core.Interfaces

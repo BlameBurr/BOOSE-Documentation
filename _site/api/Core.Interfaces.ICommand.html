@@ -85,7 +85,7 @@
 
 
   <h1 id="Core_Interfaces_ICommand" data-uid="Core.Interfaces.ICommand" class="text-break">
-Interface ICommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Interface ICommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -121,7 +121,7 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Core_Interfaces_ICommand_Description" data-uid="Core.Interfaces.ICommand.Description">
   Description
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Description of what the commmand does as part of the help message</p>
@@ -153,7 +153,7 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Core_Interfaces_ICommand_Name" data-uid="Core.Interfaces.ICommand.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Name used for adding command to list</p>
@@ -185,7 +185,7 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Core_Interfaces_ICommand_Usage" data-uid="Core.Interfaces.ICommand.Usage">
   Usage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Usage used to help generate help message</p>
@@ -219,9 +219,9 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
 
   <a id="Core_Interfaces_ICommand_Execute_" data-uid="Core.Interfaces.ICommand.Execute*"></a>
 
-  <h3 id="Core_Interfaces_ICommand_Execute_System_Collections_Generic_List_System_Object__" data-uid="Core.Interfaces.ICommand.Execute(System.Collections.Generic.List{System.Object})">
-  Execute(List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Core_Interfaces_ICommand_Execute_Core_Interfaces_ICanvas_System_Collections_Generic_List_System_Object__" data-uid="Core.Interfaces.ICommand.Execute(Core.Interfaces.ICanvas,System.Collections.Generic.List{System.Object})">
+  Execute(ICanvas, List&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Function containing the code executed when the command is run</p>
@@ -229,11 +229,13 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">CommandResult Execute(List&lt;object&gt; parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">CommandResult Execute(ICanvas canvas, List&lt;object&gt; parameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
+    <dt><code>canvas</code> <a class="xref" href="Core.Interfaces.ICanvas.html">ICanvas</a></dt>
+    <dd></dd>
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
     <dd><p>List of parameters as un-parsed objects</p>
 </dd>
@@ -259,7 +261,7 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr/blob/main/BOOSE-Application/Core/Interfaces/ICommand.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

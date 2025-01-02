@@ -22,7 +22,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: CommandResult
     path: ../BOOSE-Application/Core/Enums/CommandResult.cs
-    startLine: 11
+    startLine: 5
   assemblies:
   - Core
   namespace: Core.Enums
@@ -49,7 +49,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Error
     path: ../BOOSE-Application/Core/Enums/CommandResult.cs
-    startLine: 13
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Enums
@@ -75,7 +75,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Success
     path: ../BOOSE-Application/Core/Enums/CommandResult.cs
-    startLine: 14
+    startLine: 8
   assemblies:
   - Core
   namespace: Core.Enums
@@ -101,7 +101,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Finished
     path: ../BOOSE-Application/Core/Enums/CommandResult.cs
-    startLine: 15
+    startLine: 9
   assemblies:
   - Core
   namespace: Core.Enums

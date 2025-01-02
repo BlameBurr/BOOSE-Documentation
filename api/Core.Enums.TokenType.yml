@@ -7,6 +7,7 @@ items:
   children:
   - Core.Enums.TokenType.EOF
   - Core.Enums.TokenType.String
+  - Core.Enums.TokenType.array_manipulation
   - Core.Enums.TokenType.command
   - Core.Enums.TokenType.conditional
   - Core.Enums.TokenType.integer
@@ -31,7 +32,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: TokenType
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 11
+    startLine: 5
   assemblies:
   - Core
   namespace: Core.Enums
@@ -58,7 +59,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: command
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 13
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Enums
@@ -84,7 +85,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: conditional
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 14
+    startLine: 8
   assemblies:
   - Core
   namespace: Core.Enums
@@ -110,7 +111,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: iteration
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 15
+    startLine: 9
   assemblies:
   - Core
   namespace: Core.Enums
@@ -136,7 +137,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: variableType
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 16
+    startLine: 10
   assemblies:
   - Core
   namespace: Core.Enums
@@ -162,7 +163,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: variableName
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 17
+    startLine: 11
   assemblies:
   - Core
   namespace: Core.Enums
@@ -188,7 +189,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: integer
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 18
+    startLine: 12
   assemblies:
   - Core
   namespace: Core.Enums
@@ -214,7 +215,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: real
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 19
+    startLine: 13
   assemblies:
   - Core
   namespace: Core.Enums
@@ -240,7 +241,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: operation
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 20
+    startLine: 14
   assemblies:
   - Core
   namespace: Core.Enums
@@ -266,7 +267,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: punctuation
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 21
+    startLine: 15
   assemblies:
   - Core
   namespace: Core.Enums
@@ -292,12 +293,38 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: String
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 22
+    startLine: 16
   assemblies:
   - Core
   namespace: Core.Enums
   syntax:
     content: String = 9
+    return:
+      type: Core.Enums.TokenType
+- uid: Core.Enums.TokenType.array_manipulation
+  commentId: F:Core.Enums.TokenType.array_manipulation
+  id: array_manipulation
+  parent: Core.Enums.TokenType
+  langs:
+  - csharp
+  - vb
+  name: array_manipulation
+  nameWithType: TokenType.array_manipulation
+  fullName: Core.Enums.TokenType.array_manipulation
+  type: Field
+  source:
+    remote:
+      path: BOOSE-Application/Core/Enums/TokenType.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: array_manipulation
+    path: ../BOOSE-Application/Core/Enums/TokenType.cs
+    startLine: 17
+  assemblies:
+  - Core
+  namespace: Core.Enums
+  syntax:
+    content: array_manipulation = 10
     return:
       type: Core.Enums.TokenType
 - uid: Core.Enums.TokenType.invalid
@@ -318,7 +345,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: invalid
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 23
+    startLine: 18
   assemblies:
   - Core
   namespace: Core.Enums
@@ -344,7 +371,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: EOF
     path: ../BOOSE-Application/Core/Enums/TokenType.cs
-    startLine: 24
+    startLine: 19
   assemblies:
   - Core
   namespace: Core.Enums

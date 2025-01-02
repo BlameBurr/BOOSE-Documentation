@@ -5,8 +5,6 @@ items:
   id: Core.Enums
   children:
   - Core.Enums.CommandResult
-  - Core.Enums.CommandsList
-  - Core.Enums.PatternType
   - Core.Enums.TokenType
   - Core.Enums.VariableType
   langs:
@@ -26,19 +24,6 @@ references:
   name: CommandResult
   nameWithType: CommandResult
   fullName: Core.Enums.CommandResult
-- uid: Core.Enums.CommandsList
-  commentId: T:Core.Enums.CommandsList
-  href: Core.Enums.CommandsList.html
-  name: CommandsList
-  nameWithType: CommandsList
-  fullName: Core.Enums.CommandsList
-- uid: Core.Enums.PatternType
-  commentId: T:Core.Enums.PatternType
-  parent: Core.Enums
-  href: Core.Enums.PatternType.html
-  name: PatternType
-  nameWithType: PatternType
-  fullName: Core.Enums.PatternType
 - uid: Core.Enums.TokenType
   commentId: T:Core.Enums.TokenType
   parent: Core.Enums

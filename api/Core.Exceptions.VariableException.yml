@@ -20,17 +20,20 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: VariableException
     path: ../BOOSE-Application/Core/Exceptions/VariableException.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Core
   namespace: Core.Exceptions
+  summary: Exceptions for variable assignment
+  example: []
   syntax:
-    content: 'public class VariableException : BooseException, ISerializable'
-    content.vb: Public Class VariableException Inherits BooseException Implements ISerializable
+    content: 'public class VariableException : StoredProgramException, ISerializable'
+    content.vb: Public Class VariableException Inherits StoredProgramException Implements ISerializable
   inheritance:
   - System.Object
   - System.Exception
   - Core.Exceptions.BooseException
+  - Core.Exceptions.StoredProgramException
   implements:
   - System.Runtime.Serialization.ISerializable
   inheritedMembers:
@@ -69,7 +72,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Core/Exceptions/VariableException.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Exceptions
@@ -132,6 +135,13 @@ references:
   name: BooseException
   nameWithType: BooseException
   fullName: Core.Exceptions.BooseException
+- uid: Core.Exceptions.StoredProgramException
+  commentId: T:Core.Exceptions.StoredProgramException
+  parent: Core.Exceptions
+  href: Core.Exceptions.StoredProgramException.html
+  name: StoredProgramException
+  nameWithType: StoredProgramException
+  fullName: Core.Exceptions.StoredProgramException
 - uid: System.Runtime.Serialization.ISerializable
   commentId: T:System.Runtime.Serialization.ISerializable
   parent: System.Runtime.Serialization

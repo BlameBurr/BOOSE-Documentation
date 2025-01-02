@@ -578,7 +578,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/Frontend/MainWindow.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - Frontend
   namespace: Frontend

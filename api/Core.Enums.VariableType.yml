@@ -25,10 +25,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: VariableType
     path: ../BOOSE-Application/Core/Enums/VariableType.cs
-    startLine: 8
+    startLine: 5
   assemblies:
   - Core
   namespace: Core.Enums
+  summary: Variable types enumerable
+  example: []
   syntax:
     content: public enum VariableType
     content.vb: Public Enum VariableType
@@ -50,7 +52,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Integer
     path: ../BOOSE-Application/Core/Enums/VariableType.cs
-    startLine: 10
+    startLine: 7
   assemblies:
   - Core
   namespace: Core.Enums
@@ -76,7 +78,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: Real
     path: ../BOOSE-Application/Core/Enums/VariableType.cs
-    startLine: 11
+    startLine: 8
   assemblies:
   - Core
   namespace: Core.Enums
@@ -102,7 +104,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: String
     path: ../BOOSE-Application/Core/Enums/VariableType.cs
-    startLine: 12
+    startLine: 9
   assemblies:
   - Core
   namespace: Core.Enums
@@ -128,7 +130,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ListInt
     path: ../BOOSE-Application/Core/Enums/VariableType.cs
-    startLine: 13
+    startLine: 10
   assemblies:
   - Core
   namespace: Core.Enums
@@ -154,7 +156,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ListReal
     path: ../BOOSE-Application/Core/Enums/VariableType.cs
-    startLine: 14
+    startLine: 11
   assemblies:
   - Core
   namespace: Core.Enums
@@ -180,7 +182,7 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: ListStr
     path: ../BOOSE-Application/Core/Enums/VariableType.cs
-    startLine: 15
+    startLine: 12
   assemblies:
   - Core
   namespace: Core.Enums

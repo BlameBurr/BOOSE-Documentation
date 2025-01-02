@@ -6,9 +6,17 @@ items:
   parent: CoreUnitTest
   children:
   - CoreUnitTest.CoreUnitTest.#ctor
+  - CoreUnitTest.CoreUnitTest.ArrayVariableTest
+  - CoreUnitTest.CoreUnitTest.CommandFactoryTest
+  - CoreUnitTest.CoreUnitTest.ConditionalTest
   - CoreUnitTest.CoreUnitTest.DrawToTest
+  - CoreUnitTest.CoreUnitTest.ForIterationTest
+  - CoreUnitTest.CoreUnitTest.IntegerVariableTest
+  - CoreUnitTest.CoreUnitTest.MethodTest
   - CoreUnitTest.CoreUnitTest.MoveToTest
   - CoreUnitTest.CoreUnitTest.MultiLineTest
+  - CoreUnitTest.CoreUnitTest.RealVariableTest
+  - CoreUnitTest.CoreUnitTest.WhileIterationTest
   langs:
   - csharp
   - vb
@@ -23,10 +31,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: CoreUnitTest
     path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
-    startLine: 5
+    startLine: 58
   assemblies:
   - CoreUnitTest
   namespace: CoreUnitTest
+  summary: Unit tests for the BOOSE core
+  example: []
   syntax:
     content: public class CoreUnitTest
     content.vb: Public Class CoreUnitTest
@@ -58,10 +68,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: .ctor
     path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
-    startLine: 10
+    startLine: 68
   assemblies:
   - CoreUnitTest
   namespace: CoreUnitTest
+  summary: Setup constructor for creating canvas, storedProgram, commandFactory and parser
+  example: []
   syntax:
     content: public CoreUnitTest()
     content.vb: Public Sub New()
@@ -87,10 +99,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: MoveToTest
     path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
-    startLine: 15
+    startLine: 79
   assemblies:
   - CoreUnitTest
   namespace: CoreUnitTest
+  summary: Test MoveTo command
+  example: []
   syntax:
     content: >-
       [Fact]
@@ -123,10 +137,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: DrawToTest
     path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
-    startLine: 25
+    startLine: 94
   assemblies:
   - CoreUnitTest
   namespace: CoreUnitTest
+  summary: Test DrawTo command
+  example: []
   syntax:
     content: >-
       [Fact]
@@ -159,10 +175,12 @@ items:
       repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
     id: MultiLineTest
     path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
-    startLine: 35
+    startLine: 109
   assemblies:
   - CoreUnitTest
   namespace: CoreUnitTest
+  summary: Test multi-line script functionality
+  example: []
   syntax:
     content: >-
       [Fact]
@@ -173,6 +191,306 @@ items:
 
       Public Sub MultiLineTest()
   overload: CoreUnitTest.CoreUnitTest.MultiLineTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: CoreUnitTest.CoreUnitTest.IntegerVariableTest
+  commentId: M:CoreUnitTest.CoreUnitTest.IntegerVariableTest
+  id: IntegerVariableTest
+  parent: CoreUnitTest.CoreUnitTest
+  langs:
+  - csharp
+  - vb
+  name: IntegerVariableTest()
+  nameWithType: CoreUnitTest.IntegerVariableTest()
+  fullName: CoreUnitTest.CoreUnitTest.IntegerVariableTest()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/CoreUnitTest/CoreTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: IntegerVariableTest
+    path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
+    startLine: 124
+  assemblies:
+  - CoreUnitTest
+  namespace: CoreUnitTest
+  summary: Test integer variable assignment
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IntegerVariableTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IntegerVariableTest()
+  overload: CoreUnitTest.CoreUnitTest.IntegerVariableTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: CoreUnitTest.CoreUnitTest.RealVariableTest
+  commentId: M:CoreUnitTest.CoreUnitTest.RealVariableTest
+  id: RealVariableTest
+  parent: CoreUnitTest.CoreUnitTest
+  langs:
+  - csharp
+  - vb
+  name: RealVariableTest()
+  nameWithType: CoreUnitTest.RealVariableTest()
+  fullName: CoreUnitTest.CoreUnitTest.RealVariableTest()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/CoreUnitTest/CoreTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: RealVariableTest
+    path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
+    startLine: 138
+  assemblies:
+  - CoreUnitTest
+  namespace: CoreUnitTest
+  summary: Test real variable assignment
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void RealVariableTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub RealVariableTest()
+  overload: CoreUnitTest.CoreUnitTest.RealVariableTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: CoreUnitTest.CoreUnitTest.CommandFactoryTest
+  commentId: M:CoreUnitTest.CoreUnitTest.CommandFactoryTest
+  id: CommandFactoryTest
+  parent: CoreUnitTest.CoreUnitTest
+  langs:
+  - csharp
+  - vb
+  name: CommandFactoryTest()
+  nameWithType: CoreUnitTest.CommandFactoryTest()
+  fullName: CoreUnitTest.CoreUnitTest.CommandFactoryTest()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/CoreUnitTest/CoreTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: CommandFactoryTest
+    path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
+    startLine: 151
+  assemblies:
+  - CoreUnitTest
+  namespace: CoreUnitTest
+  summary: Test command factory implementation
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CommandFactoryTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CommandFactoryTest()
+  overload: CoreUnitTest.CoreUnitTest.CommandFactoryTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: CoreUnitTest.CoreUnitTest.ConditionalTest
+  commentId: M:CoreUnitTest.CoreUnitTest.ConditionalTest
+  id: ConditionalTest
+  parent: CoreUnitTest.CoreUnitTest
+  langs:
+  - csharp
+  - vb
+  name: ConditionalTest()
+  nameWithType: CoreUnitTest.ConditionalTest()
+  fullName: CoreUnitTest.CoreUnitTest.ConditionalTest()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/CoreUnitTest/CoreTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ConditionalTest
+    path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
+    startLine: 167
+  assemblies:
+  - CoreUnitTest
+  namespace: CoreUnitTest
+  summary: Test conditional blocks
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ConditionalTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ConditionalTest()
+  overload: CoreUnitTest.CoreUnitTest.ConditionalTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: CoreUnitTest.CoreUnitTest.WhileIterationTest
+  commentId: M:CoreUnitTest.CoreUnitTest.WhileIterationTest
+  id: WhileIterationTest
+  parent: CoreUnitTest.CoreUnitTest
+  langs:
+  - csharp
+  - vb
+  name: WhileIterationTest()
+  nameWithType: CoreUnitTest.WhileIterationTest()
+  fullName: CoreUnitTest.CoreUnitTest.WhileIterationTest()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/CoreUnitTest/CoreTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: WhileIterationTest
+    path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
+    startLine: 182
+  assemblies:
+  - CoreUnitTest
+  namespace: CoreUnitTest
+  summary: Test while blocks
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void WhileIterationTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub WhileIterationTest()
+  overload: CoreUnitTest.CoreUnitTest.WhileIterationTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: CoreUnitTest.CoreUnitTest.ForIterationTest
+  commentId: M:CoreUnitTest.CoreUnitTest.ForIterationTest
+  id: ForIterationTest
+  parent: CoreUnitTest.CoreUnitTest
+  langs:
+  - csharp
+  - vb
+  name: ForIterationTest()
+  nameWithType: CoreUnitTest.ForIterationTest()
+  fullName: CoreUnitTest.CoreUnitTest.ForIterationTest()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/CoreUnitTest/CoreTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ForIterationTest
+    path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
+    startLine: 197
+  assemblies:
+  - CoreUnitTest
+  namespace: CoreUnitTest
+  summary: Test for blocks
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ForIterationTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ForIterationTest()
+  overload: CoreUnitTest.CoreUnitTest.ForIterationTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: CoreUnitTest.CoreUnitTest.ArrayVariableTest
+  commentId: M:CoreUnitTest.CoreUnitTest.ArrayVariableTest
+  id: ArrayVariableTest
+  parent: CoreUnitTest.CoreUnitTest
+  langs:
+  - csharp
+  - vb
+  name: ArrayVariableTest()
+  nameWithType: CoreUnitTest.ArrayVariableTest()
+  fullName: CoreUnitTest.CoreUnitTest.ArrayVariableTest()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/CoreUnitTest/CoreTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: ArrayVariableTest
+    path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
+    startLine: 210
+  assemblies:
+  - CoreUnitTest
+  namespace: CoreUnitTest
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ArrayVariableTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ArrayVariableTest()
+  overload: CoreUnitTest.CoreUnitTest.ArrayVariableTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: CoreUnitTest.CoreUnitTest.MethodTest
+  commentId: M:CoreUnitTest.CoreUnitTest.MethodTest
+  id: MethodTest
+  parent: CoreUnitTest.CoreUnitTest
+  langs:
+  - csharp
+  - vb
+  name: MethodTest()
+  nameWithType: CoreUnitTest.MethodTest()
+  fullName: CoreUnitTest.CoreUnitTest.MethodTest()
+  type: Method
+  source:
+    remote:
+      path: BOOSE-Application/CoreUnitTest/CoreTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-boose-assignment-BlameBurr.git
+    id: MethodTest
+    path: ../BOOSE-Application/CoreUnitTest/CoreTest.cs
+    startLine: 222
+  assemblies:
+  - CoreUnitTest
+  namespace: CoreUnitTest
+  syntax:
+    content: >-
+      [Fact]
+
+      public void MethodTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub MethodTest()
+  overload: CoreUnitTest.CoreUnitTest.MethodTest*
   attributes:
   - type: Xunit.FactAttribute
     ctor: Xunit.FactAttribute.#ctor
@@ -448,3 +766,51 @@ references:
   name: MultiLineTest
   nameWithType: CoreUnitTest.MultiLineTest
   fullName: CoreUnitTest.CoreUnitTest.MultiLineTest
+- uid: CoreUnitTest.CoreUnitTest.IntegerVariableTest*
+  commentId: Overload:CoreUnitTest.CoreUnitTest.IntegerVariableTest
+  href: CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_IntegerVariableTest
+  name: IntegerVariableTest
+  nameWithType: CoreUnitTest.IntegerVariableTest
+  fullName: CoreUnitTest.CoreUnitTest.IntegerVariableTest
+- uid: CoreUnitTest.CoreUnitTest.RealVariableTest*
+  commentId: Overload:CoreUnitTest.CoreUnitTest.RealVariableTest
+  href: CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_RealVariableTest
+  name: RealVariableTest
+  nameWithType: CoreUnitTest.RealVariableTest
+  fullName: CoreUnitTest.CoreUnitTest.RealVariableTest
+- uid: CoreUnitTest.CoreUnitTest.CommandFactoryTest*
+  commentId: Overload:CoreUnitTest.CoreUnitTest.CommandFactoryTest
+  href: CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_CommandFactoryTest
+  name: CommandFactoryTest
+  nameWithType: CoreUnitTest.CommandFactoryTest
+  fullName: CoreUnitTest.CoreUnitTest.CommandFactoryTest
+- uid: CoreUnitTest.CoreUnitTest.ConditionalTest*
+  commentId: Overload:CoreUnitTest.CoreUnitTest.ConditionalTest
+  href: CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ConditionalTest
+  name: ConditionalTest
+  nameWithType: CoreUnitTest.ConditionalTest
+  fullName: CoreUnitTest.CoreUnitTest.ConditionalTest
+- uid: CoreUnitTest.CoreUnitTest.WhileIterationTest*
+  commentId: Overload:CoreUnitTest.CoreUnitTest.WhileIterationTest
+  href: CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_WhileIterationTest
+  name: WhileIterationTest
+  nameWithType: CoreUnitTest.WhileIterationTest
+  fullName: CoreUnitTest.CoreUnitTest.WhileIterationTest
+- uid: CoreUnitTest.CoreUnitTest.ForIterationTest*
+  commentId: Overload:CoreUnitTest.CoreUnitTest.ForIterationTest
+  href: CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ForIterationTest
+  name: ForIterationTest
+  nameWithType: CoreUnitTest.ForIterationTest
+  fullName: CoreUnitTest.CoreUnitTest.ForIterationTest
+- uid: CoreUnitTest.CoreUnitTest.ArrayVariableTest*
+  commentId: Overload:CoreUnitTest.CoreUnitTest.ArrayVariableTest
+  href: CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_ArrayVariableTest
+  name: ArrayVariableTest
+  nameWithType: CoreUnitTest.ArrayVariableTest
+  fullName: CoreUnitTest.CoreUnitTest.ArrayVariableTest
+- uid: CoreUnitTest.CoreUnitTest.MethodTest*
+  commentId: Overload:CoreUnitTest.CoreUnitTest.MethodTest
+  href: CoreUnitTest.CoreUnitTest.html#CoreUnitTest_CoreUnitTest_MethodTest
+  name: MethodTest
+  nameWithType: CoreUnitTest.MethodTest
+  fullName: CoreUnitTest.CoreUnitTest.MethodTest
